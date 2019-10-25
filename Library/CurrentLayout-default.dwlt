@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 887, y: 616}
   m_MaxSize: {x: 16012, y: 18066}
   vertical: 0
-  controlID: 172
+  controlID: 75
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,8 +214,8 @@ MonoBehaviour:
     y: 0
     width: 227
     height: 553
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -531,7 +531,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d0f3ffff
+      m_ExpandedIDs: 40f9ffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -591,9 +591,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -6.7540812, y: 32.618332, z: -40.21875}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -6.7540812, y: 32.618332, z: -40.21875}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -626,9 +626,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 184.9682
     speed: 2
-    m_Value: 10
+    m_Value: 184.9682
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -719,20 +719,20 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Packages
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Packages
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\andre\Documents\Turn Based Test\Red Herring\Red Herring
+  m_LastProjectPath: C:\Users\andre\Documents\Intro to Game Dev\Red-Herring
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ffffff7f
-    m_LastClickedID: 2147483647
-    m_ExpandedIDs: 000000007c36000000ca9a3b
+    m_SelectedIDs: 82350000
+    m_LastClickedID: 13698
+    m_ExpandedIDs: 000000009a2f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -760,7 +760,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c360000
+    m_ExpandedIDs: 000000009a2f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -788,7 +788,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000306500009864000034360000b4360000
+    m_ExpandedInstanceIDs: c6230000306500009864000034360000b436000096350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
