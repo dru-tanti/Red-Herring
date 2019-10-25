@@ -1,0 +1,36 @@
+<%IF !EQUATABLE%>
+using System;
+<%ENDIF%>
+using UnityEngine;
+<%IF TYPE_HAS_NAMESPACE%>
+using {TYPE_NAMESPACE};
+<%ENDIF%>
+
+<%IF HAS_SUB_UA_NAMESPACE%>
+namespace UnityAtoms.{SUB_UA_NAMESPACE}
+<%ELSE%>
+namespace UnityAtoms
+<%ENDIF%>
+{
+<%IF EQUATABLE%>
+    /// <summary>
+    /// Variable of type `{TYPE}`. Inherits from `EquatableAtomVariable&lt;{TYPE}, {TYPE_NAME}Event, {TYPE_NAME}{TYPE_NAME}Event&gt;`.
+    /// </summary>
+    [EditorIcon("atom-icon-lush")]
+    [CreateAssetMenu(menuName = "Unity Atoms/Variables/{TYPE_NAME}", fileName = "{TYPE_NAME}Variable")]
+    public sealed class {TYPE_NAME}Variable : EquatableAtomVariable<{TYPE}, {TYPE_NAME}Event, {TYPE_NAME}{TYPE_NAME}Event> { }
+<%ELSE%>
+    /// <summary>
+    /// Variable of type `{TYPE}`. Inherits from `AtomVariable&lt;{TYPE}, {TYPE_NAME}Event, {TYPE_NAME}{TYPE_NAME}Event&gt;`.
+    /// </summary>
+    [EditorIcon("atom-icon-lush")]
+    [CreateAssetMenu(menuName = "Unity Atoms/Variables/{TYPE_NAME}", fileName = "{TYPE_NAME}Variable")]
+    public sealed class {TYPE_NAME}Variable : AtomVariable<{TYPE}, {TYPE_NAME}Event, {TYPE_NAME}{TYPE_NAME}Event>
+    {
+        protected override bool AreEqual({TYPE} first, {TYPE} second)
+        {
+            throw new NotImplementedException();
+        }
+    }
+<%ENDIF%>
+}
