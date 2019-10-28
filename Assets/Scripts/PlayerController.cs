@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Variables")]
     public int speed = 10;
     private bool facingRight = false;
+    private SpriteRenderer _spriteRenderer;
     public int jump = 10;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private void Awake() 
     {
         _playerRB = GetComponent<Rigidbody2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -38,7 +40,6 @@ public class PlayerController : MonoBehaviour
         } else if(_playerRB.velocity.y > 0 && !Input.GetButton("Jump")) {
             _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
-        // Debug.Log(grounded);
     }
 
     private void FixedUpdate() 
@@ -47,15 +48,6 @@ public class PlayerController : MonoBehaviour
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
 
         Move();
-    }
-
-    // Inverts the players scale to make it look as if they are moving left and right.
-    void FlipPlayer()
-    {
-        facingRight = !facingRight;
-        Vector2 localScale  = gameObject.transform.localScale;
-        localScale.x *= -1;
-        transform.localScale = localScale;
     }
 
     void Jump()
@@ -83,10 +75,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // When the space key is released, disable the jump.
-        if(Input.GetButtonUp("Jump"))
-        {
-            isJumping = false;
-        }
+        isJumping = Input.GetButtonUp("Jump");
     }
     
     // Controls the movement of the player.
@@ -97,10 +86,12 @@ public class PlayerController : MonoBehaviour
         // Inverts the player model if they are moving to the left.
         if (moveX < 0f && facingRight == false)
         {
-            FlipPlayer();
+            facingRight = !facingRight;
+            _spriteRenderer.flipX = facingRight;
         } else if (moveX > 0f && facingRight == true) 
         {
-            FlipPlayer();
+            facingRight = !facingRight;
+            _spriteRenderer.flipX = facingRight;
         }
 
         // Moves the players rigidbody.
