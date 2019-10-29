@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))] [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Variables")]
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Jump();
+        // If the player is falling, we will increase the gravity scale so that the player falls faster.
         if(_playerRB.velocity.y < 0) {
             _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         } else if(_playerRB.velocity.y > 0 && !Input.GetButton("Jump")) {
@@ -75,7 +77,10 @@ public class PlayerController : MonoBehaviour
         }
 
         // When the space key is released, disable the jump.
-        isJumping = Input.GetButtonUp("Jump");
+        if(Input.GetButtonUp("Jump"))
+        {
+            isJumping = false;
+        }
     }
     
     // Controls the movement of the player.
@@ -83,7 +88,7 @@ public class PlayerController : MonoBehaviour
     {
         moveX = Input.GetAxisRaw("Horizontal");
 
-        // Inverts the player model if they are moving to the left.
+        // Inverts the player model through the sprite renderer if they are moving to the left.
         if (moveX < 0f && facingRight == false)
         {
             facingRight = !facingRight;

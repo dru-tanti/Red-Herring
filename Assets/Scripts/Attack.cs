@@ -10,12 +10,15 @@ public class Attack : MonoBehaviour
 	private int element;
     private void Update()
 	{
+		// Rotates the GameObject in the direction of the mouse.
 		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 		float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
+
+		// If the Left Mouse Button is clicked fire a projectile in the direction the mouse is pointing.
 		if(Input.GetMouseButtonDown(0))
 		{
-			Instantiate(projectiles[0], shotPoint.position, transform.rotation);
+			Instantiate(projectiles[element], shotPoint.position, transform.rotation);
 		}
 	}
 

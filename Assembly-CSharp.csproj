@@ -44,7 +44,9 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\Scripts\PlayerController.cs" />
+  <ItemGroup>     <Compile Include="Assets\Scripts\Attack.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Projectile.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/andre/Documents/Intro to Game Dev/Red-Herring/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

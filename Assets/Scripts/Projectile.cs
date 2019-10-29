@@ -21,6 +21,7 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
+        // Fire the projectile horizontally in relation to the spawn point.
         _projectileRB.velocity = transform.TransformDirection(Vector2.right) * speed;
         
         // Destroy this object after a specific amount of time.
