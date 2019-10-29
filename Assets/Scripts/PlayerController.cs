@@ -24,6 +24,16 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private float moveX;
 
+    // Custom class that will contain the colour and the sprites we will use for the radial mennu
+    [System.Serializable]
+    public class Action {
+        public Color colour;
+        public Sprite sprite;
+        public string title;
+    }
+
+    public Action[] elements;
+
     private Rigidbody2D _playerRB;
 
     // Retrieves the players rigidbody so that we can move it.
@@ -33,6 +43,7 @@ public class PlayerController : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+
     void Update()
     {
         Jump();
@@ -41,6 +52,12 @@ public class PlayerController : MonoBehaviour
             _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         } else if(_playerRB.velocity.y > 0 && !Input.GetButton("Jump")) {
             _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+
+        // When the Right Mouse button is clicked, it will spawn a menu.
+        if(Input.GetMouseButtonDown(1))
+        {
+            RadialMenuSpawner.ins.SpawnMenu(this);
         }
     }
 
