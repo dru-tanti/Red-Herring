@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public int speed = 10;
     private bool facingRight = false;
     private SpriteRenderer _spriteRenderer;
+    private Rigidbody2D _playerRB;
     public int jump = 10;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
@@ -29,14 +30,14 @@ public class PlayerController : MonoBehaviour
     public class Action {
         public Color colour;
         public Sprite sprite;
-        public string title;
+        public int index;
     }
 
+    // Passes the information set in the Action class to the Radial menu.
     public Action[] elements;
 
-    private Rigidbody2D _playerRB;
 
-    // Retrieves the players rigidbody so that we can move it.
+    // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     private void Awake() 
     {
         _playerRB = GetComponent<Rigidbody2D>();

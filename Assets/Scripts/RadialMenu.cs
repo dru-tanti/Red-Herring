@@ -10,6 +10,12 @@ public class RadialMenu : MonoBehaviour
 {
     public RadialButton buttonPrefab;
     public RadialButton selected;
+    public Attack attack;
+
+    // Finds the Attack script so that we can set the selected element from what the user selects from the menu.
+    private void Awake() {
+        attack = GameObject.Find("Weapon").GetComponent<Attack>();
+    }
 
     // Needs an instance of where the custom class Action() is located (in this case in the Player Controller Script.).
     public void SpawnButtons(PlayerController obj)
@@ -27,15 +33,19 @@ public class RadialMenu : MonoBehaviour
             float tetha = (2 * Mathf.PI / obj.elements.Length) * i;
             float xPos = Mathf.Sin(tetha);
             float yPos = Mathf.Cos(tetha);
+
+            // Sets the position and information of every button.
             newButton.transform.localPosition = new Vector2(xPos, yPos) * 100f;
             newButton.circle.color = obj.elements[i].colour;
             newButton.icon.sprite = obj.elements[i].sprite;
-            newButton.title = obj.elements[i].title;
+            newButton.index = obj.elements[i].index;
 
+            // Sets the menu to this current instance of the script.
             newButton.myMenu = this;
         }
     }
 
+    // If the user releases the right mouse button, set the selectedElement to what was chosen.
     void Update()
     {
         if(Input.GetMouseButtonUp(1))
@@ -44,7 +54,7 @@ public class RadialMenu : MonoBehaviour
             Time.fixedDeltaTime = 0.02F * Time.timeScale;
             if(selected)
             {
-                Debug.Log(selected.title + "Selected");
+                attack.selectedElement = selected.index;
             }
             Destroy(gameObject);
         }

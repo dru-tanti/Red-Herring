@@ -6,9 +6,9 @@ using System.Collections.Generic;
 
 public class RadialButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    public int index;
     public Image circle;
     public Image icon;
-    public string title;
     public RadialMenu myMenu;
     Color defaultColor;
 
