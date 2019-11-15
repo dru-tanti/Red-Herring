@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))] [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Variables")]
     public int speed = 10;
-    private bool facingRight = false;
+    private bool _facingRight = false;
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _playerRB;
     public int jump = 10;
@@ -15,15 +15,15 @@ public class PlayerController : MonoBehaviour
     public float lowJumpMultiplier = 2f;
 
     [Header("Jump Variables")]
-    private bool grounded = false;
-    private bool doubleJump = false;
+    private bool _grounded = false;
+    private bool _doubleJump = false;
     public float groundRadius = 0.2f;
     public Transform groundCheck;
     public LayerMask whatIsGround;
-    private float jumpTimeCounter;
+    private float _jumpTimeCounter;
     public float jumpTime;
-    private bool isJumping;
-    private float moveX;
+    private bool _isJumping;
+    private float _moveX;
 
     // Custom class that will contain the colour and the sprites we will use for the radial mennu
     [System.Serializable]
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate() 
     {
         // Will check if the character is touching the ground
-        grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
 
         Move();
     }
@@ -73,51 +73,51 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         // Checks if the player is already in the air before executing the jump command.
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (Input.GetButtonDown("Jump") && _grounded)
         {
-            isJumping = true;
-            jumpTimeCounter = jumpTime;
+            _isJumping = true;
+            _jumpTimeCounter = jumpTime;
 
             // Applies force when the player presses the Jump Button.
             _playerRB.velocity = Vector2.up * jump;   
         }
 
         // If the player holds down the spacebar the character will jump higher
-        if(Input.GetButton("Jump") && isJumping == true)
+        if(Input.GetButton("Jump") && _isJumping == true)
         {
-            if(jumpTimeCounter > 0) {
+            if(_jumpTimeCounter > 0) {
                 // Applies force when the player presses the Jump Button.
                 _playerRB.velocity = Vector2.up * jump;   
-                jumpTimeCounter -= Time.deltaTime;
+                _jumpTimeCounter -= Time.deltaTime;
             } else {
-                isJumping = false;
+                _isJumping = false;
             }
         }
 
         // When the space key is released, disable the jump.
         if(Input.GetButtonUp("Jump"))
         {
-            isJumping = false;
+            _isJumping = false;
         }
     }
     
     // Controls the movement of the player.
     void Move()
     {
-        moveX = Input.GetAxisRaw("Horizontal");
+        _moveX = Input.GetAxisRaw("Horizontal");
 
         // Inverts the player model through the sprite renderer if they are moving to the left.
-        if (moveX < 0f && facingRight == false)
+        if (_moveX < 0f && _facingRight == false)
         {
-            facingRight = !facingRight;
-            _spriteRenderer.flipX = facingRight;
-        } else if (moveX > 0f && facingRight == true) 
+            _facingRight = !_facingRight;
+        } else if (_moveX > 0f && _facingRight == true) 
         {
-            facingRight = !facingRight;
-            _spriteRenderer.flipX = facingRight;
+            _facingRight = !_facingRight;
         }
+        _spriteRenderer.flipX = _facingRight;
 
         // Moves the players rigidbody.
-        _playerRB.velocity = new Vector2 (moveX * speed, _playerRB.velocity.y);
+        _playerRB.velocity = new Vector2 (_moveX * speed, _playerRB.velocity.y);
     }
+
 }

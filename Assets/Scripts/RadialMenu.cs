@@ -21,7 +21,7 @@ public class RadialMenu : MonoBehaviour
     public void SpawnButtons(PlayerController obj)
     {
         // Slows down time while the menu is active.
-        Time.timeScale = 0.4f;
+        Time.timeScale = 0.0f;
         Time.fixedDeltaTime = 0.02F * Time.timeScale;
         // Creates a button around the circumference of a circle depending on how many buttons we defined.
         for(int i=0; i<obj.elements.Length; i++)
