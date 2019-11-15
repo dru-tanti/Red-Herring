@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityAtoms;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer))]
-public class PlayerController : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D))]
+public class PlayerControl : MonoBehaviour
 {
+    // TODO: Add scriptable objects to define what each element does. Then create a script for all the possible effects that an element can have.
     [Header("Movement Variables")]
-    public int speed = 10;
-    private bool _facingRight = false;
-    private SpriteRenderer _spriteRenderer;
-    private Rigidbody2D _playerRB;
-    public int jump = 10;
+    public FloatConstant speed;
+    private bool _facingRight;
+    public Rigidbody2D _playerRB;
+    public FloatConstant jump;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
 
@@ -25,41 +26,16 @@ public class PlayerController : MonoBehaviour
     private bool _isJumping;
     private float _moveX;
 
-    // Custom class that will contain the colour and the sprites we will use for the radial mennu
-    [System.Serializable]
-    public class Action {
-        public Color colour;
-        public Sprite sprite;
-        public int index;
-    }
-
-    // Passes the information set in the Action class to the Radial menu.
-    public Action[] elements;
-
-
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     private void Awake() 
     {
         _playerRB = GetComponent<Rigidbody2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 
     void Update()
     {
         Jump();
-        // If the player is falling, we will increase the gravity scale so that the player falls faster.
-        if(_playerRB.velocity.y < 0) {
-            _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        } else if(_playerRB.velocity.y > 0 && !Input.GetButton("Jump")) {
-            _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-        }
-
-        // When the Right Mouse button is clicked, it will spawn a menu.
-        if(Input.GetMouseButtonDown(1))
-        {
-            RadialMenuSpawner.ins.SpawnMenu(this);
-        }
     }
 
     private void FixedUpdate() 
@@ -67,6 +43,12 @@ public class PlayerController : MonoBehaviour
         // Will check if the character is touching the ground
         _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
 
+        // If the player is falling, we will increase the gravity scale so that the player falls faster.
+        if(_playerRB.velocity.y < 0) {
+            _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        } else if(_playerRB.velocity.y > 0 && !Input.GetButton("Jump")) {
+            _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
         Move();
     }
 
@@ -79,7 +61,7 @@ public class PlayerController : MonoBehaviour
             _jumpTimeCounter = jumpTime;
 
             // Applies force when the player presses the Jump Button.
-            _playerRB.velocity = Vector2.up * jump;   
+            _playerRB.velocity = Vector2.up * jump.Value;   
         }
 
         // If the player holds down the spacebar the character will jump higher
@@ -87,7 +69,7 @@ public class PlayerController : MonoBehaviour
         {
             if(_jumpTimeCounter > 0) {
                 // Applies force when the player presses the Jump Button.
-                _playerRB.velocity = Vector2.up * jump;   
+                _playerRB.velocity = Vector2.up * jump.Value;   
                 _jumpTimeCounter -= Time.deltaTime;
             } else {
                 _isJumping = false;
@@ -106,18 +88,25 @@ public class PlayerController : MonoBehaviour
     {
         _moveX = Input.GetAxisRaw("Horizontal");
 
-        // Inverts the player model through the sprite renderer if they are moving to the left.
+        // Inverts the player model if they are moving to the left.
         if (_moveX < 0f && _facingRight == false)
         {
-            _facingRight = !_facingRight;
+            FlipPlayer();
         } else if (_moveX > 0f && _facingRight == true) 
         {
-            _facingRight = !_facingRight;
+            FlipPlayer();
         }
-        _spriteRenderer.flipX = _facingRight;
+        
 
         // Moves the players rigidbody.
-        _playerRB.velocity = new Vector2 (_moveX * speed, _playerRB.velocity.y);
+        _playerRB.velocity = new Vector2 (_moveX * speed.Value, _playerRB.velocity.y);
     }
 
+        // Rotates the gameObject to flip the player to make it look as if they are moving left and right.
+    void FlipPlayer()
+    {
+        _facingRight = !_facingRight;
+        
+        transform.Rotate(0f, 180f, 0f);
+    }
 }

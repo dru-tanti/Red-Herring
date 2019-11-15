@@ -44,8 +44,16 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\Scripts\Attack.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
+  <ItemGroup>     <Compile Include="Assets\Scripts\AIBehaviour.cs" />
+     <Compile Include="Assets\Scripts\AIMovement.cs" />
+     <Compile Include="Assets\Scripts\ElementType.cs" />
+     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
+     <Compile Include="Assets\Scripts\PlayerControl.cs" />
+     <Compile Include="Assets\Scripts\Previous Version\Attack.cs" />
+     <Compile Include="Assets\Scripts\Previous Version\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Previous Version\RadialButton.cs" />
+     <Compile Include="Assets\Scripts\Previous Version\RadialMenu.cs" />
+     <Compile Include="Assets\Scripts\Previous Version\RadialMenuSpawner.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/andre/Documents/Intro to Game Dev/Red-Herring/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -635,6 +643,16 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
+      <Project>{8468D452-F64A-56F7-4527-BCE18994907F}</Project>
+      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
+      <Project>{965B4410-F2A5-B8D4-8CC5-920A6F2E44F2}</Project>
+      <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

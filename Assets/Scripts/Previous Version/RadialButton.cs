@@ -4,6 +4,10 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 
+//----------------------------------------------------------------
+// Handles the parameters of the individual button.
+//----------------------------------------------------------------
+
 public class RadialButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public int index;
