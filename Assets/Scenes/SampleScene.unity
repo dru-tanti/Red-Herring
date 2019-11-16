@@ -459,9 +459,8 @@ MonoBehaviour:
   - {fileID: 5554692202938164878, guid: 9d984f2879fb4dd4c846b845c515ea02, type: 3}
   - {fileID: 731239433087526622, guid: a9f54b095798cc246a029bc185341ff4, type: 3}
   - {fileID: 3888762511451399719, guid: 1e95e45d55c98eb4f97d85d288a0eae1, type: 3}
-  selectedElement: 0
-  dashSpeed: 20
-  player: {fileID: 0}
+  selectedElement: {fileID: 11400000, guid: 5c42e8df52b4c7b4ebea0f9e08141d8c, type: 2}
+  isInvisible: {fileID: 11400000, guid: 6079edc376c87e042824adf350a7d75b, type: 2}
 --- !u!1 &776042093
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityAtoms;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -13,6 +14,7 @@ public class Projectile : MonoBehaviour
 
     // A reference to the laser's rigidbody.
     private Rigidbody2D _projectileRB;
+    public IntVariable selectedElement;
 
     private void Awake()
     {

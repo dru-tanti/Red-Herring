@@ -17,7 +17,7 @@ public class PlayerControl : MonoBehaviour
 
     [Header("Jump Variables")]
     private bool _grounded = false;
-    private bool _doubleJump = false;
+    // private bool _doubleJump = false;
     public float groundRadius = 0.2f;
     public Transform groundCheck;
     public LayerMask whatIsGround;
