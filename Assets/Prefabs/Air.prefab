@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6458258953894415244}
   - component: {fileID: 1089623835304136246}
   - component: {fileID: 495977320450150210}
+  - component: {fileID: 1890397892838602158}
   m_Layer: 0
   m_Name: Air
   m_TagString: Untagged
@@ -118,3 +119,19 @@ MonoBehaviour:
   speed: 10
   lifetime: 2
   selectedElement: {fileID: 11400000, guid: 5c42e8df52b4c7b4ebea0f9e08141d8c, type: 2}
+--- !u!58 &1890397892838602158
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458258953894415245}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5

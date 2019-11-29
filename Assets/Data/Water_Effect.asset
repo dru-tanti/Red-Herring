@@ -9,8 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8baf5fc7a4e3ee244a69a81b08959efb, type: 3}
-  m_Name: AI Behaviour
+  m_Script: {fileID: 11500000, guid: 6954593f7a46bad46900b7fa9a69d5af, type: 3}
+  m_Name: Water
   m_EditorClassIdentifier: 
-  _canJump: 1
-  _moveSpeed: 2
+  _willDamage: 0
+  _damage: 0
+  _willPush: 0
+  _willFreeze: 1
+  _freezeDuration: 4
+  _immune: 0
+  _fog: 0
+  _weightLess: 0
+  _willStun: 0
+  _stunDuration: 0
+  _willDig: 0

@@ -15,3 +15,6 @@ MonoBehaviour:
   _image: {fileID: 0}
   _counters:
   - {fileID: 11400000, guid: 6f767dd8f446fbb40b296eadbba0cd8c, type: 2}
+  _effects:
+  - {fileID: 11400000, guid: 77cc9759b5ec18147bf75de109de1c4c, type: 2}
+  - {fileID: 11400000, guid: 20cdb58d57c86184abd629ef0bce4d79, type: 2}

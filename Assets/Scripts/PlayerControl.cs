@@ -102,7 +102,7 @@ public class PlayerControl : MonoBehaviour
         _playerRB.velocity = new Vector2 (_moveX * speed.Value, _playerRB.velocity.y);
     }
 
-        // Rotates the gameObject to flip the player to make it look as if they are moving left and right.
+    // Rotates the gameObject to flip the player to make it look as if they are moving left and right.
     void FlipPlayer()
     {
         _facingRight = !_facingRight;

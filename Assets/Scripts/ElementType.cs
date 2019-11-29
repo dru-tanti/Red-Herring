@@ -9,6 +9,9 @@ public class ElementType : ScriptableObject
     public Sprite image { get => _image; }
 
     [SerializeField] private List<ElementType> _counters;
+
+    [SerializeField] private List<ElementEffect> _effects;
+    public List<ElementEffect> effects { get => _effects; }
     
     public bool Counters(ElementType type)
     {

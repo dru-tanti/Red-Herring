@@ -2,21 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIMovement : MonoBehaviour
+public class AITest : AIBehaviour
 {
-    [SerializeField] private AIBehaviour _behaviour;
-
     // Start is called before the first frame update
     void Start()
     {
-        if (_behaviour.canJump)
-        {
-            Debug.Log("I am Jumping!");
-        }
+        Debug.Log("I LIVE!");
     }
 
     // Update is called once per frame
     void Update()
     {
+        
     }
 }

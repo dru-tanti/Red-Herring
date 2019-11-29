@@ -45,7 +45,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\Scripts\AIBehaviour.cs" />
-     <Compile Include="Assets\Scripts\AIMovement.cs" />
+     <Compile Include="Assets\Scripts\AIProperties.cs" />
+     <Compile Include="Assets\Scripts\AITest.cs" />
+     <Compile Include="Assets\Scripts\ElementEffect.cs" />
      <Compile Include="Assets\Scripts\ElementType.cs" />
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
