@@ -119,7 +119,6 @@ MonoBehaviour:
   speed: 10
   lifetime: 2
   selectedElement: {fileID: 11400000, guid: b2710b6d0f09ea04e8d01e1743662fec, type: 2}
-  ai: {fileID: 0}
 --- !u!58 &5981158146963180988
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -135,4 +134,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.2

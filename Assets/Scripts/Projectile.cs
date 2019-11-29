@@ -67,7 +67,8 @@ public class Projectile : MonoBehaviour
 
         if (effect.willPush)
         {
-            ai.Push();
+            Vector3 offset = transform.position - ai.transform.position;
+            ai.Push(Mathf.Sign(offset.x), effect.pushForce);
         }
 
         if (effect.willFreeze)

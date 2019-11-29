@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e923f3e1c747e1439425aff3512c8a7, type: 3}
-  m_Name: Fire
+  m_Name: Water
   m_EditorClassIdentifier: 
   _image: {fileID: 0}
   _counters:
-  - {fileID: 11400000, guid: 6f767dd8f446fbb40b296eadbba0cd8c, type: 2}
+  - {fileID: 0}
   _effects:
-  - {fileID: 11400000, guid: 77cc9759b5ec18147bf75de109de1c4c, type: 2}
-  - {fileID: 11400000, guid: 20cdb58d57c86184abd629ef0bce4d79, type: 2}
+  - {fileID: 11400000, guid: 7740660a617ce194c9b08b7d4ec8faaa, type: 2}
+  - {fileID: 0}

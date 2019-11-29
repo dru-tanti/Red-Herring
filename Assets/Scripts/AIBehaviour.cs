@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public abstract class AIBehaviour : MonoBehaviour
 {
     public int enemyHealth = 10;
     public int speed = 5;
+    public float pushForce = 4;
+    protected Rigidbody2D _enemyRB;
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake() 
     {
-        // if (_behaviour.canJump)
-        // {
-        //     Debug.Log("I am Jumping!");
-        // }
+        _enemyRB = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -38,9 +38,9 @@ public abstract class AIBehaviour : MonoBehaviour
         StartCoroutine(FreezeEnemy(freezeDuration));
     }
 
-    public void Push()
+    public void Push(float direction, float pushMultiplier)
     {   
-        
+        _enemyRB.AddForce(Vector2.left * direction  * pushForce * pushMultiplier, ForceMode2D.Impulse);
     }
 
     // Stunned enemies can still damage you if you touch them.

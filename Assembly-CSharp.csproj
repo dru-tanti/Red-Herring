@@ -47,6 +47,7 @@
   <ItemGroup>     <Compile Include="Assets\Scripts\AIBehaviour.cs" />
      <Compile Include="Assets\Scripts\AIProperties.cs" />
      <Compile Include="Assets\Scripts\AITest.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ElementEffect.cs" />
      <Compile Include="Assets\Scripts\ElementType.cs" />
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />

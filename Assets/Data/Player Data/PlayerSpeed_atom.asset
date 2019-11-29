@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerSpeed_atom
   m_EditorClassIdentifier: 
   _developerDescription: The speed that the player can move
-  _value: 10
+  _value: 7

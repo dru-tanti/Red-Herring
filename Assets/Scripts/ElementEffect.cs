@@ -13,6 +13,10 @@ public class ElementEffect : ScriptableObject
     
     [SerializeField] private bool _willPush = false;
     public bool willPush { get => _willPush; }
+    
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _pushForce = 0;
+    public float pushForce { get => _pushForce; }
 
     [SerializeField] private bool _willFreeze = false;
     public bool willFreeze { get => _willFreeze; }
