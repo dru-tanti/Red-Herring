@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6954593f7a46bad46900b7fa9a69d5af, type: 3}
-  m_Name: Fire_effect
+  m_Script: {fileID: 11500000, guid: 8e923f3e1c747e1439425aff3512c8a7, type: 3}
+  m_Name: Fire
   m_EditorClassIdentifier: 
-  _willDamage: 1
-  _damage: 5
-  _willPush: 0
+  _effects:
+  - {fileID: 11400000, guid: 77cc9759b5ec18147bf75de109de1c4c, type: 2}

@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//--------------------------------------------------------------------------------------------------------------------------
+// Contains all the possible effects of the elements.
+// Instances of this will define what the element can do depending on what is selected.
+//--------------------------------------------------------------------------------------------------------------------------
+
 [CreateAssetMenu(menuName = "Game/Element Effect", fileName = "ElementEffect")]
 public class ElementEffect : ScriptableObject
 {

@@ -9,12 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e923f3e1c747e1439425aff3512c8a7, type: 3}
-  m_Name: Water
+  m_Script: {fileID: 11500000, guid: 6954593f7a46bad46900b7fa9a69d5af, type: 3}
+  m_Name: Fire_effect
   m_EditorClassIdentifier: 
-  _image: {fileID: 0}
-  _counters:
-  - {fileID: 0}
-  _effects:
-  - {fileID: 11400000, guid: 7740660a617ce194c9b08b7d4ec8faaa, type: 2}
-  - {fileID: 0}
+  _willDamage: 1
+  _damage: 5
+  _willPush: 1
+  _pushForce: 0.107
+  _willFreeze: 1
+  _freezeDuration: 0
+  _immune: 0
+  _fog: 0
+  _weightLess: 0
+  _willStun: 0
+  _stunDuration: 0
+  _willDig: 0

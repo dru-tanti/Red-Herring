@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//--------------------------------------------------------------------------------------------------------------------------
+// Used for testing purposes only.
+//--------------------------------------------------------------------------------------------------------------------------
+
 public class AITest : AIBehaviour
 {
     // Start is called before the first frame update
@@ -13,6 +17,5 @@ public class AITest : AIBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

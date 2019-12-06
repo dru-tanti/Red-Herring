@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
 
-
+//--------------------------------------------------------------------------------------------------------------------------
 // Version of the attack script that does not rely on the radial menu.
+// Instantiates the projectile prefabs depending on what element is selected
+//--------------------------------------------------------------------------------------------------------------------------
+
 public class PlayerAttack : MonoBehaviour
 {
 	public Transform shotPoint;

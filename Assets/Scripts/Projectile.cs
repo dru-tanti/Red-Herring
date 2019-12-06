@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
 
+//--------------------------------------------------------------------------------------------------------------------------
+// Controls the projectile and it's effects when it spawns.
+//--------------------------------------------------------------------------------------------------------------------------
+
 [RequireComponent(typeof(Rigidbody2D))]
 public class Projectile : MonoBehaviour
 {
@@ -31,11 +35,13 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
+    // When an enemy is hit, trigger the selected properties of the element.
     private void OnCollisionEnter2D(Collision2D other) 
     {
 
         if(other.gameObject.tag == "Enemy")
         {
+            // Retrieve the base script that is inheritied by every enemy.
             AIBehaviour ai = other.gameObject.GetComponent<AIBehaviour>();
             _collider.enabled = false;
             _projectileRB.velocity = Vector2.zero;
@@ -56,6 +62,7 @@ public class Projectile : MonoBehaviour
         }    
     }
 
+    // Defines what properties will trigger which functios in the AIBehaviour script.
     private void UseEffect(AIBehaviour ai, ElementEffect effect)
     {
         if (effect == null) return;
