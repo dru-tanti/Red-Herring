@@ -17,7 +17,9 @@ public class TileUtilityGizmos
         handlesColor.a = alpha;
         Handles.color = handlesColor;
 
-        Handles.DrawWireDisc(tileScript.playerBack, Vector3.forward, 0.1f);
+        Handles.DrawWireDisc(tileScript.playerTop, Vector3.up, 0.1f);
+        Handles.DrawWireDisc(tileScript.playerBack, Vector3.back, 0.1f);
+
     }
 
     static bool Is(GizmoType check, GizmoType desired)

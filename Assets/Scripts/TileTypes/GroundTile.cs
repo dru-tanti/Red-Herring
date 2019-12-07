@@ -7,4 +7,5 @@ using UnityEngine.Tilemaps;
 public class GroundTile : Tile
 {
     public GroundTile dugVersion;
+    public bool Dug = false;
 }

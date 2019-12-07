@@ -22,6 +22,8 @@ public class PlayerAttack : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.O)){ selectedElement.Value = 2; }
         if(Input.GetKeyDown(KeyCode.P)){ selectedElement.Value = 3; }
 
+		float rotation = Input.GetAxisRaw("Vertical") * 90;
+		transform.rotation = Quaternion.Euler(0f, 0f, rotation);
 		if(Input.GetKeyDown(KeyCode.V))
 		{
 			Instantiate(projectiles[selectedElement.Value], shotPoint.position, transform.rotation);
