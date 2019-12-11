@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +19,12 @@ public abstract class AIBehaviour : MonoBehaviour
     private void Awake() 
     {
         _enemyRB = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 
     // Reduced the enemies health by the amount defined by the projectile.
@@ -53,6 +59,7 @@ public abstract class AIBehaviour : MonoBehaviour
         yield return new WaitForSeconds(stunDuration);
         speed = 5;
     }
+
 
     // Freeze makes the enemies harmless.
     private IEnumerator FreezeEnemy(int freezeDuration)
