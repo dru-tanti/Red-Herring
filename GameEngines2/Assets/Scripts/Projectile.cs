@@ -43,6 +43,8 @@ public class Projectile : MonoBehaviour
         {
             // Retrieve the base script that is inheritied by every enemy.
             AIBehaviour ai = other.gameObject.GetComponent<AIBehaviour>();
+
+            // Stop and disable the colldier of the projectile.
             _collider.enabled = false;
             _projectileRB.velocity = Vector2.zero;
 
@@ -52,17 +54,18 @@ public class Projectile : MonoBehaviour
                 {
                     UseEffect(ai, effect);
                 }
-            }
-            else
+            } else
             {
                 Debug.LogWarning("No element assigned to these particles.");
             }
+
             enabled = false;
-            
         }    
     }
 
-    // Defines what properties will trigger which functios in the AIBehaviour script.
+    // @param ai The AI agent that the projectile has hit.
+    // @param effect The effect of the selected element of the projectile. 
+    // Defines what properties will trigger which functions in the AIBehaviour script.
     private void UseEffect(AIBehaviour ai, ElementEffect effect)
     {
         if (effect == null) return;

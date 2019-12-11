@@ -24,3 +24,4 @@ MonoBehaviour:
   _willStun: 0
   _stunDuration: 0
   _willDig: 0
+  _cooldown: 2

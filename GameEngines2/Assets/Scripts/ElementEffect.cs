@@ -46,4 +46,8 @@ public class ElementEffect : ScriptableObject
 
     [SerializeField] private bool _willDig = false;
     public bool willDig { get => _willDig; }
+    
+    [Range(0.0f, 10.0f)]
+    [SerializeField] private float _cooldown = 0;
+    public float cooldown { get => _cooldown; }
 }
