@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6954593f7a46bad46900b7fa9a69d5af, type: 3}
-  m_Name: Fire_effect
+  m_Name: Fire_Other
   m_EditorClassIdentifier: 
-  _willDamage: 1
-  _damage: 5
-  _willPush: 1
-  _pushForce: 0.107
-  _willFreeze: 1
+  _willDamage: 0
+  _damage: 0
+  _willPush: 0
+  _pushForce: 0
+  _willFreeze: 0
   _freezeDuration: 0
+  _willStun: 0
+  _stunDuration: 0
   _immune: 0
   _fog: 0
   _weightLess: 0
-  _willStun: 0
-  _stunDuration: 0
   _willDig: 0
-  _cooldown: 3
+  _willDash: 0
+  _dashForce: 0
+  _cooldown: 0

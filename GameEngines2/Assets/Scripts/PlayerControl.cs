@@ -6,7 +6,6 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerControl : MonoBehaviour
 {
-    // TODO: Add scriptable objects to define what each element does. Then create a script for all the possible effects that an element can have.
     [Header("Movement Variables")]
     public FloatConstant speed;
     private bool _facingRight;
@@ -26,12 +25,16 @@ public class PlayerControl : MonoBehaviour
     private bool _isJumping;
     private float _moveX;
 
+
+    [Header("Element")]
+	public IntVariable selectedElement;
+    public ElementType[] element;
+
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     private void Awake() 
     {
         _playerRB = GetComponent<Rigidbody2D>();
     }
-
 
     void Update()
     {
@@ -40,6 +43,17 @@ public class PlayerControl : MonoBehaviour
 
     private void FixedUpdate() 
     {
+
+        // Every frame we will check which element was chosen
+        // and use the effects defined in ElementEffect
+        if(Input.GetKeyDown(KeyCode.C) && element[selectedElement.Value] != null)
+        {
+            foreach(ElementEffect otherEffects in element[selectedElement.Value].otherEffects)
+            {
+                UseEffect(otherEffects);
+            }
+        }
+
         // Will check if the character is touching the ground
         _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
 
@@ -97,7 +111,6 @@ public class PlayerControl : MonoBehaviour
             FlipPlayer();
         }
         
-
         // Moves the players rigidbody.
         _playerRB.velocity = new Vector2 (_moveX * speed.Value, _playerRB.velocity.y);
     }
@@ -106,7 +119,43 @@ public class PlayerControl : MonoBehaviour
     void FlipPlayer()
     {
         _facingRight = !_facingRight;
-        
         transform.Rotate(0f, 180f, 0f);
+    }
+
+    void Dash(float dashForce)
+    {
+        Debug.Log("Gotta Go Fast!");
+        // _playerRB.AddForce(Vector2.right * dashForce);
+    }
+
+    void Immune()
+    {
+        // TODO: Code to ignore any projectiles that hit the player.
+    }
+
+    void HighJump()
+    {
+        // TODO: Code that makes the player jump higher.
+    }
+
+    private void UseEffect(ElementEffect effect)
+    {
+        if (effect == null) return;
+
+        if (effect.willDash)
+        {
+            Dash(effect.dashForce);
+            //Mathf.Sign(offset.x), effect.pushForce
+        }
+
+        if (effect.immune)
+        {
+            Immune();
+        }
+
+        if (effect.weightLess)
+        {
+            HighJump();
+        }
     }
 }

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6954593f7a46bad46900b7fa9a69d5af, type: 3}
+  m_Name: Fire_Attack
+  m_EditorClassIdentifier: 
+  _willDamage: 1
+  _damage: 5
+  _willPush: 0
+  _pushForce: 0
+  _willFreeze: 0
+  _freezeDuration: 0
+  _willStun: 0
+  _stunDuration: 0
+  _immune: 0
+  _fog: 0
+  _weightLess: 0
+  _willDig: 0
+  _willDash: 0
+  _dashForce: 0
+  _cooldown: 3

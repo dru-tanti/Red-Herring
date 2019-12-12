@@ -50,9 +50,9 @@ public class Projectile : MonoBehaviour
 
             if (selectedElement != null)
             {
-                foreach (ElementEffect effect in selectedElement.effects)
+                foreach (ElementEffect attackEffect in selectedElement.attackEffects)
                 {
-                    UseEffect(ai, effect);
+                    UseEffect(ai, attackEffect);
                 }
             } else
             {
