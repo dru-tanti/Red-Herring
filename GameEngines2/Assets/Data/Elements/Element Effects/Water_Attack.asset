@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6954593f7a46bad46900b7fa9a69d5af, type: 3}
-  m_Name: Water_Effect
+  m_Name: Water_Attack
   m_EditorClassIdentifier: 
   _willDamage: 0
   _damage: 0
-  _willPush: 1
-  _pushForce: 1
+  _willPush: 0
+  _pushForce: 0
   _willFreeze: 1
-  _freezeDuration: 4
+  _freezeDuration: 2
   _willStun: 0
   _stunDuration: 0
   _immune: 0

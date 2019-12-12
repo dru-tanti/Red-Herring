@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e923f3e1c747e1439425aff3512c8a7, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: 
-  _effects:
+  _attackEffects:
   - {fileID: 11400000, guid: 7740660a617ce194c9b08b7d4ec8faaa, type: 2}
+  _otherEffects:
+  - {fileID: 11400000, guid: 24dd65eb2172d044f985487c36575159, type: 2}
+  _passiveEffects: []

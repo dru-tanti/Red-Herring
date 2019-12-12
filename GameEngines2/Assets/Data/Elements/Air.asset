@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e923f3e1c747e1439425aff3512c8a7, type: 3}
   m_Name: Air
   m_EditorClassIdentifier: 
-  _attackEffects: []
-  _otherEffects: []
+  _attackEffects:
+  - {fileID: 11400000, guid: 6b6c42313d9160a47aaafc1a14481c5b, type: 2}
+  _otherEffects:
+  - {fileID: 11400000, guid: 7de5789f3fa44634099901d2e494a771, type: 2}
   _passiveEffects: []

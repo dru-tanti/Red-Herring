@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _willDamage: 0
   _damage: 0
-  _willPush: 0
-  _pushForce: 0
+  _willPush: 1
+  _pushForce: 1
   _willFreeze: 0
   _freezeDuration: 0
   _willStun: 0
