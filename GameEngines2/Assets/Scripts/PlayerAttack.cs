@@ -36,6 +36,7 @@ public class PlayerAttack : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.V))
 		{
 			Instantiate(projectiles[selectedElement.Value], shotPoint.position, transform.rotation);
+			this.GetComponentInParent<PlayerMana>().mana.Value -= 10;
 		}
 	}
 

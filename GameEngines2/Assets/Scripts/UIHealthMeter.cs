@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class UIHealthMeter : MonoBehaviour
 {
     [SerializeField]
-    private IntVariable max_health;
+    public IntVariable max_health;
 
     [SerializeField]
-    private GameObject pool;
+    public GameObject pool;
     
-    public void HealthChanged(int health)
+    public void HealthChanged(int current_health)
     {   
-        pool.GetComponent<Image>().fillAmount = health;
+        pool.GetComponent<Image>().fillAmount = 1.0f * current_health / max_health.Value;
     }
 }
