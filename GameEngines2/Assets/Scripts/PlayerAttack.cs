@@ -12,8 +12,17 @@ public class PlayerAttack : MonoBehaviour
 {
 	public Transform shotPoint;
 	public Projectile[] projectiles;
+	
+	[HideInInspector]
+	public static Projectile[] elements;
+	
 	public IntVariable selectedElement;
 	public BoolVariable isInvisible;
+
+	//Allows the ManaMeter to read the projectiles array via a proxy
+	void Awake(){
+		elements = projectiles;
+	}
 
     private void Update()
 	{
