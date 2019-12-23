@@ -14,13 +14,13 @@ public class ElementType : ScriptableObject
     // public Sprite image { get => _image; }
 
     // [SerializeField] private List<ElementType> _counters;
-    [SerializeField] private List<ElementEffect> _attackEffects;
+    [SerializeField] private List<ElementEffect> _attackEffects = null;
     public List<ElementEffect> attackEffects { get => _attackEffects; }
 
-    [SerializeField] private List<ElementEffect> _otherEffects;
+    [SerializeField] private List<ElementEffect> _otherEffects = null;
     public List<ElementEffect> otherEffects { get => _otherEffects; }
 
-    [SerializeField] private List<ElementEffect> _passiveEffects;
+    [SerializeField] private List<ElementEffect> _passiveEffects = null;
     public List<ElementEffect> passiveEffects { get => _passiveEffects; }
     
     // public bool Counters(ElementType type)

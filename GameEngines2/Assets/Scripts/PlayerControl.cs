@@ -9,18 +9,22 @@ public class PlayerControl : MonoBehaviour
     [Header("Movement Variables")]
     public FloatConstant speed;
     private bool _facingRight;
-    public Rigidbody2D _playerRB;
+    [HideInInspector] public Rigidbody2D _playerRB;
+    private TerrainControl terrain;
     public FloatConstant jump;
+    [Range(0f, 5f)]
     public float fallMultiplier = 2.5f;
+    [Range(0f, 5f)]
     public float lowJumpMultiplier = 2f;
 
     [Header("Jump Variables")]
     private bool _grounded = false;
     // private bool _doubleJump = false;
-    public float groundRadius = 0.2f;
+    private float groundRadius = 0.2f;
     public Transform groundCheck;
     public LayerMask whatIsGround;
     private float _jumpTimeCounter;
+    [Range(0f, 0.5f)]
     public float jumpTime;
     private bool _isJumping;
     private float _moveX;
@@ -34,6 +38,7 @@ public class PlayerControl : MonoBehaviour
     private void Awake() 
     {
         _playerRB = GetComponent<Rigidbody2D>();
+        terrain = GetComponent<TerrainControl>();
     }
 
     void Update()

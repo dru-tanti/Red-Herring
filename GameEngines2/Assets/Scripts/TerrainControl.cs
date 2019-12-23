@@ -38,9 +38,10 @@ public class TerrainControl : MonoBehaviour
     [Header("Element")]
 	public IntVariable selectedElement;
     public ElementType[] element;
+    
     void Update()
     {
-                // Finds the cell that is currently occupied by the shotPoint.
+        // Finds the cell that is currently occupied by the shotPoint.
         Vector3Int cellAim = grid.WorldToCell(shotPoint.position);
         // Finds the tile in the tilemap that is currently in the cell retrieved above.
         TileBase tileAim = tilemap.GetTile(cellAim);
@@ -49,46 +50,70 @@ public class TerrainControl : MonoBehaviour
         Vector3Int cellStand = grid.WorldToCell(groundCheck.position);
         TileBase tileStand = tilemap.GetTile(cellStand);
 
-        if(selectedElement.Value == 1)
+        // Finds and stores th cell just above the player.
+        Vector3Int cellTop = grid.WorldToCell(playerTop);
+        TileBase tileTop = tilemap.GetTile(cellTop);
+
+        // Finds and stores the cell just behind the player.
+        Vector3Int cellBack = grid.WorldToCell(playerBack);
+        TileBase tileBack = tilemap.GetTile(cellBack);
+
+        // Replace any dug tiles above or behind the player.
+        UnDig(cellBack, tileBack, cellTop, tileTop);
+
+        if(Input.GetKeyDown(KeyCode.C) && element[selectedElement.Value] != null)
         {
-            // Finds and stores th cell just above the player.
-            Vector3Int cellTop = grid.WorldToCell(playerTop);
-            TileBase tileTop = tilemap.GetTile(cellTop);
-
-            // Finds and stores the cell just behind the player.
-            Vector3Int cellBack = grid.WorldToCell(playerBack);
-            TileBase tileBack = tilemap.GetTile(cellBack);
-
-            // If the tile is already dug, we will set it back to an undug tile when the player gets past it.
-            if(tileBack is GroundTile && (tileBack as GroundTile).Dug == true)
+            foreach(ElementEffect otherEffects in element[selectedElement.Value].otherEffects)
             {
-                Debug.Log("We Touched the Back!");
-                tilemap.SetTile(cellBack, (tileBack as GroundTile).dugVersion);
+                UseEffect(otherEffects, cellAim, tileAim);
             }
-                
-            if(tileTop is GroundTile && (tileTop as GroundTile).Dug == true)
-            {
-                Debug.Log("We Touched the Top!");
-                tilemap.SetTile(cellTop, (tileTop as GroundTile).dugVersion);
-            }  
-            
-            // If the payer is aiming towards a diggable tile, then we can dig through it.
-            if (Input.GetKeyDown(KeyCode.C))
-            {
-                if (tileAim is GroundTile && (tileAim as GroundTile).Dug == false)
-                {
-                    tilemap.SetTile(cellAim, (tileAim as GroundTile).dugVersion);
-                }
-            }
-
-            if (tileAim == null) return;
-            if (tileStand == null) return;
         }
+
+        foreach(ElementEffect passiveEffects in element[selectedElement.Value].passiveEffects)
+        {
+            UseEffect(passiveEffects, cellAim, tileAim);
+        }
+
+        // if (tileAim == null) return;
+        // if (tileStand == null) return;
+
         // If the player is currently standing on a hazard, deal damage.
         if (tileStand is SpikeTile)
         {
             Debug.Log("Ouch");
         }
+    }
 
+    private void UseEffect(ElementEffect effect, Vector3Int cellAim, TileBase tileAim)
+    {
+        if(effect.willDig)
+        {
+            Dig(cellAim, tileAim);
+        }
+    }
+
+    // If the player is aiming at a diggable tile, replace it with a dug tile.
+    public void Dig(Vector3Int cellAim, TileBase tileAim)
+    {
+        if (tileAim is GroundTile && (tileAim as GroundTile).Dug == false)
+        {
+            tilemap.SetTile(cellAim, (tileAim as GroundTile).dugVersion);
+        }
+    }
+    
+    // If the tile is already dug, set it back to an undug tile when the player gets past it.
+    public void UnDig(Vector3Int cellBack, TileBase tileBack, Vector3Int cellTop, TileBase tileTop)
+    {
+        if(tileBack is GroundTile && (tileBack as GroundTile).Dug == true)
+        {
+            Debug.Log("We Touched the Back!");
+            tilemap.SetTile(cellBack, (tileBack as GroundTile).dugVersion);
+        }
+            
+        if(tileTop is GroundTile && (tileTop as GroundTile).Dug == true)
+        {
+            Debug.Log("We Touched the Top!");
+            tilemap.SetTile(cellTop, (tileTop as GroundTile).dugVersion);
+        }  
     }
 }
