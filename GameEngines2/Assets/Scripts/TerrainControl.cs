@@ -21,16 +21,12 @@ public class TerrainControl : MonoBehaviour
     public float radius { get => _radius; }
 
     // Stores the transform behind the player so that we can later restore a dug tile.
-    public Vector3 playerBack
-        { get => transform.TransformPoint(Vector3.left * radius); }
-    public Vector3Int backCell
-        { get => tilemap.WorldToCell(playerBack); }
+    public Vector3 playerBack { get => transform.TransformPoint(Vector3.left * radius); }
+    public Vector3Int backCell { get => tilemap.WorldToCell(playerBack); }
 
     // Stores the transform above the player so that we can later restore a dug tile.
-    public Vector3 playerTop
-        { get => transform.TransformPoint(Vector3.up * radius); }
-    public Vector3Int topCell
-        { get => tilemap.WorldToCell(playerTop); }
+    public Vector3 playerTop { get => transform.TransformPoint(Vector3.up * radius); }
+    public Vector3Int topCell { get => tilemap.WorldToCell(playerTop); }
 
     public Transform shotPoint;
     public Transform groundCheck;
@@ -61,6 +57,7 @@ public class TerrainControl : MonoBehaviour
         // Replace any dug tiles above or behind the player.
         UnDig(cellBack, tileBack, cellTop, tileTop);
 
+        // Only use the secondary abilites when the "C" button is pressed.
         if(Input.GetKeyDown(KeyCode.C) && element[selectedElement.Value] != null)
         {
             foreach(ElementEffect otherEffects in element[selectedElement.Value].otherEffects)
@@ -69,6 +66,7 @@ public class TerrainControl : MonoBehaviour
             }
         }
 
+        // Passive abilities should always be active, depending on the current selected element.
         foreach(ElementEffect passiveEffects in element[selectedElement.Value].passiveEffects)
         {
             UseEffect(passiveEffects, cellAim, tileAim);
