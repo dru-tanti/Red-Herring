@@ -35,8 +35,11 @@ public class PlayerAttack : MonoBehaviour
 		transform.localRotation = Quaternion.Euler(0f, 0f, rotation);
 		if(Input.GetKeyDown(KeyCode.V))
 		{
-			Instantiate(projectiles[selectedElement.Value], shotPoint.position, transform.rotation);
-			this.GetComponentInParent<PlayerMana>().mana.Value -= 10;
+			//Player can only fire if they have a minimum of 10 mana
+			if(this.GetComponentInParent<PlayerMana>().mana.Value >= 10){
+				Instantiate(projectiles[selectedElement.Value], shotPoint.position, transform.rotation);
+				this.GetComponentInParent<PlayerMana>().mana.Value -= 10;
+			}
 		}
 	}
 

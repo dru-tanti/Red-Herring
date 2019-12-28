@@ -10,7 +10,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public abstract class AIBehaviour : MonoBehaviour
 {
-    public int enemyHealth = 10;
+    public static int enemyMaxHealth = 10;
+    public int enemyHealth;
     public int speed = 5;
     public float pushForce = 4;
     protected Rigidbody2D _enemyRB;
@@ -19,6 +20,7 @@ public abstract class AIBehaviour : MonoBehaviour
     private void Awake() 
     {
         _enemyRB = GetComponent<Rigidbody2D>();
+        enemyHealth = enemyMaxHealth;
     }
 
     // Update is called once per frame
@@ -32,6 +34,10 @@ public abstract class AIBehaviour : MonoBehaviour
     {
         enemyHealth -= damage;
         Debug.Log(enemyHealth);
+
+        //testing enemy health bar
+        var test = GetComponent<AITest>();
+        test.EnemyIsHit(enemyHealth);
     }
 
     // Triggers the Stun effect.
