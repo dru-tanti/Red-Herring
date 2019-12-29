@@ -25,5 +25,5 @@ MonoBehaviour:
   _weightLess: 0
   _willDig: 0
   _willDash: 1
-  _dashForce: 60000
+  _dashForce: 20
   _cooldown: 0

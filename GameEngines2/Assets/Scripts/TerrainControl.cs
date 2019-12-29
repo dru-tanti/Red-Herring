@@ -58,17 +58,14 @@ public class TerrainControl : MonoBehaviour
         UnDig(cellBack, tileBack, cellTop, tileTop);
 
         // Only use the secondary abilites when the "C" button is pressed.
-        if(Input.GetKeyDown(KeyCode.C) && element[selectedElement.Value] != null)
-        {
-            foreach(ElementEffect otherEffects in element[selectedElement.Value].otherEffects)
-            {
+        if(Input.GetKeyDown(KeyCode.C) && element[selectedElement.Value] != null) {
+            foreach(ElementEffect otherEffects in element[selectedElement.Value].otherEffects) {
                 UseEffect(otherEffects, cellAim, tileAim);
             }
         }
 
         // Passive abilities should always be active, depending on the current selected element.
-        foreach(ElementEffect passiveEffects in element[selectedElement.Value].passiveEffects)
-        {
+        foreach(ElementEffect passiveEffects in element[selectedElement.Value].passiveEffects) {
             UseEffect(passiveEffects, cellAim, tileAim);
         }
 
@@ -76,10 +73,13 @@ public class TerrainControl : MonoBehaviour
         // if (tileStand == null) return;
 
         // If the player is currently standing on a hazard, deal damage.
-        if (tileStand is SpikeTile)
-        {
+        if (tileStand is SpikeTile) {
             Debug.Log("Ouch");
         }
+
+        // if(tileTop is WaterTile) {
+        //     Debug.Log("You are drowning!");
+        // }
     }
 
     private void UseEffect(ElementEffect effect, Vector3Int cellAim, TileBase tileAim)
