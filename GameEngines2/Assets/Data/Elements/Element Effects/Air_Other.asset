@@ -22,7 +22,9 @@ MonoBehaviour:
   _stunDuration: 0
   _immune: 0
   _fog: 0
-  _weightLess: 1
+  _willGlide: 1
+  _glideTime: 4
+  _glideSpeed: 0.1
   _willDig: 0
   _willDash: 0
   _dashForce: 0

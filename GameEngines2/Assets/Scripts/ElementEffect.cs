@@ -43,8 +43,16 @@ public class ElementEffect : ScriptableObject
     [SerializeField] private bool _fog = false;
     public bool fog { get => _fog; }
 
-    [SerializeField] private bool _weightLess = false;
-    public bool weightLess { get => _weightLess; }
+    [SerializeField] private bool _willGlide = false;
+    public bool willGlide { get => _willGlide; }
+        
+    [Range(0.0f, 10.0f)]
+    [SerializeField] private float _glideTime = 0f;
+    public float glideTime { get => _glideTime; }
+
+    [Range(0.0f, 5.0f)]
+    [SerializeField] private float _glideSpeed = 0f;
+    public float glideSpeed { get => _glideSpeed; }
 
     [SerializeField] private bool _willDig = false;
     public bool willDig { get => _willDig; }

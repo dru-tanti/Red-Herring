@@ -33,16 +33,20 @@ public class PlayerControl : MonoBehaviour
     private bool _isJumping;
     private float _hardLandingTimer;
     private float _gravityScale;
+    private bool _gliding;
 
     [Header("Element")]
 	public IntVariable selectedElement;
     public ElementType[] element;
+
+    private Animator _anim;
 
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     private void Awake() {
         _playerRB = GetComponent<Rigidbody2D>();
         terrain = GetComponent<TerrainControl>();
         _gravityScale = _playerRB.gravityScale;
+        _anim = GetComponent<Animator>();
     }
 
     void Update() {
@@ -100,6 +104,12 @@ public class PlayerControl : MonoBehaviour
     // Controls the movement of the player.
     void Move() {
         _moveX = Input.GetAxisRaw("Horizontal");
+        
+        if(_moveX != 0f){
+            _anim.SetBool("IsRunning", true);
+        } else {
+            _anim.SetBool("IsRunning", false);
+        }
         // Inverts the player model if they are moving to the left.
         if (_moveX < 0f && _facingRight == true) {
             FlipPlayer();
@@ -126,8 +136,18 @@ public class PlayerControl : MonoBehaviour
         // TODO: Code to ignore any projectiles that hit the player.
     }
 
-    void HighJump() {
-        // TODO: Code that makes the player jump higher.
+    void HighJump(float glideSpeed, float glideTime) {
+        _gliding = !_gliding;
+
+        if(_gliding){ 
+            Gravity(true); 
+            return;
+        }
+
+        while(_gliding){
+            Gravity(false);
+            _playerRB.AddForce(Vector3.down * glideSpeed);
+        }
     }
 
     private void UseEffect(ElementEffect effect) {
@@ -141,8 +161,8 @@ public class PlayerControl : MonoBehaviour
             Immune();
         }
 
-        if (effect.weightLess) {
-            HighJump();
+        if (effect.willGlide) {
+            HighJump(effect.glideSpeed, effect.glideTime);
         }
     }
 
@@ -166,11 +186,6 @@ public class PlayerControl : MonoBehaviour
             if (this._playerRB.gravityScale > Mathf.Epsilon || !applyGravity)
                 return;
             this._playerRB.gravityScale = _gravityScale;
-        }
-    }
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Water")) {
-            
         }
     }
 }
