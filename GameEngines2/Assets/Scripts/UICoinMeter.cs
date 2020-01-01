@@ -10,20 +10,25 @@ public class UICoinMeter : MonoBehaviour
     public IntVariable coins;
 
     [SerializeField]
+    public IntVariable multiplier;
+
+
+    [SerializeField]
     public TextMeshProUGUI wallet;
 
     [SerializeField]
     public TextMeshProUGUI add_coins;
 
+    [SerializeField]
+    public TextMeshProUGUI multiply_text;
+
     private const float _fade = 2.0f;
-    private Color _fade_colour;
     private bool _update = false;
 
     void Awake(){
         wallet.SetText("0");
         add_coins.SetText("");
-
-        _fade_colour = add_coins.color;
+        multiply_text.SetText("");
     }
 
     void FixedUpdate(){
@@ -42,10 +47,23 @@ public class UICoinMeter : MonoBehaviour
             }
         }
     }
-    
+
+    public void MultiplierFlavour(){
+        if(multiplier.Value == 0){ 
+            multiply_text.SetText("");
+        }else{
+            multiply_text.SetText("x" + multiplier.Value);
+        }
+    }
+
+    //multiplier text is affected by enemy death and player being hit
     public void WalletUpdated(int value)
     {   
-        add_coins.SetText("+" + (value - coins.OldValue));
+        int excess = 1;
+
+        if(multiplier.Value > 0) excess = multiplier.Value;
+
+        add_coins.SetText("+" + ((value - coins.OldValue) * excess));
         _update = true;
         wallet.SetText(coins.Value.ToString());
     }

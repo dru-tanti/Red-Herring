@@ -14,6 +14,7 @@ public class UIHealthMeter : MonoBehaviour
     
     public void HealthChanged(int current_health)
     {   
+        Debug.Log(current_health.ToString());
         pool.GetComponent<Image>().fillAmount = 1.0f * current_health / max_health.Value;
     }
 }

@@ -18,6 +18,9 @@ public class PlayerAttack : MonoBehaviour
 	
 	public IntVariable selectedElement;
 	public BoolVariable isInvisible;
+	public IntVariable multiplier;
+
+	private int _timer = 0;
 
 	//Allows the ManaMeter to read the projectiles array via a proxy
 	void Awake(){
@@ -39,8 +42,26 @@ public class PlayerAttack : MonoBehaviour
 			if(this.GetComponentInParent<PlayerMana>().mana.Value >= 10){
 				Instantiate(projectiles[selectedElement.Value], shotPoint.position, transform.rotation);
 				this.GetComponentInParent<PlayerMana>().mana.Value -= 10;
+				
+				//Invokes and cancels a timer
+				if(_timer != 0){
+					CancelInvoke("OutOfCombatTimer");
+					_timer = 0;
+				}
+
+				InvokeRepeating("OutOfCombatTimer", 0, 1);
 			}
 		}
+
+		if(_timer >= 10){
+			CancelInvoke("OutOfCombatTimer");
+			_timer = 0;
+			multiplier.Value = 0;
+		} 
+	}
+
+	private void OutOfCombatTimer(){
+		_timer += 1;
 	}
 
 	private void OnDrawGizmos()

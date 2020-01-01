@@ -32,7 +32,8 @@ public abstract class AIBehaviour : MonoBehaviour
     // Reduced the enemies health by the amount defined by the projectile.
     public void Damage(int damage)
     {
-        enemyHealth -= damage;
+        //enemyHealth -= damage; 
+        enemyHealth -= damage * 2; //testing multiplier
         Debug.Log(enemyHealth);
 
         //testing enemy health bar
