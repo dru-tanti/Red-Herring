@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//--------------------------------------------------------------------------------------------------------------------------
+// Basic Camera controller for testing purposes.
+//--------------------------------------------------------------------------------------------------------------------------
+
 public class CameraController : MonoBehaviour
 {
     private Vector2 velocity;
@@ -14,13 +18,11 @@ public class CameraController : MonoBehaviour
 
     public GameObject Player;
 
-    void Start()
-    {
+    void Start() {
         Player = GameObject.FindGameObjectWithTag("Player");
     }
     
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         // Smoothens the camera movement
         float posX = Mathf.SmoothDamp(transform.position.x, Player.transform.position.x + offset, ref velocity.x, smoothTimeX);
         float posY = Mathf.SmoothDamp(transform.position.y, Player.transform.position.y + offset, ref velocity.y, smoothTimeY);    

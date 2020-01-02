@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 670690463}
   - component: {fileID: 670690461}
   - component: {fileID: 670690467}
+  - component: {fileID: 670690468}
   - component: {fileID: 670690466}
   m_Layer: 0
   m_Name: Player
@@ -487,12 +488,14 @@ MonoBehaviour:
   jump: {fileID: 11400000, guid: 7e8265b32854625488d57ad042fc9320, type: 2}
   fallMultiplier: 2.5
   lowJumpMultiplier: 3
+  _moveX: 0
   dashTime: 0.3
   groundCheck: {fileID: 831061612}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
   jumpTime: 0.2
+  _grounded: 0
   selectedElement: {fileID: 11400000, guid: 5c42e8df52b4c7b4ebea0f9e08141d8c, type: 2}
   element:
   - {fileID: 11400000, guid: 7b8dc18c4bbfe604b817126ab6c69cb3, type: 2}
@@ -512,7 +515,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017579317, y: -0.11426592}
+  m_Offset: {x: -0.0026547909, y: -0.0737977}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -523,7 +526,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.58357143, y: 1.1285319}
+  m_Size: {x: 0.49454165, y: 1.0475955}
   m_EdgeRadius: 0
 --- !u!50 &670690463
 Rigidbody2D:
@@ -654,6 +657,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 87260a0687a4e304dacb6e1e985ee95d, type: 2}
   - {fileID: 11400000, guid: e0c2e9a785e4fa148ab0aafcb109bc6c, type: 2}
   - {fileID: 11400000, guid: b2710b6d0f09ea04e8d01e1743662fec, type: 2}
+--- !u!114 &670690468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670690460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fec702d466382c4da9508677ccf3d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &776042093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872189516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 0.3, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1255187666}

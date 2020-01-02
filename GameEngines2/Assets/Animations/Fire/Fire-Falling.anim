@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle-Fire
+  m_Name: Fire-Falling
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,22 +20,19 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 3104856973371954195, guid: 09934cbf2b592b643b0cc1f815e2dd7e,
+      value: {fileID: -3026964249219473789, guid: 1c8c6b0c24ab5184bad708dc534e79ba,
         type: 3}
-    - time: 0.1
-      value: {fileID: -1586597300839503904, guid: 09934cbf2b592b643b0cc1f815e2dd7e,
+    - time: 0.083333336
+      value: {fileID: -7295322029243656498, guid: 1c8c6b0c24ab5184bad708dc534e79ba,
         type: 3}
-    - time: 0.23333333
-      value: {fileID: -3434202998369283515, guid: 09934cbf2b592b643b0cc1f815e2dd7e,
-        type: 3}
-    - time: 0.33333334
-      value: {fileID: -7699448262563130182, guid: 09934cbf2b592b643b0cc1f815e2dd7e,
+    - time: 0.25
+      value: {fileID: -1798587919399296386, guid: 1c8c6b0c24ab5184bad708dc534e79ba,
         type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 30
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -50,21 +47,20 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 3104856973371954195, guid: 09934cbf2b592b643b0cc1f815e2dd7e, type: 3}
-    - {fileID: -1586597300839503904, guid: 09934cbf2b592b643b0cc1f815e2dd7e, type: 3}
-    - {fileID: -3434202998369283515, guid: 09934cbf2b592b643b0cc1f815e2dd7e, type: 3}
-    - {fileID: -7699448262563130182, guid: 09934cbf2b592b643b0cc1f815e2dd7e, type: 3}
+    - {fileID: -3026964249219473789, guid: 1c8c6b0c24ab5184bad708dc534e79ba, type: 3}
+    - {fileID: -7295322029243656498, guid: 1c8c6b0c24ab5184bad708dc534e79ba, type: 3}
+    - {fileID: -1798587919399296386, guid: 1c8c6b0c24ab5184bad708dc534e79ba, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.36666667
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

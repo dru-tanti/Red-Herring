@@ -16,7 +16,7 @@ public class PlayerControl : MonoBehaviour
     public float fallMultiplier = 2.5f;
     [Range(0f, 5f)]
     public float lowJumpMultiplier = 2f;
-    private float _moveX;
+    [HideInInspector] public float _moveX;
     [Range(0f, 1f)]
     [Tooltip("Time dashForce will be active for")]
     public float dashTime = 0f;
@@ -27,26 +27,24 @@ public class PlayerControl : MonoBehaviour
     public LayerMask whatIsGround;
     [Range(0f, 0.5f)]
     public float jumpTime;
-    private bool _grounded = false;
+    [HideInInspector] public bool _grounded = false;
     private float groundRadius = 0.2f;
     private float _jumpTimeCounter;
     private bool _isJumping;
-    private float _hardLandingTimer;
-    private float _gravityScale;
+    private float _hardLandingTimer; // Used to trigger the hard landing animation.
+    private float _gravityScale; // Keeps a reference of the default value to use later.
     private bool _gliding;
 
     [Header("Element")]
 	public IntVariable selectedElement;
     public ElementType[] element;
 
-    private Animator _anim;
 
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     private void Awake() {
         _playerRB = GetComponent<Rigidbody2D>();
         terrain = GetComponent<TerrainControl>();
         _gravityScale = _playerRB.gravityScale;
-        _anim = GetComponent<Animator>();
     }
 
     void Update() {
@@ -95,28 +93,20 @@ public class PlayerControl : MonoBehaviour
         }
 
         // When the space key is released, disable the jump.
-        if(Input.GetButtonUp("Jump"))
-        {
-            _isJumping = false;
-        }
+        if(Input.GetButtonUp("Jump")) { _isJumping = false; }
     }
     
     // Controls the movement of the player.
     void Move() {
         _moveX = Input.GetAxisRaw("Horizontal");
-        
-        if(_moveX != 0f){
-            _anim.SetBool("IsRunning", true);
-        } else {
-            _anim.SetBool("IsRunning", false);
-        }
+
         // Inverts the player model if they are moving to the left.
         if (_moveX < 0f && _facingRight == true) {
             FlipPlayer();
         } else if (_moveX > 0f && _facingRight == false) {
             FlipPlayer();
         }
-        // Moves the players rigidbody.
+
         _playerRB.velocity = new Vector2 (_moveX * speed.Value, _playerRB.velocity.y);
     }
 
@@ -126,30 +116,8 @@ public class PlayerControl : MonoBehaviour
         transform.Rotate(0f, 180f, 0f);
     }
 
-    // Applies a force in the direction the player is facing.
-    void Dash(float dashForce) {
-        if(_dashing == true){ return; }
-        StartCoroutine(Dashing(dashForce));
-    }
 
-    void Immune() {
-        // TODO: Code to ignore any projectiles that hit the player.
-    }
-
-    void HighJump(float glideSpeed, float glideTime) {
-        _gliding = !_gliding;
-
-        if(_gliding){ 
-            Gravity(true); 
-            return;
-        }
-
-        while(_gliding){
-            Gravity(false);
-            _playerRB.AddForce(Vector3.down * glideSpeed);
-        }
-    }
-
+    // Triggers different methods depending on the effects active.
     private void UseEffect(ElementEffect effect) {
         if (effect == null) return;
 
@@ -166,6 +134,12 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    // Applies a force in the direction the player is facing.
+    void Dash(float dashForce) {
+        if(_dashing == true){ return; }
+        StartCoroutine(Dashing(dashForce));
+    }
+
     // Applies the dash force and stops the player from moving while dash is active.
     private IEnumerator Dashing(float dashForce) {
         _dashing = true;
@@ -175,6 +149,24 @@ public class PlayerControl : MonoBehaviour
             yield return new WaitForSeconds(dashTime);
             _dashing = false;
             Gravity(true);
+        }
+    }
+
+    void Immune() {
+        // TODO: Code to ignore any projectiles that hit the player.
+    }
+
+    void HighJump(float glideSpeed, float glideTime) {
+        _gliding = !_gliding;
+
+        if(_gliding) { 
+            Gravity(true); 
+            return;
+        }
+
+        while(_gliding) {
+            Gravity(false);
+            _playerRB.AddForce(Vector3.down * glideSpeed);
         }
     }
 

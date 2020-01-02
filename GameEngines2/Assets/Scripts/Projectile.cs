@@ -4,7 +4,7 @@ using UnityAtoms;
 using UnityEngine;
 
 //--------------------------------------------------------------------------------------------------------------------------
-// Controls the projectile and it's effects when it spawns.
+// Controls the projectile and its effects when it spawns.
 //--------------------------------------------------------------------------------------------------------------------------
 
 [RequireComponent(typeof(Rigidbody2D))]
