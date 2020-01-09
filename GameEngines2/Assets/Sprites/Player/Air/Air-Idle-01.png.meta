@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 196c53e34e32d8749bda538a219d9a30
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6363067384963754384
+    second: Air-Idle-0
+  - first:
+      213: -6736252062190825670
+    second: Air-Idle-1
+  - first:
+      213: -1548911808249861243
+    second: Air-Idle-2
+  - first:
+      213: -3236377850196165859
+    second: Air-Idle-3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +96,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Air-Idle-0
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 34
+        width: 231
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79939698ad8c74d4db7505bd63fbe6b8
+      internalID: -6363067384963754384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Idle-1
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 34
+        width: 232
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ae5a23006c30a4fb726828231d0e51
+      internalID: -6736252062190825670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Idle-2
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 34
+        width: 231
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82923b2a82e45134aa9815b6046e1d0b
+      internalID: -1548911808249861243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Idle-3
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 34
+        width: 231
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644566d69edec0c4aa06ac8feaa1885f
+      internalID: -3236377850196165859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

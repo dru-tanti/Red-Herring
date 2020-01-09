@@ -16,7 +16,8 @@ public class PlayerControl : MonoBehaviour
     public float fallMultiplier = 2.5f;
     [Range(0f, 5f)]
     public float lowJumpMultiplier = 2f;
-    [HideInInspector] public float _moveX;
+    private float _moveX;
+    public float moveX { get => _moveX; } // To be used by the PlayerAnimation script
     [Range(0f, 1f)]
     [Tooltip("Time dashForce will be active for")]
     public float dashTime = 0f;
@@ -165,8 +166,7 @@ public class PlayerControl : MonoBehaviour
         }
 
         while(_gliding) {
-            Gravity(false);
-            _playerRB.AddForce(Vector3.down * glideSpeed);
+            this._playerRB.gravityScale = glideSpeed;
         }
     }
 

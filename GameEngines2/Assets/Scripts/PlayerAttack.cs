@@ -14,13 +14,18 @@ public class PlayerAttack : MonoBehaviour
 	public Projectile[] projectiles;
 	public IntVariable selectedElement;
 	public BoolVariable isInvisible;
+	private PlayerAnimation _anim;
 
+	private void Awake() {
+		_anim = gameObject.GetComponentInParent<PlayerAnimation>();
+		Debug.Log(_anim);
+	}
     private void Update()
 	{
-        if(Input.GetKeyDown(KeyCode.U)){ selectedElement.Value = 0; }
-        if(Input.GetKeyDown(KeyCode.I)){ selectedElement.Value = 1; }
-        if(Input.GetKeyDown(KeyCode.O)){ selectedElement.Value = 2; }
-        if(Input.GetKeyDown(KeyCode.P)){ selectedElement.Value = 3; }
+        if(Input.GetKeyDown(KeyCode.U)){ selectedElement.Value = 0; _anim.changeElement(selectedElement.Value); }
+        if(Input.GetKeyDown(KeyCode.I)){ selectedElement.Value = 1; _anim.changeElement(selectedElement.Value); }
+        if(Input.GetKeyDown(KeyCode.O)){ selectedElement.Value = 2; _anim.changeElement(selectedElement.Value); }
+        if(Input.GetKeyDown(KeyCode.P)){ selectedElement.Value = 3; _anim.changeElement(selectedElement.Value); }
 
 		float rotation = Input.GetAxisRaw("Vertical") * 90;
 		transform.localRotation = Quaternion.Euler(0f, 0f, rotation);

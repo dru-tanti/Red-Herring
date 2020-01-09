@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 235d040f6d1923e4f98323c52aeedfb4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3200243816074731861
+    second: Air-Jumping-0
+  - first:
+      213: 8061454871969665144
+    second: Air-Jumping-1
+  - first:
+      213: -8466655235950076294
+    second: Air-Falling-0
+  - first:
+      213: -5619885010340092755
+    second: Air-Falling-1
+  - first:
+      213: -2508312015964490866
+    second: Air-Falling-2
+  - first:
+      213: 8552707746734307395
+    second: Air-Landing-0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +102,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Air-Jumping-0
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 33
+        width: 231
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b8314861cc094478130837ee5ace81
+      internalID: -3200243816074731861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Jumping-1
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 38
+        width: 233
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d124e18f94a2f45919b38f92c9e649
+      internalID: 8061454871969665144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Falling-0
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 75
+        width: 226
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19585d4a662c74546b4c840d59b0078c
+      internalID: -8466655235950076294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Falling-1
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 75
+        width: 235
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acac681e10d74f4db3b3ed0934ee673
+      internalID: -5619885010340092755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Falling-2
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 36
+        width: 224
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87546eef4af01be478764e4dff3c2299
+      internalID: -2508312015964490866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-Landing-0
+      rect:
+        serializedVersion: 2
+        x: 3724
+        y: 31
+        width: 268
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ac40f45e9a9e048a626c789ff8cd12
+      internalID: 8552707746734307395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: 8e7db2191b548414e962eb0c5015d2f0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2483938180912728811
+    second: Water-Jumping-0
+  - first:
+      213: -4834667362589938828
+    second: Water-Jumping-1
+  - first:
+      213: 8911424648700588850
+    second: Water-Falling-0
+  - first:
+      213: 5764526621762277158
+    second: Water-Falling-1
+  - first:
+      213: 1105304282140767790
+    second: Water-Falling-2
+  - first:
+      213: 7457428298872368259
+    second: Water-Landing-0
+  - first:
+      213: 7457428298872368259
+    second: Water-Landing-1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +105,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Water-Jumping-0
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 33
+        width: 252
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89c30de1bcb3b840a8ce74808bcf1dd
+      internalID: 2483938180912728811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Jumping-1
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 33
+        width: 251
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9ddadc774282b4788ecf6146c0f169
+      internalID: -4834667362589938828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Falling-0
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 33
+        width: 253
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7433b69d0c5ea87438b8cb405b988038
+      internalID: 8911424648700588850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Falling-1
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 33
+        width: 256
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660b6b921cc83404abf78556f90ca45b
+      internalID: 5764526621762277158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Falling-2
+      rect:
+        serializedVersion: 2
+        x: 3111
+        y: 33
+        width: 260
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486f577fdb37e954485717c76944afbd
+      internalID: 1105304282140767790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Landing-0
+      rect:
+        serializedVersion: 2
+        x: 3724
+        y: 31
+        width: 284
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ff9d7775a141142a0fcc128c1b8b1c
+      internalID: 7457428298872368259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Landing-1
+      rect:
+        serializedVersion: 2
+        x: 4292
+        y: 34
+        width: 249
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a7e5462f4ac154982bf8ee57e536d4
+      internalID: 7457428298872368259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

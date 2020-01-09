@@ -101,9 +101,9 @@ TextureImporter:
       name: Fire-Idle-0
       rect:
         serializedVersion: 2
-        x: 199
-        y: 34
-        width: 193
+        x: 171
+        y: 35
+        width: 246
         height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -122,9 +122,9 @@ TextureImporter:
       name: Fire-Idle-1
       rect:
         serializedVersion: 2
-        x: 789
-        y: 34
-        width: 193
+        x: 763
+        y: 35
+        width: 246
         height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -143,9 +143,9 @@ TextureImporter:
       name: Fire-Idle-2
       rect:
         serializedVersion: 2
-        x: 1380
-        y: 34
-        width: 193
+        x: 1355
+        y: 35
+        width: 246
         height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -164,9 +164,9 @@ TextureImporter:
       name: Fire-Idle-3
       rect:
         serializedVersion: 2
-        x: 1970
+        x: 1940
         y: 35
-        width: 193
+        width: 246
         height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

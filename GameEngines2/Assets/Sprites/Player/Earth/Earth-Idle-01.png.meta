@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 4e0fed165dd83814b9ffcc2d398fc1d2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7673164554182386441
+    second: Earth-Idle-1
+  - first:
+      213: 7030858836789769342
+    second: Earth-Idle-0
+  - first:
+      213: -8197517173058140793
+    second: Earth-Idle-2
+  - first:
+      213: 8693204872584620247
+    second: Earth-Idle-3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +96,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Earth-Idle-1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 34
+        width: 217
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee79c3f14452d5c49870eede920f272b
+      internalID: 7673164554182386441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Idle-0
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 35
+        width: 217
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8929bc18392d8469c6c95c3f0b48d2
+      internalID: 7030858836789769342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Idle-2
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 34
+        width: 217
+        height: 468
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b96274d4f382a4a9a31211bb017080
+      internalID: -8197517173058140793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Idle-3
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 34
+        width: 217
+        height: 468
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f29a17aba717794aac7ce94533f66d4
+      internalID: 8693204872584620247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

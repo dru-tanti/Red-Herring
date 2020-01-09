@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 3d37b6fb3480e5e49ad6525013295a03
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7643205128847176294
+    second: Water-Running-0
+  - first:
+      213: 6691355354433896405
+    second: Water-Running-1
+  - first:
+      213: -8827414968480275020
+    second: Water-Running-2
+  - first:
+      213: -2763865719574401627
+    second: Water-Running-3
+  - first:
+      213: -2476466995349315352
+    second: Water-Running-4
+  - first:
+      213: -1528239882032500599
+    second: Water-Running-5
+  - first:
+      213: 6543105841787456471
+    second: Water-Running-6
+  - first:
+      213: 5795494667095891170
+    second: Water-Running-7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +108,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Water-Running-0
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 38
+        width: 265
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e30c3ab82a4324f853c397480318a1
+      internalID: -7643205128847176294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Running-1
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 41
+        width: 265
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b25058d5b7fbbb428c8b9b55794b90b
+      internalID: 6691355354433896405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Running-2
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 38
+        width: 265
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb79125782808bc429aeae9e75a6404c
+      internalID: -8827414968480275020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Running-3
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 33
+        width: 265
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b8c7a617d896542bf6e134ab9f4db0
+      internalID: -2763865719574401627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Running-4
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 38
+        width: 265
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0e41e56b7a829498575cc8cac33776
+      internalID: -2476466995349315352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Running-5
+      rect:
+        serializedVersion: 2
+        x: 3131
+        y: 38
+        width: 265
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8f5be143084f14db64fb55763a1392
+      internalID: -1528239882032500599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Running-6
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 38
+        width: 265
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b999aef20d39c4dad4fd77a85ea28e
+      internalID: 6543105841787456471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Running-7
+      rect:
+        serializedVersion: 2
+        x: 4312
+        y: 38
+        width: 265
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513f4854224aafb40a52ca754eb1f722
+      internalID: 5795494667095891170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

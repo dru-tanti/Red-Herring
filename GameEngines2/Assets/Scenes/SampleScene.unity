@@ -488,7 +488,6 @@ MonoBehaviour:
   jump: {fileID: 11400000, guid: 7e8265b32854625488d57ad042fc9320, type: 2}
   fallMultiplier: 2.5
   lowJumpMultiplier: 3
-  _moveX: 0
   dashTime: 0.3
   groundCheck: {fileID: 831061612}
   whatIsGround:
@@ -519,7 +518,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.46433514, y: 1.2379808}
+    oldSize: {x: 0.55575866, y: 1.1370193}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -587,7 +586,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3104856973371954195, guid: 09934cbf2b592b643b0cc1f815e2dd7e,
+  m_Sprite: {fileID: -6363067384963754384, guid: 196c53e34e32d8749bda538a219d9a30,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -625,7 +624,7 @@ Animator:
   m_GameObject: {fileID: 670690460}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f974e85352da32f4289003117e36a9a9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 84969d4746bb1fc4c91bb7fe5018c988, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -669,6 +668,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fec702d466382c4da9508677ccf3d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedElement: {fileID: 11400000, guid: 5c42e8df52b4c7b4ebea0f9e08141d8c, type: 2}
+  anims:
+  - {fileID: 9100000, guid: 84969d4746bb1fc4c91bb7fe5018c988, type: 2}
+  - {fileID: 9100000, guid: 609245978f7b08044920fd25f2eafcf5, type: 2}
+  - {fileID: 9100000, guid: f974e85352da32f4289003117e36a9a9, type: 2}
+  - {fileID: 9100000, guid: 08d1deadceb8b504b80c579fdf467e8d, type: 2}
 --- !u!1 &776042093
 GameObject:
   m_ObjectHideFlags: 0

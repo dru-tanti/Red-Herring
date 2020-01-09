@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 9ff406fb72f8d8a4f8bcd6c39b1158ff
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3658696289267703785
+    second: Water-Idle-0
+  - first:
+      213: 8960154271550462772
+    second: Water-Idle-1
+  - first:
+      213: -8072588187784977644
+    second: Water-Idle-2
+  - first:
+      213: -6714997639187505422
+    second: Water-Idle-3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +96,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Water-Idle-0
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 34
+        width: 246
+        height: 515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37be8b13b3fd0248b4dbb31178ba419
+      internalID: -3658696289267703785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Idle-1
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 34
+        width: 247
+        height: 515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a264c21fe1ca6c4ea3870d04cdb9d4b
+      internalID: 8960154271550462772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Idle-2
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 34
+        width: 246
+        height: 515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fd36eec98847e458cacb4309b5977d
+      internalID: -8072588187784977644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water-Idle-3
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 34
+        width: 246
+        height: 515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd65267b4b0b22c4c9b77ed79716146d
+      internalID: -6714997639187505422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
