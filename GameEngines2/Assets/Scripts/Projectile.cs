@@ -21,14 +21,12 @@ public class Projectile : MonoBehaviour
     private Collider2D _collider;
     public ElementType selectedElement;
 
-    private void Awake()
-    {
+    private void Awake() {
         _projectileRB = GetComponent<Rigidbody2D>();
         _collider = GetComponent<Collider2D>();
     }
 
-    private void Start()
-    {
+    private void Start() {
         // Fire the projectile horizontally in relation to the spawn point.
         _projectileRB.velocity = transform.TransformDirection(Vector2.right) * speed;
         // Destroy this object after a specific amount of time.
@@ -36,11 +34,8 @@ public class Projectile : MonoBehaviour
     }
 
     // When an enemy is hit, trigger the selected properties of the element.
-    private void OnCollisionEnter2D(Collision2D other) 
-    {
-
-        if(other.gameObject.tag == "Enemy")
-        {
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag == "Enemy") {
             // Retrieve the base script that is inheritied by every enemy.
             AIBehaviour ai = other.gameObject.GetComponent<AIBehaviour>();
 
@@ -48,17 +43,13 @@ public class Projectile : MonoBehaviour
             _collider.enabled = false;
             _projectileRB.velocity = Vector2.zero;
 
-            if (selectedElement != null)
-            {
-                foreach (ElementEffect attackEffect in selectedElement.attackEffects)
-                {
+            if (selectedElement != null) {
+                foreach (ElementEffect attackEffect in selectedElement.attackEffects) {
                     UseEffect(ai, attackEffect);
                 }
-            } else
-            {
+            } else {
                 Debug.LogWarning("No element assigned to these particles.");
             }
-
             enabled = false;
         }    
     }
@@ -66,28 +57,23 @@ public class Projectile : MonoBehaviour
     // @param ai The AI agent that the projectile has hit.
     // @param effect The effect of the selected element of the projectile. 
     // Defines what properties will trigger which functions in the AIBehaviour script.
-    private void UseEffect(AIBehaviour ai, ElementEffect effect)
-    {
+    private void UseEffect(AIBehaviour ai, ElementEffect effect) {
         if (effect == null) return;
 
-        if (effect.willDamage)
-        {
+        if (effect.willDamage) {
             ai.Damage(effect.damage);
         }
 
-        if (effect.willPush)
-        {
+        if (effect.willPush) {
             Vector3 offset = transform.position - ai.transform.position;
             ai.Push(Mathf.Sign(offset.x), effect.pushForce);
         }
 
-        if (effect.willFreeze)
-        {
+        if (effect.willFreeze) {
             ai.Freeze(effect.freezeDuration);
         }
 
-        if (effect.willStun)
-        {
+        if (effect.willStun) {
             ai.Stun(effect.stunDuration);
         }
     }

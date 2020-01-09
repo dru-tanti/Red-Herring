@@ -174,6 +174,7 @@ public class PlayerControl : MonoBehaviour
     public void Gravity(bool applyGravity) {
         if (this._playerRB.gravityScale > Mathf.Epsilon && !applyGravity) {
             this._playerRB.gravityScale = 0.0f;
+            // _anim.SetBool("IsFalling", false);
         } else {
             if (this._playerRB.gravityScale > Mathf.Epsilon || !applyGravity)
                 return;
