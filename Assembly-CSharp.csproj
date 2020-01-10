@@ -44,13 +44,8 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\Scripts\Attack.cs" />
+  <ItemGroup>     <Compile Include="Assets\Scripts\AIBehaviour.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\Projectile.cs" />
-     <Compile Include="Assets\Scripts\RadialButton.cs" />
-     <Compile Include="Assets\Scripts\RadialMenu.cs" />
-     <Compile Include="Assets\Scripts\RadialMenuSpawner.cs" />
      <Compile Include="Assets\Scripts\SettingsMenu.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -109,17 +104,11 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="com.unity.multiplayer-hlapi.Editor">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="MamboJamboStudios.UnityAtomsCore.Runtime">
- <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsCore.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="MamboJamboStudios.UnityAtomsMonoHooks.Runtime">
- <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsMonoHooks.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="MamboJamboStudios.UnityAtomsUI.Runtime">
- <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsUI.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -127,23 +116,20 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="MamboJamboStudios.UnityAtomsCore.Editor">
- <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsCore.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="com.unity.multiplayer-weaver.Editor">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="MamboJamboStudios.UnityAtomsSceneMgmt.Editor">
- <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsSceneMgmt.Editor.dll</HintPath>
- </Reference>
- <Reference Include="MamboJamboStudios.UnityAtomsMobile.Editor">
- <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsMobile.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
@@ -151,20 +137,26 @@
  <Reference Include="Unity.2D.Tilemap.Editor">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
- <Reference Include="MamboJamboStudios.UnityAtomsMobile.Runtime">
- <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsMobile.Runtime.dll</HintPath>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
- <Reference Include="MamboJamboStudios.UnityAtomsSceneMgmt.Runtime">
- <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsSceneMgmt.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="MamboJamboStudios.UnityAtomsTags.Runtime">
- <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsTags.Runtime.dll</HintPath>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Analytics.DataPrivacy">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.8f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -348,6 +340,15 @@
  </Reference>
  <Reference Include="UnityEditor">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.8f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Tracker">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Editor">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>/Users/fabiogirlando/Documents/MCAST Interactive/3rd year/Semester 1/Game Engines/Assignment/Game_Project/Red-Herring/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.8f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
