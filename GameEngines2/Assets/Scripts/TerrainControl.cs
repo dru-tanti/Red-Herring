@@ -77,39 +77,29 @@ public class TerrainControl : MonoBehaviour
             Debug.Log("Ouch");
         }
 
-        // if(tileTop is WaterTile) {
-        //     Debug.Log("You are drowning!");
-        // }
     }
 
-    private void UseEffect(ElementEffect effect, Vector3Int cellAim, TileBase tileAim)
-    {
-        if(effect.willDig)
-        {
+    private void UseEffect(ElementEffect effect, Vector3Int cellAim, TileBase tileAim) {
+        if(effect.willDig) {
             Dig(cellAim, tileAim);
         }
     }
 
     // If the player is aiming at a diggable tile, replace it with a dug tile.
-    public void Dig(Vector3Int cellAim, TileBase tileAim)
-    {
-        if (tileAim is GroundTile && (tileAim as GroundTile).Dug == false)
-        {
+    public void Dig(Vector3Int cellAim, TileBase tileAim) {
+        if (tileAim is GroundTile && (tileAim as GroundTile).Dug == false) {
             tilemap.SetTile(cellAim, (tileAim as GroundTile).dugVersion);
         }
     }
     
     // If the tile is already dug, set it back to an undug tile when the player gets past it.
-    public void UnDig(Vector3Int cellBack, TileBase tileBack, Vector3Int cellTop, TileBase tileTop)
-    {
-        if(tileBack is GroundTile && (tileBack as GroundTile).Dug == true)
-        {
+    public void UnDig(Vector3Int cellBack, TileBase tileBack, Vector3Int cellTop, TileBase tileTop) {
+        if(tileBack is GroundTile && (tileBack as GroundTile).Dug == true) {
             Debug.Log("We Touched the Back!");
             tilemap.SetTile(cellBack, (tileBack as GroundTile).dugVersion);
         }
             
-        if(tileTop is GroundTile && (tileTop as GroundTile).Dug == true)
-        {
+        if(tileTop is GroundTile && (tileTop as GroundTile).Dug == true) {
             Debug.Log("We Touched the Top!");
             tilemap.SetTile(cellTop, (tileTop as GroundTile).dugVersion);
         }  

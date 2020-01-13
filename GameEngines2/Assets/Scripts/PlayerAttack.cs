@@ -15,10 +15,9 @@ public class PlayerAttack : MonoBehaviour
 	public IntVariable selectedElement;
 	public BoolVariable isInvisible;
 	private PlayerAnimation _anim;
-
+	public ElementType[] element;
 	private void Awake() {
 		_anim = gameObject.GetComponentInParent<PlayerAnimation>();
-		Debug.Log(_anim);
 	}
     private void Update()
 	{
@@ -29,9 +28,20 @@ public class PlayerAttack : MonoBehaviour
 
 		float rotation = Input.GetAxisRaw("Vertical") * 90;
 		transform.localRotation = Quaternion.Euler(0f, 0f, rotation);
-		if(Input.GetKeyDown(KeyCode.V))
-		{
-			Instantiate(projectiles[selectedElement.Value], shotPoint.position, transform.rotation);
+		if(Input.GetKeyDown(KeyCode.V) && element[selectedElement.Value] != null) {
+			foreach(ElementEffect attackEffects in element[selectedElement.Value].attackEffects) {
+				UseEffect(attackEffects);
+			}
+		}
+	}
+
+	private void UseEffect(ElementEffect effect) {
+		if(effect.projectile){
+			Instantiate(this.projectiles[selectedElement.Value], shotPoint.position, transform.rotation);
+		}
+
+		if(effect.invisible) {
+			isInvisible.Value = !isInvisible.Value;
 		}
 	}
 

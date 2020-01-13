@@ -101,10 +101,10 @@ TextureImporter:
       name: Air-Idle-0
       rect:
         serializedVersion: 2
-        x: 161
+        x: 155
         y: 34
-        width: 231
-        height: 473
+        width: 246
+        height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,10 +122,10 @@ TextureImporter:
       name: Air-Idle-1
       rect:
         serializedVersion: 2
-        x: 749
+        x: 745
         y: 34
-        width: 232
-        height: 473
+        width: 246
+        height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +143,10 @@ TextureImporter:
       name: Air-Idle-2
       rect:
         serializedVersion: 2
-        x: 1342
+        x: 1336
         y: 34
-        width: 231
-        height: 473
+        width: 246
+        height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: Air-Idle-3
       rect:
         serializedVersion: 2
-        x: 1932
+        x: 1925
         y: 34
-        width: 231
-        height: 473
+        width: 246
+        height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

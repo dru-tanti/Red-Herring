@@ -3,15 +3,24 @@ using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-public class PlayerControl : MonoBehaviour
+[System.Serializable]
+public class ElementCooldown {
+    [System.Serializable]
+    public struct rowData{
+        public FloatVariable[] cooldown;
+        public BoolVariable[] abilityAvailable;
+    }
+    public rowData[] elements = new rowData[4];
+}
+
+public class PlayerControl : BaseController
 {
     [Header("Movement Variables")]
     public FloatConstant speed;
     private bool _facingRight = true;
-    [HideInInspector] public Rigidbody2D _playerRB;
     private TerrainControl terrain;
     public FloatConstant jump;
+    public BoolVariable _isInvisible;
     [Range(0f, 5f)]
     public float fallMultiplier = 2.5f;
     [Range(0f, 5f)]
@@ -19,8 +28,6 @@ public class PlayerControl : MonoBehaviour
     private float _moveX;
     public float moveX { get => _moveX; } // To be used by the PlayerAnimation script
     [Range(0f, 1f)]
-    [Tooltip("Time dashForce will be active for")]
-    public float dashTime = 0f;
     private bool _dashing = false;
 
     [Header("Jump Variables")]
@@ -33,19 +40,18 @@ public class PlayerControl : MonoBehaviour
     private float _jumpTimeCounter;
     private bool _isJumping;
     private float _hardLandingTimer; // Used to trigger the hard landing animation.
-    private float _gravityScale; // Keeps a reference of the default value to use later.
-    private bool _gliding;
+    private bool _floating;
 
     [Header("Element")]
 	public IntVariable selectedElement;
     public ElementType[] element;
+    public ElementCooldown cooldowns;
 
 
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
-    private void Awake() {
-        _playerRB = GetComponent<Rigidbody2D>();
+    protected override void Awake() {
+        base.Awake();
         terrain = GetComponent<TerrainControl>();
-        _gravityScale = _playerRB.gravityScale;
     }
 
     void Update() {
@@ -63,14 +69,14 @@ public class PlayerControl : MonoBehaviour
         _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
 
         // If the player is falling, we will increase the gravity scale so that the player falls faster.
-        if(_playerRB.velocity.y < 0) {
-            _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        } else if(_playerRB.velocity.y > 0 && !Input.GetButton("Jump")) {
+        if(_rb.velocity.y < 0) {
+            _rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        } else if(_rb.velocity.y > 0 && !Input.GetButton("Jump")) {
             // If the character is rising, but the player is not holding the jump button, apply increased gravity.
-            _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            _rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
 
-        if(!_dashing){ Move(); }
+        if(!_dashing && !_floating){ Move(); }
     }
 
     void Jump() {
@@ -79,14 +85,14 @@ public class PlayerControl : MonoBehaviour
             _isJumping = true;
             _jumpTimeCounter = jumpTime;
 
-            _playerRB.velocity = Vector2.up * jump.Value;   
+            _rb.velocity = Vector2.up * jump.Value;   
         }
 
         // If the player holds down the spacebar the character will jump higher
         if(Input.GetButton("Jump") && _isJumping == true) {
             if(_jumpTimeCounter > 0) {
                 // Applies force when the player presses the Jump Button.
-                _playerRB.velocity = Vector2.up * jump.Value;   
+                _rb.velocity = Vector2.up * jump.Value;   
                 _jumpTimeCounter -= Time.deltaTime;
             } else {
                 _isJumping = false;
@@ -102,13 +108,13 @@ public class PlayerControl : MonoBehaviour
         _moveX = Input.GetAxisRaw("Horizontal");
 
         // Inverts the player model if they are moving to the left.
-        if (_moveX < 0f && _facingRight == true) {
+        if (_moveX < 0f && _facingRight) {
             FlipPlayer();
-        } else if (_moveX > 0f && _facingRight == false) {
+        } else if (_moveX > 0f && !_facingRight) {
             FlipPlayer();
         }
 
-        _playerRB.velocity = new Vector2 (_moveX * speed.Value, _playerRB.velocity.y);
+        _rb.velocity = new Vector2 (_moveX * speed.Value, _rb.velocity.y);
     }
 
     // Rotates the gameObject to flip the player to make it look as if they are moving left and right.
@@ -117,39 +123,41 @@ public class PlayerControl : MonoBehaviour
         transform.Rotate(0f, 180f, 0f);
     }
 
-
     // Triggers different methods depending on the effects active.
     private void UseEffect(ElementEffect effect) {
         if (effect == null) return;
 
         if (effect.willDash && !_dashing) {
-            Dash(effect.dashForce);
+            Dash(effect.dashForce, effect.dashTime);
+            cooldowns[selectedElement.Value, 2] = false;
         }
 
         if (effect.immune) {
             Immune();
+            cooldowns[selectedElement.Value, 2] = false;
         }
 
-        if (effect.willGlide) {
-            HighJump(effect.glideSpeed, effect.glideTime);
+        if (effect.willFloat) {
+            HighJump(effect.floatSpeed, effect.floatTime);
+            cooldowns[selectedElement.Value, 2] = false;
         }
     }
 
     // Applies a force in the direction the player is facing.
-    void Dash(float dashForce) {
-        if(_dashing == true){ return; }
-        StartCoroutine(Dashing(dashForce));
+    void Dash(float dashForce, float dashTime) {
+        if(_dashing == true) return;
+        StartCoroutine(Dashing(dashForce, dashTime));
     }
 
     // Applies the dash force and stops the player from moving while dash is active.
-    private IEnumerator Dashing(float dashForce) {
+    private IEnumerator Dashing(float dashForce, float dashTime) {
         _dashing = true;
         while(_dashing){
-            Gravity(false);
-            _playerRB.velocity = (_facingRight) ? Vector2.right * dashForce : Vector2.left * dashForce;
+            Gravity(0f);
+            _rb.velocity = (_facingRight) ? Vector2.right * dashForce : Vector2.left * dashForce;
             yield return new WaitForSeconds(dashTime);
             _dashing = false;
-            Gravity(true);
+            Gravity(1f);
         }
     }
 
@@ -157,28 +165,18 @@ public class PlayerControl : MonoBehaviour
         // TODO: Code to ignore any projectiles that hit the player.
     }
 
-    void HighJump(float glideSpeed, float glideTime) {
-        _gliding = !_gliding;
-
-        if(_gliding) { 
-            Gravity(true); 
-            return;
-        }
-
-        while(_gliding) {
-            this._playerRB.gravityScale = glideSpeed;
-        }
+    // Lets the player float upwards. If the player moves, the float is cancelled.
+    void HighJump(float floatSpeed, float floatTime) {
+        if(!_floating) StartCoroutine(Floating(floatSpeed, floatTime));
     }
 
-    // Used to turn gravity on and off as needed.
-    public void Gravity(bool applyGravity) {
-        if (this._playerRB.gravityScale > Mathf.Epsilon && !applyGravity) {
-            this._playerRB.gravityScale = 0.0f;
-            // _anim.SetBool("IsFalling", false);
-        } else {
-            if (this._playerRB.gravityScale > Mathf.Epsilon || !applyGravity)
-                return;
-            this._playerRB.gravityScale = _gravityScale;
+    private IEnumerator Floating(float floatSpeed, float floatTime) {
+        _floating = true;
+        while(_floating){
+            Gravity(floatSpeed);
+            yield return new WaitForSeconds(floatTime);
+            _floating = false;
+            Gravity(1f);
         }
     }
 }

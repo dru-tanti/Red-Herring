@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _willDamage: 0
   _damage: 0
-  _willPush: 1
+  _willPush: 0
   _pushForce: 1
   _willFreeze: 0
   _freezeDuration: 0
   _willStun: 0
   _stunDuration: 0
+  _invisible: 1
   _immune: 0
   _fog: 0
-  _weightLess: 0
+  _willGlide: 0
+  _glideTime: 0
+  _glideSpeed: 0
   _willDig: 0
   _willDash: 0
   _dashForce: 0

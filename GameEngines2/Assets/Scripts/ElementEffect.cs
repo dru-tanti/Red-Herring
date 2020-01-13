@@ -11,6 +11,8 @@ using UnityEngine;
 public class ElementEffect : ScriptableObject
 {
     [Header("Attack Effects")]
+    [SerializeField] private bool _projectile = false;
+    public bool projectile { get => _projectile; }
     [SerializeField] private bool _willDamage = false;
     public bool willDamage { get => _willDamage; }
 
@@ -35,6 +37,8 @@ public class ElementEffect : ScriptableObject
 
     [SerializeField] private int _stunDuration = 0;
     public int stunDuration { get => _stunDuration; }
+    [SerializeField] private bool _invisible = false;
+    public bool invisible { get => _invisible; }
 
     [Header("Other Effects")]
     [SerializeField] private bool _immune = false;
@@ -43,16 +47,16 @@ public class ElementEffect : ScriptableObject
     [SerializeField] private bool _fog = false;
     public bool fog { get => _fog; }
 
-    [SerializeField] private bool _willGlide = false;
-    public bool willGlide { get => _willGlide; }
+    [SerializeField] private bool _willFloat = false;
+    public bool willFloat { get => _willFloat; }
         
     [Range(0.0f, 10.0f)]
-    [SerializeField] private float _glideTime = 0f;
-    public float glideTime { get => _glideTime; }
+    [SerializeField] private float _floatTime = 0f;
+    public float floatTime { get => _floatTime; }
 
-    [Range(0.0f, 5.0f)]
-    [SerializeField] private float _glideSpeed = 0f;
-    public float glideSpeed { get => _glideSpeed; }
+    [Range(-5.0f, 0.0f)]
+    [SerializeField] private float _floatSpeed = 0f;
+    public float floatSpeed { get => _floatSpeed; }
 
     [SerializeField] private bool _willDig = false;
     public bool willDig { get => _willDig; }
@@ -62,6 +66,10 @@ public class ElementEffect : ScriptableObject
 
     [SerializeField] private int _dashForce = 0;
     public int dashForce { get => _dashForce; }
+
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _dashTime = 0f;
+    public float dashTime { get => _dashTime; }
 
     [Header("Ability Cooldown")]
     [Range(0.0f, 10.0f)]

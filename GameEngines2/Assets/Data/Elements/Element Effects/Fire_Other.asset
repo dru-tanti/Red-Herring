@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6954593f7a46bad46900b7fa9a69d5af, type: 3}
   m_Name: Fire_Other
   m_EditorClassIdentifier: 
+  _projectile: 0
   _willDamage: 0
   _damage: 0
   _willPush: 0
@@ -20,10 +21,14 @@ MonoBehaviour:
   _freezeDuration: 0
   _willStun: 0
   _stunDuration: 0
+  _invisible: 0
   _immune: 0
   _fog: 0
-  _weightLess: 0
+  _willFloat: 0
+  _floatTime: 0
+  _floatSpeed: 0
   _willDig: 0
   _willDash: 1
   _dashForce: 20
+  _dashTime: 0.3
   _cooldown: 0

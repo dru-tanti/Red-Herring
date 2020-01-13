@@ -101,10 +101,10 @@ TextureImporter:
       name: Earth-Idle-1
       rect:
         serializedVersion: 2
-        x: 768
+        x: 749
         y: 34
-        width: 217
-        height: 468
+        width: 246
+        height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,10 +122,10 @@ TextureImporter:
       name: Earth-Idle-0
       rect:
         serializedVersion: 2
-        x: 176
+        x: 154
         y: 35
-        width: 217
-        height: 468
+        width: 246
+        height: 515
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,12 +143,12 @@ TextureImporter:
       name: Earth-Idle-2
       rect:
         serializedVersion: 2
-        x: 1358
+        x: 1338
         y: 34
-        width: 217
-        height: 468
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 246
+        height: 515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -164,12 +164,12 @@ TextureImporter:
       name: Earth-Idle-3
       rect:
         serializedVersion: 2
-        x: 1949
+        x: 1928
         y: 34
-        width: 217
-        height: 468
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 246
+        height: 515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
