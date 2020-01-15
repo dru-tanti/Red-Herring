@@ -5,12 +5,9 @@ using UnityEngine;
 
 [System.Serializable]
 public class ElementCooldown {
-    [System.Serializable]
-    public struct rowData{
-        public FloatVariable[] cooldown;
-        public BoolVariable[] abilityAvailable;
-    }
-    public rowData[] elements = new rowData[4];
+    // [System.Serializable]
+    // public FloatVariable[] cooldown;
+    public BoolVariable[] abilityAvailable;
 }
 
 public class PlayerControl : BaseController
@@ -45,7 +42,7 @@ public class PlayerControl : BaseController
     [Header("Element")]
 	public IntVariable selectedElement;
     public ElementType[] element;
-    public ElementCooldown cooldowns;
+    public ElementCooldown[] cooldowns;
 
 
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
@@ -58,8 +55,13 @@ public class PlayerControl : BaseController
         Jump();
         // Every frame we will check which element was chosen and use the effects defined in ElementEffect
         if(Input.GetKeyDown(KeyCode.C) && element[selectedElement.Value] != null) {
-            foreach(ElementEffect otherEffects in element[selectedElement.Value].otherEffects) {
-                UseEffect(otherEffects);
+            if(cooldowns[selectedElement.Value].abilityAvailable[1].Value) {
+                foreach(ElementEffect otherEffects in element[selectedElement.Value].otherEffects) {
+                    UseEffect(otherEffects);
+                }
+            } else {
+                Debug.Log("Ability not yet available");
+                return;
             }
         }
     }
@@ -129,17 +131,18 @@ public class PlayerControl : BaseController
 
         if (effect.willDash && !_dashing) {
             Dash(effect.dashForce, effect.dashTime);
-            cooldowns[selectedElement.Value, 2] = false;
+            StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
         }
 
         if (effect.immune) {
             Immune();
-            cooldowns[selectedElement.Value, 2] = false;
+            StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
+
         }
 
         if (effect.willFloat) {
             HighJump(effect.floatSpeed, effect.floatTime);
-            cooldowns[selectedElement.Value, 2] = false;
+            StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
         }
     }
 
@@ -178,5 +181,12 @@ public class PlayerControl : BaseController
             _floating = false;
             Gravity(1f);
         }
+    }
+
+    // Sets an ability as not available for a specified time.
+    private IEnumerator abilityCoolingdown(ElementCooldown cooldowns, float cooldownTime, int index) {
+        cooldowns.abilityAvailable[index].Value = false;
+        yield return new WaitForSeconds(cooldownTime);
+        cooldowns.abilityAvailable[index].Value = true;
     }
 }
