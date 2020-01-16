@@ -31,4 +31,4 @@ MonoBehaviour:
   _willDash: 1
   _dashForce: 20
   _dashTime: 0.3
-  _cooldown: 0
+  _cooldown: 3

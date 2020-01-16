@@ -501,31 +501,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e0c2e9a785e4fa148ab0aafcb109bc6c, type: 2}
   - {fileID: 11400000, guid: b2710b6d0f09ea04e8d01e1743662fec, type: 2}
   cooldowns:
-    elements:
-    - cooldown:
-      - {fileID: 11400000, guid: 74696561012647348a094c686d6b648a, type: 2}
-      - {fileID: 11400000, guid: 40539a77d662ca94697e93d98aa384eb, type: 2}
-      abilityAvailable:
-      - {fileID: 11400000, guid: b1b5327feb9979841b24c10e86094fa0, type: 2}
-      - {fileID: 11400000, guid: adeff87498ed1cb47a0b61193b14efb6, type: 2}
-    - cooldown:
-      - {fileID: 11400000, guid: ff4f9fe802c64fa45986123f8f98490c, type: 2}
-      - {fileID: 11400000, guid: eb569dd1de7ce5846aa97a726122a01f, type: 2}
-      abilityAvailable:
-      - {fileID: 11400000, guid: 49ea09cb2cb60d84c8f9fc77d7b6b21d, type: 2}
-      - {fileID: 11400000, guid: 8247580a950e76e4cbcd05b7fa30ea6b, type: 2}
-    - cooldown:
-      - {fileID: 11400000, guid: cf254733560fc3a43b430f4e865c9fbc, type: 2}
-      - {fileID: 11400000, guid: 2cfad00af34365642a47136a8a7ccdd3, type: 2}
-      abilityAvailable:
-      - {fileID: 11400000, guid: 49ea09cb2cb60d84c8f9fc77d7b6b21d, type: 2}
-      - {fileID: 11400000, guid: 8247580a950e76e4cbcd05b7fa30ea6b, type: 2}
-    - cooldown:
-      - {fileID: 11400000, guid: 498cc68be35bb4744af74b0d7c86e879, type: 2}
-      - {fileID: 11400000, guid: ef95199259034884c9cda4b0d3bced41, type: 2}
-      abilityAvailable:
-      - {fileID: 11400000, guid: 0ebac86e35c54dd4195508d2729362d7, type: 2}
-      - {fileID: 11400000, guid: 637693f4ddd7e2d46878ae2636c987f5, type: 2}
+  - abilityAvailable:
+    - {fileID: 11400000, guid: b1b5327feb9979841b24c10e86094fa0, type: 2}
+    - {fileID: 11400000, guid: adeff87498ed1cb47a0b61193b14efb6, type: 2}
+  - abilityAvailable:
+    - {fileID: 11400000, guid: 49ea09cb2cb60d84c8f9fc77d7b6b21d, type: 2}
+    - {fileID: 11400000, guid: 8247580a950e76e4cbcd05b7fa30ea6b, type: 2}
+  - abilityAvailable:
+    - {fileID: 11400000, guid: e15cc9c8f6966bb49a0cc024cfc317ef, type: 2}
+    - {fileID: 11400000, guid: 6de4c0995ceea334c92460258654f8fe, type: 2}
+  - abilityAvailable:
+    - {fileID: 11400000, guid: 0ebac86e35c54dd4195508d2729362d7, type: 2}
+    - {fileID: 11400000, guid: 637693f4ddd7e2d46878ae2636c987f5, type: 2}
 --- !u!61 &670690462
 BoxCollider2D:
   m_ObjectHideFlags: 0

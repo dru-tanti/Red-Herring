@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms;
 
 //--------------------------------------------------------------------------------------------------------------------------
 // Contains The properties of this element.
@@ -23,6 +24,7 @@ public class ElementType : ScriptableObject
     [SerializeField] private List<ElementEffect> _passiveEffects = null;
     public List<ElementEffect> passiveEffects { get => _passiveEffects; }
     
+    public BoolVariable unlocked;
     // public bool Counters(ElementType type)
     // {
     //     return _counters.Contains(type);

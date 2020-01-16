@@ -30,4 +30,5 @@ MonoBehaviour:
   _willDig: 0
   _willDash: 0
   _dashForce: 0
-  _cooldown: 0
+  _dashTime: 0
+  _cooldown: 5

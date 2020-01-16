@@ -30,10 +30,15 @@ public class TerrainControl : MonoBehaviour
 
     public Transform shotPoint;
     public Transform groundCheck;
+    private PlayerControl _player;
 
     [Header("Element")]
 	public IntVariable selectedElement;
     public ElementType[] element;
+
+    private void Awake() {
+        _player = GetComponent<PlayerControl>();
+    }
     
     void Update()
     {
@@ -55,12 +60,17 @@ public class TerrainControl : MonoBehaviour
         TileBase tileBack = tilemap.GetTile(cellBack);
 
         // Replace any dug tiles above or behind the player.
-        UnDig(cellBack, tileBack, cellTop, tileTop);
+        // UnDig(cellBack, tileBack, cellTop, tileTop);
 
         // Only use the secondary abilites when the "C" button is pressed.
         if(Input.GetKeyDown(KeyCode.C) && element[selectedElement.Value] != null) {
-            foreach(ElementEffect otherEffects in element[selectedElement.Value].otherEffects) {
-                UseEffect(otherEffects, cellAim, tileAim);
+            if(_player.cooldowns[selectedElement.Value].abilityAvailable[1].Value) {
+                foreach(ElementEffect otherEffects in element[selectedElement.Value].otherEffects) {
+                    UseEffect(otherEffects, cellAim, tileAim);
+                }
+            } else {
+                Debug.Log("Ability not yet available");
+                return;
             }
         }
 
@@ -87,6 +97,7 @@ public class TerrainControl : MonoBehaviour
 
     // If the player is aiming at a diggable tile, replace it with a dug tile.
     public void Dig(Vector3Int cellAim, TileBase tileAim) {
+        if (tileAim is GroundTile && (tileAim as GroundTile).Dug == true) return;
         if (tileAim is GroundTile && (tileAim as GroundTile).Dug == false) {
             tilemap.SetTile(cellAim, (tileAim as GroundTile).dugVersion);
         }

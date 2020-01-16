@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 320ccd2dc511d4d1b9d768f703fd3bb8, type: 3}
-  m_Name: airAttack
+  m_Name: EarthUnlock
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _value: 1
-  _initialValue: 1
+  _value: 0
+  _initialValue: 0
   _oldValue: 0
   Changed: {fileID: 0}
   ChangedWithHistory: {fileID: 0}

@@ -18,6 +18,13 @@ public class ElementEffect : ScriptableObject
 
     [SerializeField] private int _damage = 0;
     public int damage { get => _damage; }
+
+    [SerializeField] private bool _turnInvisible = false;
+    public bool turnInvisible { get => _turnInvisible; }
+    
+    [Range(0.0f, 10.0f)]
+    [SerializeField] private float _invisibleTime = 0f;
+    public float invisibleTime { get => _invisibleTime; }
     
     [SerializeField] private bool _willPush = false;
     public bool willPush { get => _willPush; }
@@ -37,8 +44,6 @@ public class ElementEffect : ScriptableObject
 
     [SerializeField] private int _stunDuration = 0;
     public int stunDuration { get => _stunDuration; }
-    [SerializeField] private bool _invisible = false;
-    public bool invisible { get => _invisible; }
 
     [Header("Other Effects")]
     [SerializeField] private bool _immune = false;

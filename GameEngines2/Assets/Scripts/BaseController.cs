@@ -28,7 +28,6 @@ public class BaseController : MonoBehaviour {
             Debug.Log("Bye");
         }
     }
-
     
     // Used to change the gravity scale.
     protected void Gravity(float multiplier) {

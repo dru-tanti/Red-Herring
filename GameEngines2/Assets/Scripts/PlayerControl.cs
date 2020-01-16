@@ -10,8 +10,7 @@ public class ElementCooldown {
     public BoolVariable[] abilityAvailable;
 }
 
-public class PlayerControl : BaseController
-{
+public class PlayerControl : BaseController {
     [Header("Movement Variables")]
     public FloatConstant speed;
     private bool _facingRight = true;
@@ -44,11 +43,11 @@ public class PlayerControl : BaseController
     public ElementType[] element;
     public ElementCooldown[] cooldowns;
 
-
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     protected override void Awake() {
         base.Awake();
         terrain = GetComponent<TerrainControl>();
+        
     }
 
     void Update() {
@@ -184,7 +183,7 @@ public class PlayerControl : BaseController
     }
 
     // Sets an ability as not available for a specified time.
-    private IEnumerator abilityCoolingdown(ElementCooldown cooldowns, float cooldownTime, int index) {
+    public IEnumerator abilityCoolingdown(ElementCooldown cooldowns, float cooldownTime, int index) {
         cooldowns.abilityAvailable[index].Value = false;
         yield return new WaitForSeconds(cooldownTime);
         cooldowns.abilityAvailable[index].Value = true;

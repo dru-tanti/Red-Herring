@@ -48,10 +48,13 @@ public class PlayerAnimation : MonoBehaviour
             _falling = false;
         }
 
-        if(Input.GetKeyDown(KeyCode.V)) {
-            _anim.SetBool("IsAttacking", true);
-        } else {
-            _anim.SetBool("IsAttacking", false);
+        // Only sets the animation boolean to true if the ability is available to use.
+        if(_player.cooldowns[selectedElement.Value].abilityAvailable[0]) {
+            if(Input.GetKeyDown(KeyCode.V)) {
+                _anim.SetBool("IsAttacking", true);
+            } else {
+                _anim.SetBool("IsAttacking", false);
+            }
         }
     }
 
