@@ -17,3 +17,4 @@ MonoBehaviour:
   _otherEffects:
   - {fileID: 11400000, guid: 24dd65eb2172d044f985487c36575159, type: 2}
   _passiveEffects: []
+  unlocked: {fileID: 11400000, guid: 720d272b51705b542b1182647f815260, type: 2}

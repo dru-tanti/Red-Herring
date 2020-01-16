@@ -22,8 +22,7 @@ public class PlayerAttack : MonoBehaviour
 		_anim = gameObject.GetComponentInParent<PlayerAnimation>();
 		_sprite = gameObject.GetComponentInParent<SpriteRenderer>();
 		_player = gameObject.GetComponentInParent<PlayerControl>();
-
-		Debug.Log(_sprite.color);
+		checkElements();
 	}
     private void Update()
 	{
@@ -92,6 +91,18 @@ public class PlayerAttack : MonoBehaviour
 			_sprite.color = new Color (1f, 1f, 1f, 1f);
 		}
 	}
+
+	// Finds the first unlocked element, and sets that as the current active.
+	private void checkElements() {
+		for(int i = 0; i < element.Length; i++) {
+			if(element[i].unlocked.Value == true){
+				selectedElement.Value = i;
+				_anim.changeElement(i);
+				return;
+			}
+		}
+	}
+	
 	private void OnDrawGizmos()
 	{
 		if (shotPoint != null)

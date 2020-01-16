@@ -47,7 +47,7 @@ public class PlayerControl : BaseController {
     protected override void Awake() {
         base.Awake();
         terrain = GetComponent<TerrainControl>();
-        
+        resetElements();
     }
 
     void Update() {
@@ -187,5 +187,19 @@ public class PlayerControl : BaseController {
         cooldowns.abilityAvailable[index].Value = false;
         yield return new WaitForSeconds(cooldownTime);
         cooldowns.abilityAvailable[index].Value = true;
+    }
+
+    // NOTE: Mainly for Testing Purposes
+    // Will be used to manually reset the elements at the start of the game
+    public void resetElements() {
+        element[0].unlocked.Value = false;
+        element[1].unlocked.Value = false;
+        element[3].unlocked.Value = false;
+        for(int x = 0; x < cooldowns.Length; x++) {
+            for(int y = 0; y < cooldowns[x].abilityAvailable.Length; y++) {
+                cooldowns[x].abilityAvailable[y].Value = false;
+            }
+        }
+        cooldowns[2].abilityAvailable[0].Value = true;
     }
 }

@@ -32,11 +32,6 @@ public class PlayerAnimation : MonoBehaviour
             _anim.SetBool("IsJumping", true);
         }
 
-        // Changes the animation controller when the player changes elements
-        // ! Button needs to be double clicked for some reason.
-        // if(Input.GetKeyDown(KeyCode.U) || Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.P)){ 
-        // }
-
         if(!_player._grounded && _playerRB.velocity.y < 0f) {
             _anim.SetBool("IsJumping", false);
             _anim.SetBool("IsFalling", true);
@@ -49,12 +44,14 @@ public class PlayerAnimation : MonoBehaviour
         }
 
         // Only sets the animation boolean to true if the ability is available to use.
-        if(_player.cooldowns[selectedElement.Value].abilityAvailable[0]) {
+        if(_player.cooldowns[selectedElement.Value].abilityAvailable[0].Value) {
             if(Input.GetKeyDown(KeyCode.V)) {
                 _anim.SetBool("IsAttacking", true);
             } else {
                 _anim.SetBool("IsAttacking", false);
             }
+        } else {
+            _anim.SetBool("IsAttacking", false);
         }
     }
 
