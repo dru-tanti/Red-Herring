@@ -40,8 +40,7 @@ public class TerrainControl : MonoBehaviour
         _player = GetComponent<PlayerControl>();
     }
     
-    void Update()
-    {
+    void Update() {
         // Finds the cell that is currently occupied by the shotPoint.
         Vector3Int cellAim = grid.WorldToCell(shotPoint.position);
         // Finds the tile in the tilemap that is currently in the cell retrieved above.

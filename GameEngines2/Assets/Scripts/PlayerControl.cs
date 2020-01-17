@@ -11,6 +11,8 @@ public class ElementCooldown {
 }
 
 public class PlayerControl : BaseController {
+    [Tooltip("Unlockes all the elements and abilites if true. For Testing Purposes")]
+    public bool elementsUnlocked = false;
     [Header("Movement Variables")]
     public FloatConstant speed;
     private bool _facingRight = true;
@@ -47,7 +49,13 @@ public class PlayerControl : BaseController {
     protected override void Awake() {
         base.Awake();
         terrain = GetComponent<TerrainControl>();
-        resetElements();
+
+        // NOTE: FOR TESTING PURPOSES.
+        if(elementsUnlocked == true){
+            unlockElements();
+        } else {
+            resetElements();
+        }
     }
 
     void Update() {
@@ -198,6 +206,19 @@ public class PlayerControl : BaseController {
         for(int x = 0; x < cooldowns.Length; x++) {
             for(int y = 0; y < cooldowns[x].abilityAvailable.Length; y++) {
                 cooldowns[x].abilityAvailable[y].Value = false;
+            }
+        }
+        cooldowns[2].abilityAvailable[0].Value = true;
+    }
+
+    // Unlocks all the elements for testin purposes.
+    public void unlockElements() {
+        element[0].unlocked.Value = true;
+        element[1].unlocked.Value = true;
+        element[3].unlocked.Value = true;
+        for(int x = 0; x < cooldowns.Length; x++) {
+            for(int y = 0; y < cooldowns[x].abilityAvailable.Length; y++) {
+                cooldowns[x].abilityAvailable[y].Value = true;
             }
         }
         cooldowns[2].abilityAvailable[0].Value = true;
