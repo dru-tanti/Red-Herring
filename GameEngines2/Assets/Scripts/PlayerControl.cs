@@ -10,7 +10,7 @@ public class ElementCooldown {
     public BoolVariable[] abilityAvailable;
 }
 
-public class PlayerControl : BaseController {
+public partial class PlayerControl : BaseController {
     [Tooltip("Unlockes all the elements and abilites if true. For Testing Purposes")]
     public bool elementsUnlocked = false;
     [Header("Movement Variables")]
@@ -44,6 +44,8 @@ public class PlayerControl : BaseController {
 	public IntVariable selectedElement;
     public ElementType[] element;
     public ElementCooldown[] cooldowns;
+
+    private Coroutine _highJumpCoroutine;
 
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     protected override void Awake() {
@@ -114,8 +116,7 @@ public class PlayerControl : BaseController {
     
     // Controls the movement of the player.
     void Move() {
-        _moveX = Input.GetAxisRaw("Horizontal");
-
+        _moveX = Input.GetAxisRaw("Horizontal"); 
         // Inverts the player model if they are moving to the left.
         if (_moveX < 0f && _facingRight) {
             FlipPlayer();
@@ -162,7 +163,7 @@ public class PlayerControl : BaseController {
     // Applies the dash force and stops the player from moving while dash is active.
     private IEnumerator Dashing(float dashForce, float dashTime) {
         _dashing = true;
-        while(_dashing){
+        while(_dashing) {
             Gravity(0f);
             _rb.velocity = (_facingRight) ? Vector2.right * dashForce : Vector2.left * dashForce;
             yield return new WaitForSeconds(dashTime);
@@ -177,12 +178,13 @@ public class PlayerControl : BaseController {
 
     // Lets the player float upwards. If the player moves, the float is cancelled.
     void HighJump(float floatSpeed, float floatTime) {
-        if(!_floating) StartCoroutine(Floating(floatSpeed, floatTime));
+        if(!_floating) _highJumpCoroutine = StartCoroutine(Floating(floatSpeed, floatTime));
+        else StopCoroutine(_highJumpCoroutine);
     }
 
     private IEnumerator Floating(float floatSpeed, float floatTime) {
         _floating = true;
-        while(_floating){
+        while(_floating) {
             Gravity(floatSpeed);
             yield return new WaitForSeconds(floatTime);
             _floating = false;

@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b061d1b48735edc4994e46aa2bd97467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementsUnlocked: 0
+  elementsUnlocked: 1
   speed: {fileID: 11400000, guid: 440a71e053492704c9c9d69ca3c9a2c6, type: 2}
   jump: {fileID: 11400000, guid: 7e8265b32854625488d57ad042fc9320, type: 2}
   _isInvisible: {fileID: 0}
