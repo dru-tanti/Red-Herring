@@ -49,7 +49,7 @@ public class MainMenu : MonoBehaviour
     // Adds extra functionality that works when the scene has been added to the hierarchy
     private void OnOptionsMenuLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        if (scene.name == "OptionsMenu")
+        if (scene.name == _optionsMenuSceneName)
         {
             // sets up the OptionsMenu script so it can complement this one.
             _optionsMenu = GameObject.FindObjectOfType<OptionsMenu>();
