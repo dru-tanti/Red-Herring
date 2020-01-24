@@ -11,6 +11,7 @@ public class ElementCooldown {
 }
 
 public partial class PlayerControl : BaseController {
+
     [Tooltip("Unlockes all the elements and abilites if true. For Testing Purposes")]
     public bool elementsUnlocked = false;
     [Header("Movement Variables")]
@@ -19,6 +20,7 @@ public partial class PlayerControl : BaseController {
     private TerrainControl terrain;
     public FloatConstant jump;
     public BoolVariable _isInvisible;
+    public BoolVariable _isAlive;
     [Range(0f, 5f)]
     public float fallMultiplier = 2.5f;
     [Range(0f, 5f)]
@@ -52,6 +54,7 @@ public partial class PlayerControl : BaseController {
         base.Awake();
         terrain = GetComponent<TerrainControl>();
 
+        _isAlive.Value = true;
         // NOTE: FOR TESTING PURPOSES.
         if(elementsUnlocked == true){
             unlockElements();
@@ -72,6 +75,15 @@ public partial class PlayerControl : BaseController {
                 Debug.Log("Ability not yet available");
                 return;
             }
+        }
+
+        // NOTE: For testing Purposes Only (No shit tipo...)
+        // Kills the player
+        if(Input.GetKeyDown(KeyCode.E)) _isAlive.Value = false;
+
+        if(_isAlive.Value == false) {
+            PlayerSpawner.current.spawnPlayer();
+            Destroy(this.gameObject);
         }
     }
 

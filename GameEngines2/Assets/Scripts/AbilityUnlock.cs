@@ -5,7 +5,7 @@ using UnityAtoms;
 
 public class AbilityUnlock : MonoBehaviour
 {
-    [SerializeField] private BoolVariable abilityAvailable;
+    [SerializeField] private BoolVariable abilityAvailable = null;
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Player") {
             abilityAvailable.Value = true;

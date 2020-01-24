@@ -3,12 +3,14 @@ using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
 
+//--------------------------------------------------------------------------------------------------------------------------
+// Stores all the audio and will be used to simplify audio playing.
+//--------------------------------------------------------------------------------------------------------------------------
+
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
-
-    // Defines the AudioManager as a singleton.
-    public static AudioManager current { get; private set; }
+    public static AudioManager current { get; private set; }  // Defines the AudioManager as a singleton.
     private int level;
     
     void Awake() {

@@ -8,9 +8,7 @@ using UnityAtoms;
 // Gets the tile that the player is currently touching or aiming at.
 // It will also control what effects the terrain will have on the player and vice versa.
 //--------------------------------------------------------------------------------------------------------------------------
-
-public class TerrainControl : MonoBehaviour
-{
+public class TerrainControl : MonoBehaviour {
     [Header("Tilemap")]
     public Tilemap tilemap;
     public Grid grid;
@@ -36,8 +34,13 @@ public class TerrainControl : MonoBehaviour
 	public IntVariable selectedElement;
     public ElementType[] element;
 
+    private string lastActiveScene = null; // Used to check if the scene has changed.
+    [SerializeField] private StringVariable currentActiveScene = null;
+
     private void Awake() {
         _player = GetComponent<PlayerControl>();
+        findGrid();
+        lastActiveScene = currentActiveScene.Value;
     }
     
     void Update() {
@@ -73,6 +76,11 @@ public class TerrainControl : MonoBehaviour
             }
         }
 
+        if(lastActiveScene != currentActiveScene.Value) {
+            findGrid();
+            lastActiveScene = currentActiveScene.Value;
+        }
+
         // Passive abilities should always be active, depending on the current selected element.
         foreach(ElementEffect passiveEffects in element[selectedElement.Value].passiveEffects) {
             UseEffect(passiveEffects, cellAim, tileAim);
@@ -86,6 +94,11 @@ public class TerrainControl : MonoBehaviour
             Debug.Log("Ouch");
         }
 
+    }
+
+    private void findGrid() {
+        tilemap = GameObject.Find("Tilemap-"+currentActiveScene.Value).GetComponent<Tilemap>();
+        grid = GameObject.Find("Grid-"+currentActiveScene.Value).GetComponent<Grid>();
     }
 
     private void UseEffect(ElementEffect effect, Vector3Int cellAim, TileBase tileAim) {

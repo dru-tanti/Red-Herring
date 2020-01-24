@@ -103,10 +103,8 @@ public class PlayerAttack : MonoBehaviour
 		}
 	}
 	
-	private void OnDrawGizmos()
-	{
-		if (shotPoint != null)
-		{
+	private void OnDrawGizmos() {
+		if (shotPoint != null) {
 			Gizmos.color = Color.blue;
 			Gizmos.DrawWireSphere(shotPoint.position, 0.5f);
 		}

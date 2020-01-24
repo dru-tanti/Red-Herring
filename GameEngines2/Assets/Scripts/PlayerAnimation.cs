@@ -7,8 +7,7 @@ using UnityAtoms;
 // Manages the players animation variables to avoid clutter in the PlayerControl script.
 //--------------------------------------------------------------------------------------------------------------------------
 
-public class PlayerAnimation : MonoBehaviour
-{
+public class PlayerAnimation : MonoBehaviour {
     private Animator _anim;
     private PlayerControl _player;
     private Rigidbody2D _playerRB;

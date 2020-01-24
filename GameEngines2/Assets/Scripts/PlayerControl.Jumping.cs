@@ -6,6 +6,6 @@ using UnityEngine;
 public partial class PlayerControl
 {
     private void Start() {
-        _is
+        
     }
 }
