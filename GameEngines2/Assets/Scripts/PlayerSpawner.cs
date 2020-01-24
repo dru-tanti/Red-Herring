@@ -21,6 +21,10 @@ public class PlayerSpawner : MonoBehaviour {
             return;
         }
 
+        SceneManager.sceneLoaded += CheckPlayer;
+    }
+
+    void CheckPlayer(Scene scene, LoadSceneMode sceneMode) {
         if(GameObject.FindGameObjectsWithTag("Player").Length == 0) {
             Debug.Log("No Player Found! Respawning");
             spawnPlayer();
@@ -46,6 +50,7 @@ public class PlayerSpawner : MonoBehaviour {
         }
         Debug.Log("Finding Spawn Points");
         _spawnPoints = FindObjectsOfType<SpawnPoint>();
+        Debug.Log(_spawnPoints[0]);
         foreach(SpawnPoint spawn in _spawnPoints) {
             if(spawn.spawnName == currentSpawn.Value){
                 Debug.Log("Spawn Point found, respawning player");

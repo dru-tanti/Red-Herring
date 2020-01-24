@@ -26,25 +26,25 @@ public class PlayerAttack : MonoBehaviour
 	}
     private void Update()
 	{
-        if(Input.GetKeyDown(KeyCode.U)) {
+        if(Input.GetKeyDown(KeyCode.W)) {
 			if(element[0].unlocked.Value == true) {
 				selectedElement.Value = 0; 
 				_anim.changeElement(selectedElement.Value); 
 			} 
 		}
-        if(Input.GetKeyDown(KeyCode.I)) { 
+        if(Input.GetKeyDown(KeyCode.A)) { 
 			if(element[1].unlocked.Value == true) {
 				selectedElement.Value = 1; 
 				_anim.changeElement(selectedElement.Value); 
 			}
 		}
-        if(Input.GetKeyDown(KeyCode.O)) { 
+        if(Input.GetKeyDown(KeyCode.S)) { 
 			if(element[2].unlocked.Value == true){
 				selectedElement.Value = 2; 
 				_anim.changeElement(selectedElement.Value); 
 			}
 		}
-        if(Input.GetKeyDown(KeyCode.P)) { 
+        if(Input.GetKeyDown(KeyCode.D)) { 
 			if(element[3].unlocked.Value == true) {
 				selectedElement.Value = 3;
 				_anim.changeElement(selectedElement.Value); 
