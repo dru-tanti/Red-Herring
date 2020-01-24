@@ -1,32 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Cinemachine;
 //--------------------------------------------------------------------------------------------------------------------------
 // Basic Camera controller for testing purposes.
 //--------------------------------------------------------------------------------------------------------------------------
 
-public class CameraController : MonoBehaviour
-{
-    private Vector2 velocity;
-    public Camera camera;
+public class CameraController : MonoBehaviour {
+    public static CameraController current { get; private set; }
+    private CinemachineVirtualCamera _CM;
 
-    [Header ("Camera Smoothing")]
-    public float smoothTimeY;
-    public float smoothTimeX;
-    public float offset;
+    private GameObject _player;
+    private void Awake() {
+        // Declares the camera as a singleton and makes sure that it is not destoyed on load.
+        if (current == null) {
+            current = this;
+            DontDestroyOnLoad(gameObject);
+        } else {
+            DestroyImmediate(gameObject);
+            return;
+        }
 
-    public GameObject Player;
-
+        // Retrieves a reference to the Cinemachine so that we can give it a reference to the player.
+        _CM = GetComponent<CinemachineVirtualCamera>();
+    }
+    // Sets the player as the transfomr the Cinemachine will follow.
     void Start() {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _CM.m_Follow = _player.transform;
     }
     
-    void FixedUpdate() {
-        // Smoothens the camera movement
-        float posX = Mathf.SmoothDamp(transform.position.x, Player.transform.position.x + offset, ref velocity.x, smoothTimeX);
-        float posY = Mathf.SmoothDamp(transform.position.y, Player.transform.position.y + offset, ref velocity.y, smoothTimeY);    
-
-        transform.position = new Vector3(posX, posY, transform.position.z);
+    // If the player is destoryed, or the camera loses it's reference to it, find the player again.
+    private void Update() {
+        if(_player == null) {
+            _player = GameObject.FindGameObjectWithTag("Player");
+            _CM.m_Follow = _player.transform;
+        }
     }
 }
