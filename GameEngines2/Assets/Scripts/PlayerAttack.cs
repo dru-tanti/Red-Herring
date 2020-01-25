@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
+using UnityEngine.Events;
 
 //--------------------------------------------------------------------------------------------------------------------------
 // Version of the attack script that does not rely on the radial menu.
@@ -18,6 +19,7 @@ public class PlayerAttack : MonoBehaviour
 	public ElementType[] element;
 	private PlayerControl _player;
 	private SpriteRenderer _sprite;
+
 	private void Awake() {
 		_anim = gameObject.GetComponentInParent<PlayerAnimation>();
 		_sprite = gameObject.GetComponentInParent<SpriteRenderer>();
@@ -84,11 +86,13 @@ public class PlayerAttack : MonoBehaviour
 
 	private IEnumerator turnInvisible(float time) {
 		isInvisible.Value = true;
+		TilemapManager.current.showHiddenTiles();
 		while(isInvisible.Value) {
 			_sprite.color = new Color (1f, 1f, 1f, 0.5f);
 			yield return new WaitForSeconds(time);
 			isInvisible.Value = false;
 			_sprite.color = new Color (1f, 1f, 1f, 1f);
+			TilemapManager.current.showHiddenTiles();
 		}
 	}
 

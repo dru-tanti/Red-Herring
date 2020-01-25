@@ -9,22 +9,19 @@ using UnityAtoms;
 // It will also control what effects the terrain will have on the player and vice versa.
 //--------------------------------------------------------------------------------------------------------------------------
 public class TerrainControl : MonoBehaviour {
-    [Header("Tilemap")]
-    public Tilemap tilemap;
-    public Grid grid;
-
     [Header("Player References")]
     // The radius at which we will detect the cells around the player.
     [SerializeField] private float _radius = 1f;
     public float radius { get => _radius; }
 
+
     // Stores the transform behind the player so that we can later restore a dug tile.
     public Vector3 playerBack { get => transform.TransformPoint(Vector3.left * radius); }
-    public Vector3Int backCell { get => tilemap.WorldToCell(playerBack); }
+    public Vector3Int backCell { get => TilemapManager.current.tilemap.WorldToCell(playerBack); }
 
     // Stores the transform above the player so that we can later restore a dug tile.
     public Vector3 playerTop { get => transform.TransformPoint(Vector3.up * radius); }
-    public Vector3Int topCell { get => tilemap.WorldToCell(playerTop); }
+    public Vector3Int topCell { get => TilemapManager.current.tilemap.WorldToCell(playerTop); }
 
     public Transform shotPoint;
     public Transform groundCheck;
@@ -39,27 +36,26 @@ public class TerrainControl : MonoBehaviour {
 
     private void Awake() {
         _player = GetComponent<PlayerControl>();
-        if(grid == null || tilemap == null) findGrid();
         lastActiveScene = currentActiveScene.Value;
     }
     
     void Update() {
         // Finds the cell that is currently occupied by the shotPoint.
-        Vector3Int cellAim = grid.WorldToCell(shotPoint.position);
+        Vector3Int cellAim = TilemapManager.current.grid.WorldToCell(shotPoint.position);
         // Finds the tile in the tilemap that is currently in the cell retrieved above.
-        TileBase tileAim = tilemap.GetTile(cellAim);
+        TileBase tileAim = TilemapManager.current.tilemap.GetTile(cellAim);
 
         // Finds the cell that is currently occupied by the groundCheck.
-        Vector3Int cellStand = grid.WorldToCell(groundCheck.position);
-        TileBase tileStand = tilemap.GetTile(cellStand);
+        Vector3Int cellStand = TilemapManager.current.grid.WorldToCell(groundCheck.position);
+        TileBase tileStand = TilemapManager.current.tilemap.GetTile(cellStand);
 
-        // Finds and stores th cell just above the player.
-        Vector3Int cellTop = grid.WorldToCell(playerTop);
-        TileBase tileTop = tilemap.GetTile(cellTop);
+        // // Finds and stores th cell just above the player.
+        // Vector3Int cellTop = grid.WorldToCell(playerTop);
+        // TileBase tileTop = tilemap.GetTile(cellTop);
 
-        // Finds and stores the cell just behind the player.
-        Vector3Int cellBack = grid.WorldToCell(playerBack);
-        TileBase tileBack = tilemap.GetTile(cellBack);
+        // // Finds and stores the cell just behind the player.
+        // Vector3Int cellBack = grid.WorldToCell(playerBack);
+        // TileBase tileBack = tilemap.GetTile(cellBack);
 
         // Replace any dug tiles above or behind the player.
         // UnDig(cellBack, tileBack, cellTop, tileTop);
@@ -74,11 +70,6 @@ public class TerrainControl : MonoBehaviour {
                 Debug.Log("Ability not yet available");
                 return;
             }
-        }
-
-        if(lastActiveScene != currentActiveScene.Value) {
-            findGrid();
-            lastActiveScene = currentActiveScene.Value;
         }
 
         // Passive abilities should always be active, depending on the current selected element.
@@ -96,11 +87,6 @@ public class TerrainControl : MonoBehaviour {
 
     }
 
-    private void findGrid() {
-        tilemap = GameObject.Find("Tilemap-"+currentActiveScene.Value).GetComponent<Tilemap>();
-        grid = GameObject.Find("Grid-"+currentActiveScene.Value).GetComponent<Grid>();
-    }
-
     private void UseEffect(ElementEffect effect, Vector3Int cellAim, TileBase tileAim) {
         if(effect.willDig) {
             Dig(cellAim, tileAim);
@@ -111,20 +97,20 @@ public class TerrainControl : MonoBehaviour {
     public void Dig(Vector3Int cellAim, TileBase tileAim) {
         if (tileAim is GroundTile && (tileAim as GroundTile).Dug == true) return;
         if (tileAim is GroundTile && (tileAim as GroundTile).Dug == false) {
-            tilemap.SetTile(cellAim, (tileAim as GroundTile).dugVersion);
+            TilemapManager.current.tilemap.SetTile(cellAim, (tileAim as GroundTile).dugVersion);
         }
     }
     
     // If the tile is already dug, set it back to an undug tile when the player gets past it.
-    public void UnDig(Vector3Int cellBack, TileBase tileBack, Vector3Int cellTop, TileBase tileTop) {
-        if(tileBack is GroundTile && (tileBack as GroundTile).Dug == true) {
-            Debug.Log("We Touched the Back!");
-            tilemap.SetTile(cellBack, (tileBack as GroundTile).dugVersion);
-        }
+    // public void UnDig(Vector3Int cellBack, TileBase tileBack, Vector3Int cellTop, TileBase tileTop) {
+    //     if(tileBack is GroundTile && (tileBack as GroundTile).Dug == true) {
+    //         Debug.Log("We Touched the Back!");
+    //         tilemap.SetTile(cellBack, (tileBack as GroundTile).dugVersion);
+    //     }
             
-        if(tileTop is GroundTile && (tileTop as GroundTile).Dug == true) {
-            Debug.Log("We Touched the Top!");
-            tilemap.SetTile(cellTop, (tileTop as GroundTile).dugVersion);
-        }  
-    }
+    //     if(tileTop is GroundTile && (tileTop as GroundTile).Dug == true) {
+    //         Debug.Log("We Touched the Top!");
+    //         tilemap.SetTile(cellTop, (tileTop as GroundTile).dugVersion);
+    //     }  
+    // }
 }

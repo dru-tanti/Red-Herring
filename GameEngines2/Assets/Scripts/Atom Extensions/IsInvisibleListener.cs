@@ -6,21 +6,17 @@ using UnityEngine;
 public class IsInvisibleListener : MonoBehaviour
 {
     [SerializeField]
-    private BoolEvent _event;
+    private BoolEvent _event = null;
 
-
-    void Start()
-    {
+    void Start() {
         _event.Register(OnInvisible);
     }
 
-    void OnDestroy()
-    {
+    void OnDestroy() {
         _event.Unregister(OnInvisible);
     }
 
-    private void OnInvisible(bool isInvisible)
-    {
-        Debug.Log(isInvisible);
+    private void OnInvisible(bool isInvisible) {
+        // Debug.Log(isInvisible);
     }
 }
