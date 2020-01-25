@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ActiveScene_atomS
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _value: SceneLoad1
-  _initialValue: SceneLoad1
-  _oldValue: SceneLoad2
+  _value: SampleScene
+  _initialValue: SampleScene
+  _oldValue: SampleScene
   Changed: {fileID: 0}
   ChangedWithHistory: {fileID: 0}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CurrentSpawn_atomS
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _value: SpawnScene1
-  _initialValue: SpawnScene1
+  _value: Spawn-Start
+  _initialValue: Spawn-Start
   _oldValue: SpawnScene2
   Changed: {fileID: 0}
   ChangedWithHistory: {fileID: 0}
