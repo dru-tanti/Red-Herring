@@ -39,7 +39,7 @@ public class TerrainControl : MonoBehaviour {
 
     private void Awake() {
         _player = GetComponent<PlayerControl>();
-        findGrid();
+        if(grid == null || tilemap == null) findGrid();
         lastActiveScene = currentActiveScene.Value;
     }
     
