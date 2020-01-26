@@ -16,13 +16,9 @@ public class TilemapManager : MonoBehaviour {
     public Grid grid;
 
     // Tiles that will be swapped when the player becomes invisible
-    [SerializeField] private InvisibleTile visible;
-    [SerializeField] private InvisibleTile invisible;
-    [SerializeField] private BoolVariable _isInvisible;
-
-    [Header("Element")]
-	public IntVariable selectedElement;
-    public ElementType[] element;
+    [SerializeField] private InvisibleTile visible = null;
+    [SerializeField] private InvisibleTile invisible = null;
+    [SerializeField] private BoolVariable _isInvisible = null;
 
     private string lastActiveScene = null; // Used to check if the scene has changed.
     [SerializeField] private StringVariable currentActiveScene = null;
@@ -42,6 +38,7 @@ public class TilemapManager : MonoBehaviour {
         lastActiveScene = currentActiveScene.Value;
     }
     void Update() {
+        Debug.Log(_isInvisible);
         // If the scene changes, find the correct Grid and Tilemap.
         if(lastActiveScene != currentActiveScene.Value) {
             grid = GameObject.Find("Grid-"+currentActiveScene.Value).GetComponent<Grid>();

@@ -1434,8 +1434,6 @@ MonoBehaviour:
   visible: {fileID: 11400000, guid: 1ef5d54aa2b8e0a469453e1cf84ecec9, type: 2}
   invisible: {fileID: 11400000, guid: 3f65ce29b40e5c14da6fabbe45a32d2e, type: 2}
   _isInvisible: {fileID: 11400000, guid: 6079edc376c87e042824adf350a7d75b, type: 2}
-  selectedElement: {fileID: 0}
-  element: []
   currentActiveScene: {fileID: 11400000, guid: c4ce6fe15aaaf2a429d74a960bc6aef4, type: 2}
 --- !u!114 &1416770695
 MonoBehaviour:
@@ -1454,7 +1452,7 @@ MonoBehaviour:
   _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1416770690}
         m_MethodName: 
         m_Mode: 1
         m_Arguments:

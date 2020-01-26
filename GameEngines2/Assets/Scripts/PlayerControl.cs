@@ -17,7 +17,7 @@ public partial class PlayerControl : BaseController {
     [Header("Movement Variables")]
     public FloatConstant speed;
     private bool _facingRight = true;
-    private TerrainControl terrain;
+    private PlayerEnvironment terrain;
     public FloatConstant jump;
     public BoolVariable _isInvisible;
     public BoolVariable _isAlive;
@@ -52,7 +52,7 @@ public partial class PlayerControl : BaseController {
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     protected override void Awake() {
         base.Awake();
-        terrain = GetComponent<TerrainControl>();
+        terrain = GetComponent<PlayerEnvironment>();
 
         _isAlive.Value = true;
         // NOTE: FOR TESTING PURPOSES.

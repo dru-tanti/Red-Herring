@@ -8,12 +8,11 @@ using UnityAtoms;
 // Gets the tile that the player is currently touching or aiming at.
 // It will also control what effects the terrain will have on the player and vice versa.
 //--------------------------------------------------------------------------------------------------------------------------
-public class TerrainControl : MonoBehaviour {
+public class PlayerEnvironment : MonoBehaviour {
     [Header("Player References")]
     // The radius at which we will detect the cells around the player.
     [SerializeField] private float _radius = 1f;
     public float radius { get => _radius; }
-
 
     // Stores the transform behind the player so that we can later restore a dug tile.
     public Vector3 playerBack { get => transform.TransformPoint(Vector3.left * radius); }
