@@ -88,15 +88,16 @@ public class PlayerEnvironment : MonoBehaviour {
 
     private void UseEffect(ElementEffect effect, Vector3Int cellAim, TileBase tileAim) {
         if(effect.willDig) {
-            Dig(cellAim, tileAim);
+            Dig(cellAim, tileAim, effect.cooldown);
         }
     }
 
     // If the player is aiming at a diggable tile, replace it with a dug tile.
-    public void Dig(Vector3Int cellAim, TileBase tileAim) {
+    public void Dig(Vector3Int cellAim, TileBase tileAim, float cooldown) {
         if (tileAim is GroundTile && (tileAim as GroundTile).Dug == true) return;
         if (tileAim is GroundTile && (tileAim as GroundTile).Dug == false) {
             TilemapManager.current.tilemap.SetTile(cellAim, (tileAim as GroundTile).dugVersion);
+            StartCoroutine(_player.abilityCoolingdown(_player.cooldowns[selectedElement.Value], cooldown, 1));
         }
     }
     

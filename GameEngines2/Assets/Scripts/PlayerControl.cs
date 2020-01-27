@@ -40,7 +40,6 @@ public partial class PlayerControl : BaseController {
     private float _jumpTimeCounter;
     private bool _isJumping;
 
-    private float _moveX;
     private float _hardLandingTimer; // Used to trigger the hard landing animation.
     private bool _floating;
 
@@ -164,7 +163,7 @@ public partial class PlayerControl : BaseController {
         }
 
         if (effect.willFloat) {
-            HighJump(effect.floatSpeed, effect.floatTime);
+            HighJump(effect.floatSpeed, effect.activeTime);
             StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
         }
     }
