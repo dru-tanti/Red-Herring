@@ -10,8 +10,9 @@ using UnityEngine;
 public abstract class AIBehaviour : BaseController
 {
     public int enemyHealth = 10;
-    public int speed = 5;
+    public float speed = 5f;
     public float pushForce = 4;
+    public bool harmful = false;
 
     // Reduced the enemies health by the amount defined by the projectile.
     public void Damage(int damage) {
@@ -20,12 +21,12 @@ public abstract class AIBehaviour : BaseController
     }
 
     // Triggers the Stun effect.
-    public void Stun(int stunDuration) {
+    public void Stun(float stunDuration) {
         StartCoroutine(StunEnemy(stunDuration));
     }
 
     // Triggers the Freeze effect.
-    public void Freeze(int freezeDuration) {
+    public void Freeze(float freezeDuration) {
         StartCoroutine(FreezeEnemy(freezeDuration));
     }
 
@@ -35,19 +36,22 @@ public abstract class AIBehaviour : BaseController
     }
 
     // Stunned enemies can still damage you if you touch them.
-    private IEnumerator StunEnemy(int stunDuration) {
-        speed = 0;
-        yield return new WaitForSeconds(stunDuration);
-        speed = 5;
+    private IEnumerator StunEnemy(float stunDuration) {
+        float speedtmp = speed;
+        speed = 0f;
+        yield return new WaitForSeconds((int)stunDuration);
+        speed = speedtmp;
     }
 
 
     // Freeze makes the enemies harmless.
-    private IEnumerator FreezeEnemy(int freezeDuration) {
-        speed = 0;
-        Debug.Log("Frozen");
+    private IEnumerator FreezeEnemy(float freezeDuration) {
+        float speedtmp = speed;
+        bool harmfultmp = harmful;
+        speed = 0f;
+        harmful = false;
         yield return new WaitForSeconds(freezeDuration);
-        Debug.Log("Thawed");
-        speed = 5;
+        harmful = harmfultmp;
+        speed = speedtmp;
     }
 }

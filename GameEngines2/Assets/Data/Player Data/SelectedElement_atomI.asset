@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SelectedElement_atomI
   m_EditorClassIdentifier: 
   _developerDescription: Stores the selected element that the player chooses
-  _value: 0
+  _value: 1
   _initialValue: 0
-  _oldValue: 2
-  Changed: {fileID: 0}
+  _oldValue: 0
+  Changed: {fileID: 11400000, guid: c83df43a767bacc42b6f28aa05f80b05, type: 2}
   ChangedWithHistory: {fileID: 0}

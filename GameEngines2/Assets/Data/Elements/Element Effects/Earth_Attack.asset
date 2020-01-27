@@ -13,22 +13,24 @@ MonoBehaviour:
   m_Name: Earth_Attack
   m_EditorClassIdentifier: 
   _projectile: 1
+  _groundEffect: 1
   _willDamage: 0
   _damage: 0
+  _turnInvisible: 0
   _willPush: 0
   _pushForce: 0
   _willFreeze: 0
-  _freezeDuration: 0
   _willStun: 1
-  _stunDuration: 5
-  _invisible: 0
   _immune: 0
   _fog: 0
   _willFloat: 0
-  _floatTime: 0
   _floatSpeed: 0
   _willDig: 0
   _willDash: 0
   _dashForce: 0
-  _dashTime: 0
+  _resistance: 0
+  _wallJump: 0
+  _strength: 0
+  _swim: 0
+  _activeTime: 0
   _cooldown: 4

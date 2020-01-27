@@ -16,10 +16,18 @@ public class TilemapManager : MonoBehaviour {
     public Grid grid;
 
     // Tiles that will be swapped when the player becomes invisible
-    [SerializeField] private InvisibleTile visible = null;
-    [SerializeField] private InvisibleTile invisible = null;
     [SerializeField] private BoolVariable _isInvisible = null;
 
+    [Header("Invisible Tiles")]
+    [SerializeField] private InvisibleTile visible = null;
+    [SerializeField] private InvisibleTile invisible = null;
+
+    [Header("Cloud Tiles")]
+    [SerializeField] private CloudTile _notWalkable = null;
+    [SerializeField] private CloudTile _walkable = null;
+    [SerializeField] private CloudTile _stormy = null;
+
+    public IntVariable selectedElement;
     private string lastActiveScene = null; // Used to check if the scene has changed.
     [SerializeField] private StringVariable currentActiveScene = null;
 
@@ -37,14 +45,38 @@ public class TilemapManager : MonoBehaviour {
         if(!tilemap) tilemap = GameObject.Find("Tilemap-"+currentActiveScene.Value).GetComponent<Tilemap>();
         lastActiveScene = currentActiveScene.Value;
     }
+
     void Update() {
         // If the scene changes, find the correct Grid and Tilemap.
-        if(lastActiveScene != currentActiveScene.Value) {
-            grid = GameObject.Find("Grid-"+currentActiveScene.Value).GetComponent<Grid>();
-            tilemap = GameObject.Find("Tilemap-"+currentActiveScene.Value).GetComponent<Tilemap>();
-            lastActiveScene = currentActiveScene.Value;
+        // if(lastActiveScene != currentActiveScene.Value) {
+        //     grid = GameObject.Find("Grid-"+currentActiveScene.Value).GetComponent<Grid>();
+        //     tilemap = GameObject.Find("Tilemap-"+currentActiveScene.Value).GetComponent<Tilemap>();
+        //     lastActiveScene = currentActiveScene.Value;
+        // }
+    }
+
+    public void setCloudWalkable() {
+        Tile changeTile = (selectedElement.Value == 0) ? _notWalkable : _walkable;
+        Tile newTile = (selectedElement.Value == 0) ? _walkable : _notWalkable;
+        tilemap.SwapTile(changeTile, newTile);
+    }
+
+    public IEnumerator startStrom(Vector3Int position, float changeTime, float activeTime) {
+        yield return new WaitForSeconds(changeTime);
+        tilemap.SetTile(position, _stormy);
+        yield return new WaitForSeconds(activeTime);
+        if(selectedElement.Value == 0) {
+            tilemap.SetTile(position, _walkable);
+        } else {
+            tilemap.SetTile(position, _notWalkable);
         }
     }
+
+    public void findGrid() {
+        grid = GameObject.Find("Grid-"+currentActiveScene.Value).GetComponent<Grid>();
+        tilemap = GameObject.Find("Tilemap-"+currentActiveScene.Value).GetComponent<Tilemap>();
+    }
+
     public void showHiddenTiles() {
         Tile changeTile = (_isInvisible.Value == true) ? invisible : visible;
         Tile newTile = (_isInvisible.Value == true) ? visible: invisible;

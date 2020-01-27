@@ -26,8 +26,7 @@ public class PlayerAttack : MonoBehaviour
 		_player = gameObject.GetComponentInParent<PlayerControl>();
 		checkElements();
 	}
-    private void Update()
-	{
+    private void Update() {
         if(Input.GetKeyDown(KeyCode.W)) {
 			if(element[0].unlocked.Value == true) {
 				selectedElement.Value = 0; 
@@ -68,13 +67,13 @@ public class PlayerAttack : MonoBehaviour
 	}
 
 	private void UseEffect(ElementEffect effect) {
-		if(effect.projectile){
+		if(effect.projectile) {
 			Instantiate(this.projectiles[selectedElement.Value], shotPoint.position, transform.rotation);
 			StartCoroutine(_player.abilityCoolingdown(_player.cooldowns[selectedElement.Value], effect.cooldown, 0));
 		}
 
 		if(effect.turnInvisible) {
-			Invisible(effect.invisibleTime);
+			Invisible(effect.activeTime);
 			StartCoroutine(_player.abilityCoolingdown(_player.cooldowns[selectedElement.Value], effect.cooldown, 0));
 		}
 	}
@@ -86,13 +85,11 @@ public class PlayerAttack : MonoBehaviour
 
 	private IEnumerator turnInvisible(float time) {
 		isInvisible.Value = true;
-		TilemapManager.current.showHiddenTiles();
 		while(isInvisible.Value) {
 			_sprite.color = new Color (1f, 1f, 1f, 0.5f);
 			yield return new WaitForSeconds(time);
 			isInvisible.Value = false;
 			_sprite.color = new Color (1f, 1f, 1f, 1f);
-			TilemapManager.current.showHiddenTiles();
 		}
 	}
 

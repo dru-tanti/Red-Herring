@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 //--------------------------------------------------------------------------------------------------------------------------
 // Controls the projectile and its effects when it spawns.
@@ -21,12 +23,23 @@ public class Projectile : MonoBehaviour
     private Collider2D _collider;
     public ElementType selectedElement;
 
+    public Transform ground;
+    private Vector3Int cellGround;
+    private TileBase tileGround;
     private void Awake() {
         _projectileRB = GetComponent<Rigidbody2D>();
         _collider = GetComponent<Collider2D>();
     }
 
     private void Start() {
+        if (selectedElement != null) {
+            foreach (ElementEffect attackEffect in selectedElement.attackEffects) {
+                UseEffect(attackEffect);
+            }
+        } else {
+            Debug.LogWarning("No element assigned to these particles.");
+        }
+
         // Fire the projectile horizontally in relation to the spawn point.
         _projectileRB.velocity = transform.TransformDirection(Vector2.right) * speed;
         // Destroy this object after a specific amount of time.
@@ -70,11 +83,30 @@ public class Projectile : MonoBehaviour
         }
 
         if (effect.willFreeze) {
-            ai.Freeze(effect.freezeDuration);
+            ai.Freeze(effect.activeTime);
         }
 
         if (effect.willStun) {
-            ai.Stun(effect.stunDuration);
+            ai.Stun(effect.activeTime);
+        }
+    }
+
+    private void UseEffect(ElementEffect effect) {
+        if (effect == null) return;
+        if (effect.groundEffect) {
+            StartCoroutine(checkGround());
+        }
+    }
+
+    private IEnumerator checkGround() {
+        while(true) {
+            cellGround = TilemapManager.current.grid.WorldToCell(ground.position);
+            tileGround = TilemapManager.current.tilemap.GetTile(cellGround);
+            if(tileGround is BreakableTile) {
+                TilemapManager.current.tilemap.SetTile(cellGround, null);
+            }
+
+            yield return new WaitForSeconds(0.1f);
         }
     }
 }
