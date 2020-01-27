@@ -6,7 +6,7 @@ using UnityEditor;
 public class TileUtilityGizmos
 {
     [DrawGizmo(GizmoType.Selected | GizmoType.Active | GizmoType.NonSelected )]
-    static void DrawPlayerCoordinates(TileTest tileScript, GizmoType type)
+    static void DrawPlayerCoordinates(PlayerEnvironment tileScript, GizmoType type)
     {
         Vector3 position = tileScript.transform.position;
         float radius = tileScript.radius;

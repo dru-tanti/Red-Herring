@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e923f3e1c747e1439425aff3512c8a7, type: 3}
+  m_Name: Air
+  m_EditorClassIdentifier: 
+  _attackEffects:
+  - {fileID: 11400000, guid: 6b6c42313d9160a47aaafc1a14481c5b, type: 2}
+  _otherEffects:
+  - {fileID: 11400000, guid: 7de5789f3fa44634099901d2e494a771, type: 2}
+  _passiveEffects: []
+  unlocked: {fileID: 11400000, guid: ee0a6092ffb8f6840ab63f868463a28d, type: 2}
