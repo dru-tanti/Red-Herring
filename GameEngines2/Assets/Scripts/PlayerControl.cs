@@ -24,8 +24,22 @@ public class PlayerControl : MonoBehaviour
     private float _jumpTimeCounter;
     public float jumpTime;
     private bool _isJumping;
+<<<<<<< Updated upstream
     private float _moveX;
 
+=======
+    private float _hardLandingTimer; // Used to trigger the hard landing animation.
+    private bool _floating;
+
+    [Header("Element")]
+	public IntVariable selectedElement;
+    public ElementType[] element;
+    public ElementCooldown[] cooldowns;
+
+    [SerializeField] private GameObject shield = null;
+    private Coroutine _highJumpCoroutine;
+    private Coroutine _shieldBubble;
+>>>>>>> Stashed changes
     // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     private void Awake() 
     {
@@ -109,4 +123,106 @@ public class PlayerControl : MonoBehaviour
         
         transform.Rotate(0f, 180f, 0f);
     }
+<<<<<<< Updated upstream
+=======
+
+    // Triggers different methods depending on the effects active.
+    private void UseEffect(ElementEffect effect) {
+        if (effect == null) return;
+
+        if (effect.willDash && !_dashing) {
+            Dash(effect.dashForce, effect.activeTime);
+            StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
+        }
+
+        if (effect.immune) {
+            Immune(effect.activeTime);
+            StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
+
+        }
+
+        if (effect.willFloat) {
+            HighJump(effect.floatSpeed, effect.activeTime);
+            StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
+        }
+    }
+
+    // Applies a force in the direction the player is facing.
+    void Dash(float dashForce, float dashTime) {
+        if(_dashing == true) return;
+        StartCoroutine(Dashing(dashForce, dashTime));
+    }
+
+    // Applies the dash force and stops the player from moving while dash is active.
+    private IEnumerator Dashing(float dashForce, float dashTime) {
+        _dashing = true;
+        while(_dashing) {
+            Gravity(0f);
+            _rb.velocity = (_facingRight) ? Vector2.right * dashForce : Vector2.left * dashForce;
+            yield return new WaitForSeconds(dashTime);
+            _dashing = false;
+            Gravity(1f);
+        }
+    }
+
+    void Immune(float activeTime) {
+        if(!shield.activeSelf) _shieldBubble = StartCoroutine(spawnShield(activeTime));
+        else StopCoroutine(_shieldBubble);
+    }
+
+    // Lets the player float upwards. If the player moves, the float is cancelled.
+    void HighJump(float floatSpeed, float floatTime) {
+        if(!_floating) _highJumpCoroutine = StartCoroutine(Floating(floatSpeed, floatTime));
+        else StopCoroutine(_highJumpCoroutine);
+    }
+
+    private IEnumerator Floating(float floatSpeed, float floatTime) {
+        _floating = true;
+        while(_floating) {
+            Gravity(floatSpeed);
+            yield return new WaitForSeconds(floatTime);
+            _floating = false;
+            Gravity(1f);
+        }
+    }
+
+    // Sets an ability as not available for a specified time.
+    public IEnumerator abilityCoolingdown(ElementCooldown cooldowns, float cooldownTime, int index) {
+        cooldowns.abilityAvailable[index].Value = false;
+        yield return new WaitForSeconds(cooldownTime);
+        cooldowns.abilityAvailable[index].Value = true;
+    }
+
+    public IEnumerator spawnShield(float activeTime) {
+        shield.SetActive(true);
+        yield return new WaitForSeconds (activeTime);
+    }
+
+    // NOTE: Mainly for Testing Purposes
+    // Will be used to manually reset the elements at the start of the game
+    public void resetElements() {
+        element[0].unlocked.Value = false;
+        element[1].unlocked.Value = false;
+        element[3].unlocked.Value = false;
+        for(int x = 0; x < cooldowns.Length; x++) {
+            for(int y = 0; y < cooldowns[x].abilityAvailable.Length; y++) {
+                cooldowns[x].abilityAvailable[y].Value = false;
+            }
+        }
+        cooldowns[2].abilityAvailable[0].Value = true;
+    }
+
+    // Unlocks all the elements for testin purposes.
+    public void unlockElements() {
+        element[0].unlocked.Value = true;
+        element[1].unlocked.Value = true;
+        element[3].unlocked.Value = true;
+        for(int x = 0; x < cooldowns.Length; x++) {
+            for(int y = 0; y < cooldowns[x].abilityAvailable.Length; y++) {
+                cooldowns[x].abilityAvailable[y].Value = true;
+            }
+        }
+        cooldowns[2].abilityAvailable[0].Value = true;
+    }
+>>>>>>> Stashed changes
 }
