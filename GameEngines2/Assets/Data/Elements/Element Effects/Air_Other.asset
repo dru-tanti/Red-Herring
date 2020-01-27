@@ -26,6 +26,7 @@ MonoBehaviour:
   _immune: 0
   _fog: 0
   _willFloat: 1
+  _floatTime: 2
   _floatSpeed: -3
   _willDig: 0
   _willDash: 0

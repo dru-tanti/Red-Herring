@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //--------------------------------------------------------------------------------------------------------------------------
-// Will define what certain enemies can do.
+// Scriptable object that will be used to manage enemy behaviour.
 //-------------------------------------------------------------------------------------------------------------------------- 
 
 [CreateAssetMenu(menuName = "Game/AI Behaviour", fileName = "AI Behaviour")]

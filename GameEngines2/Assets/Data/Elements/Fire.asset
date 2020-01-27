@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e923f3e1c747e1439425aff3512c8a7, type: 3}
   m_Name: Fire
   m_EditorClassIdentifier: 
-  _effects:
+  _attackEffects:
   - {fileID: 11400000, guid: 77cc9759b5ec18147bf75de109de1c4c, type: 2}
+  _otherEffects:
+  - {fileID: 11400000, guid: ba500062d75ed38478064d17bbb20f29, type: 2}
+  _passiveEffects: []
+  unlocked: {fileID: 11400000, guid: e2128198da9f0e443bb9fc11a067b76c, type: 2}

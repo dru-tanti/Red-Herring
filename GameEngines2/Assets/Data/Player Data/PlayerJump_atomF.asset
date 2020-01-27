@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerJump_atomF
   m_EditorClassIdentifier: 
   _developerDescription: The jump force that will be applied to the player
-  _value: 15
+  _value: 12

@@ -15,6 +15,6 @@ MonoBehaviour:
   _developerDescription: Determines if the player is invisible or not
   _value: 0
   _initialValue: 0
-  _oldValue: 0
-  Changed: {fileID: 0}
+  _oldValue: 1
+  Changed: {fileID: 11400000, guid: a7487f2e8314a95428f2fa51c557d1df, type: 2}
   ChangedWithHistory: {fileID: 0}

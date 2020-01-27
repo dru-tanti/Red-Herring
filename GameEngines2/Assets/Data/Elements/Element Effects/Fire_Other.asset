@@ -15,8 +15,6 @@ MonoBehaviour:
   _projectile: 0
   _willDamage: 0
   _damage: 0
-  _turnInvisible: 0
-  _invisibleTime: 0
   _willPush: 0
   _pushForce: 0
   _willFreeze: 0
