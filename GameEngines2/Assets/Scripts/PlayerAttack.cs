@@ -94,13 +94,14 @@ public class PlayerAttack : MonoBehaviour
 				Vector3Int pos = new Vector3Int(slamRange.position.x + x, slamRange.position.y + y, 0);
 				TileBase tile = TilemapManager.current.tilemap.GetTile(pos);
 				if (tile is BreakableTile) {
-					TilemapManager.current.tilemap.SetTile(pos, null);
+					TilemapManager.current.
+					tilemap.SetTile(pos, null);
 				}
 			}
 		}
 		// Debug.Log(slamRange);
 	 	// TileBase[] tileArray = TilemapManager.current.tilemap.GetTilesBlock(slamRange);
-		//  Debug.Log(TilemapManager.current.tilemap.gameObject.name);
+		// Debug.Log(TilemapManager.current.tilemap.gameObject.name);
 		// TilemapManager.current.destroyTile(tileArray);
 	}
 	

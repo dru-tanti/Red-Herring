@@ -48,7 +48,6 @@ public class TilemapManager : MonoBehaviour {
 
     // public void destroyTile(Vector3Int[] tiles) {
     //     for(int i = 1; i < tiles.Length; i++) {
-            
     //         Debug.Log(tilemap.GetTile(tiles[i]));
     //         // if(tiles[i] is BreakableTile) {
     //         //     tilemap.SetTile(tiles[i], null);
