@@ -4,35 +4,58 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-  public float speed;
-  public float distance;
+    private bool isAttacking = false;
+    public float speed;
+    private bool moveRight = true;
+    public Transform patrolStart;
+    public Transform patrolEnd;
+    private Vector2 target;
 
-  private bool movingRight = true;
 
-  public Transform groundDetection;
-
- // Makes Enemy Patrol: If the groundDection does not detect ground, the enemy will flip and move the other way
-  void FixedUpdate()
-  {
-    transform.Translate(Vector2.right * speed * Time.deltaTime);
-    RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
-     if(groundInfo.collider == false){
-         if(movingRight == true){
-             transform.eulerAngles = new Vector3(0, -180, 0);
-             movingRight = false;
-         } else {
-             transform.eulerAngles = new Vector3(0, 0, 0);
-             movingRight = true;
-         }
+    private void Start()
+    {
+        target = new Vector2(patrolEnd.position.x, patrolEnd.position.y);
+    }
+    void Update()
+    {
+        // If enemy is not in attack mode, it will continue to patrol
+        if(!isAttacking)
+        {
+            Patrol();
         }
- }
-  
-// If enemy collides with player, it deals damage (Debug Log is displayed for now)
- void OnTriggerEnter2D(Collider2D collider)
- {
-     if(collider.tag == "Player")
+    }
+// Patrolling with points set in Unity
+    void Patrol()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        if (transform.position.x == target.x && transform.position.y == target.y)
+        {
+            if(moveRight)
+                {
+                    target = new Vector2(patrolStart.position.x, patrolStart.position.y);
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
+                    moveRight = false;
+                } else {
+                    target = new Vector2(patrolEnd.position.x, patrolEnd.position.y);
+                    transform.localScale = new Vector3(1f, 1f, 1f);
+                    moveRight = true;
+                }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider) 
+    {
+        if(collider.tag == "Player")
      {
          Debug.Log("Dealing Damage");
      }
- }
+    }
+    
+    void OnTriggerExit2D(Collider2D other) 
+    {
+        if(other.tag == "Player")
+        {
+            isAttacking = false;
+        }    
+    }
 }

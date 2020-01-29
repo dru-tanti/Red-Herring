@@ -51,12 +51,7 @@ public class EnemyCharging : MonoBehaviour
          Debug.Log("Charging");
      }
     }
-
-    void Charge()
-    {
-       charging = speed * 2;
-    }
-
+    
     void OnTriggerExit2D(Collider2D other) 
     {
         if(other.tag == "Player")
