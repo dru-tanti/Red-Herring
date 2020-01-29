@@ -87,22 +87,16 @@ public class PlayerAttack : MonoBehaviour
 		}
 	}
 
-	private void groundSlam(BoundsInt slamRange)
-	{
+	private void groundSlam(BoundsInt slamRange) {
 		for(int x=0; x < slamRange.size.x; x++) {
 			for(int y=0; y < slamRange.size.y; y++) {
 				Vector3Int pos = new Vector3Int(slamRange.position.x + x, slamRange.position.y + y, 0);
 				TileBase tile = TilemapManager.current.tilemap.GetTile(pos);
 				if (tile is BreakableTile) {
-					TilemapManager.current.
-					tilemap.SetTile(pos, null);
+					TilemapManager.current.tilemap.SetTile(pos, null);
 				}
 			}
 		}
-		// Debug.Log(slamRange);
-	 	// TileBase[] tileArray = TilemapManager.current.tilemap.GetTilesBlock(slamRange);
-		// Debug.Log(TilemapManager.current.tilemap.gameObject.name);
-		// TilemapManager.current.destroyTile(tileArray);
 	}
 	
 	private void Invisible(float invisibleTime) {
@@ -133,10 +127,12 @@ public class PlayerAttack : MonoBehaviour
 	
 	private void OnDrawGizmos() {
 		if (shotPoint != null) {
+			// Draws a crosshair on the shotpoint
 			Gizmos.color = Color.blue;
 			Gizmos.DrawWireSphere(shotPoint.position, 0.5f);
 		}
 
+		// Draws a box around the player to show the range of the ground slam/
 		Gizmos.color = Color.blue;
 		Gizmos.DrawWireCube(slamRange.center, slamRange.size);
 	}

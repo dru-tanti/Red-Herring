@@ -64,12 +64,10 @@ public class Projectile : MonoBehaviour
                 Debug.LogWarning("No element assigned to these particles.");
             }
             enabled = false;
-        }    
+        }
     }
 
-    // @param ai The AI agent that the projectile has hit.
-    // @param effect The effect of the selected element of the projectile. 
-    // Defines what properties will trigger which functions in the AIBehaviour script.
+    // Will trigger the effects in the AIBehaviour Script
     private void UseEffect(AIBehaviour ai, ElementEffect effect) {
         if (effect == null) return;
 
@@ -91,6 +89,20 @@ public class Projectile : MonoBehaviour
         }
     }
 
+
+    // Will handle other effects in the 
+    private void UseEffect(ElementEffect effect) {
+        if (effect == null) return;
+
+        if (effect.willDamage) {
+            BurnVines(effect.damage);
+        }
+
+        if (effect.willFreeze) {
+            FreezeGround(effect.activeTime);
+        }
+    }
+
     private void UseEffect(ElementEffect effect) {
         if (effect == null) return;
         if (effect.groundEffect) {
@@ -98,12 +110,12 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    private IEnumerator checkGround() {
+    private IEnumerator checkGround(float activeTime) {
         while(true) {
             cellGround = TilemapManager.current.grid.WorldToCell(ground.position);
             tileGround = TilemapManager.current.tilemap.GetTile(cellGround);
-            if(tileGround is BreakableTile) {
-                TilemapManager.current.tilemap.SetTile(cellGround, null);
+            if(tileGround is GroundTile) {
+                StartCoroutine(TilemapManager.current.freezeTile(cellGround, activeTime));
             }
 
             yield return new WaitForSeconds(0.1f);
