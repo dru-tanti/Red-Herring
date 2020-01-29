@@ -19,10 +19,10 @@ public class EnemyPatrol : MonoBehaviour
     void Update()
     {
         // If enemy is not in attack mode, it will continue to patrol
-        if(!isAttacking)
-        {
-            Patrol();
-        }
+       if(!isAttacking)
+       {
+          Patrol();
+       }
     }
 // Patrolling with points set in Unity
     void Patrol()
@@ -46,9 +46,9 @@ public class EnemyPatrol : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider) 
     {
         if(collider.tag == "Player")
-     {
-         Debug.Log("Dealing Damage");
-     }
+        {
+            Debug.Log("Dealing Damage");
+        }
     }
     
     void OnTriggerExit2D(Collider2D other) 

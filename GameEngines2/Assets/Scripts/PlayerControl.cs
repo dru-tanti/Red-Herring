@@ -14,6 +14,10 @@ public class PlayerControl : MonoBehaviour
     public FloatConstant jump;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
+    private float pushForce = 4f;
+    public float pushTime = 2f;
+    private float pushMultiplier = 1f;
+    private bool _knockback;
 
     [Header("Jump Variables")]
     private bool _grounded = false;
@@ -35,7 +39,7 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-        Jump();
+        if(!_knockback) Jump();
     }
 
     private void FixedUpdate() 
@@ -49,7 +53,7 @@ public class PlayerControl : MonoBehaviour
         } else if(_playerRB.velocity.y > 0 && !Input.GetButton("Jump")) {
             _playerRB.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
-        Move();
+        if(!_knockback) Move();
     }
 
     void Jump()
@@ -109,4 +113,21 @@ public class PlayerControl : MonoBehaviour
         
         transform.Rotate(0f, 180f, 0f);
     }
+
+   
+    // Applies a force in the direction the player is facing.
+    public void Push(float direction, float pushForce) {
+        if(_knockback == true) return;
+        StartCoroutine(Pushing(pushForce, pushTime, direction));
+    }
+    // Applies the dash force and stops the player from moving while dash is active.
+    private IEnumerator Pushing(float pushForce, float pushTime, float direction) {
+        _knockback = true;
+        while(_knockback) {
+            _playerRB.AddForce(Vector2.left * direction  * pushForce * pushMultiplier, ForceMode2D.Impulse);
+            yield return new WaitForSeconds(pushTime);
+            _knockback= false;
+        }
+    }
+
 }
