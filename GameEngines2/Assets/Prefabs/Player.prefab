@@ -181,15 +181,14 @@ MonoBehaviour:
   elementsUnlocked: 1
   speed: {fileID: 11400000, guid: 440a71e053492704c9c9d69ca3c9a2c6, type: 2}
   jump: {fileID: 11400000, guid: 7e8265b32854625488d57ad042fc9320, type: 2}
-  _isInvisible: {fileID: 0}
   _isAlive: {fileID: 11400000, guid: 87009c5e705bec24191c2a109a6de4f7, type: 2}
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 3
   groundCheck: {fileID: 978995836103867417}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
   jumpTime: 0.2
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 3
   _grounded: 0
   selectedElement: {fileID: 11400000, guid: 5c42e8df52b4c7b4ebea0f9e08141d8c, type: 2}
   element:
@@ -210,6 +209,8 @@ MonoBehaviour:
   - abilityAvailable:
     - {fileID: 11400000, guid: 0ebac86e35c54dd4195508d2729362d7, type: 2}
     - {fileID: 11400000, guid: 637693f4ddd7e2d46878ae2636c987f5, type: 2}
+  shield: {fileID: 0}
+  _isInvisible: {fileID: 0}
 --- !u!114 &978995836279041750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,18 +223,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b83634531e7d34290f256a77844b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
-  grid: {fileID: 0}
-  _radius: 2
+  cellAim: {x: 0, y: 0, z: 0}
+  tileAim: {fileID: 0}
+  cellStand: {x: 0, y: 0, z: 0}
+  tileStand: {fileID: 0}
   shotPoint: {fileID: 978995837479754296}
   groundCheck: {fileID: 978995836103867417}
-  selectedElement: {fileID: 11400000, guid: 5c42e8df52b4c7b4ebea0f9e08141d8c, type: 2}
-  element:
-  - {fileID: 11400000, guid: 7b8dc18c4bbfe604b817126ab6c69cb3, type: 2}
-  - {fileID: 11400000, guid: 87260a0687a4e304dacb6e1e985ee95d, type: 2}
-  - {fileID: 11400000, guid: e0c2e9a785e4fa148ab0aafcb109bc6c, type: 2}
-  - {fileID: 11400000, guid: b2710b6d0f09ea04e8d01e1743662fec, type: 2}
-  currentActiveScene: {fileID: 11400000, guid: c4ce6fe15aaaf2a429d74a960bc6aef4, type: 2}
 --- !u!114 &978995836279041745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +323,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 87260a0687a4e304dacb6e1e985ee95d, type: 2}
   - {fileID: 11400000, guid: e0c2e9a785e4fa148ab0aafcb109bc6c, type: 2}
   - {fileID: 11400000, guid: b2710b6d0f09ea04e8d01e1743662fec, type: 2}
+  slamRange:
+    m_Position: {x: 1, y: 1, z: 0}
+    m_Size: {x: 10, y: 4, z: 0}
+  offset: {x: -4, y: -2, z: 0}
 --- !u!1 &978995837479754297
 GameObject:
   m_ObjectHideFlags: 0

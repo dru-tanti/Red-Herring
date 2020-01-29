@@ -39,7 +39,7 @@ public abstract class AIBehaviour : BaseController
     private IEnumerator StunEnemy(float stunDuration) {
         float speedtmp = speed;
         speed = 0f;
-        yield return new WaitForSeconds((int)stunDuration);
+        yield return new WaitForSeconds(stunDuration);
         speed = speedtmp;
     }
 

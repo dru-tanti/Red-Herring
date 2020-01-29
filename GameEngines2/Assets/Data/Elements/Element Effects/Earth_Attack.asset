@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6954593f7a46bad46900b7fa9a69d5af, type: 3}
   m_Name: Earth_Attack
   m_EditorClassIdentifier: 
-  _projectile: 1
+  _projectile: 0
   _groundEffect: 1
   _willDamage: 0
   _damage: 0

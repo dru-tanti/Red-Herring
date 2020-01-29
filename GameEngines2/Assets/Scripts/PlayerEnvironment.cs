@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityAtoms;
 
-//--------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------
 // Gets the tile that the player is currently touching or aiming at.
-//--------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------
 public class PlayerEnvironment : MonoBehaviour {
     [Header("Player References")]
     [HideInInspector] public Vector3Int cellAim;

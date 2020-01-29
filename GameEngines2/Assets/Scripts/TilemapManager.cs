@@ -46,14 +46,15 @@ public class TilemapManager : MonoBehaviour {
         lastActiveScene = currentActiveScene.Value;
     }
 
-    void Update() {
-        // If the scene changes, find the correct Grid and Tilemap.
-        // if(lastActiveScene != currentActiveScene.Value) {
-        //     grid = GameObject.Find("Grid-"+currentActiveScene.Value).GetComponent<Grid>();
-        //     tilemap = GameObject.Find("Tilemap-"+currentActiveScene.Value).GetComponent<Tilemap>();
-        //     lastActiveScene = currentActiveScene.Value;
-        // }
-    }
+    // public void destroyTile(Vector3Int[] tiles) {
+    //     for(int i = 1; i < tiles.Length; i++) {
+            
+    //         Debug.Log(tilemap.GetTile(tiles[i]));
+    //         // if(tiles[i] is BreakableTile) {
+    //         //     tilemap.SetTile(tiles[i], null);
+    //         // }
+    //     }
+    // }
 
     public void setCloudWalkable() {
         Tile changeTile = (selectedElement.Value == 0) ? _notWalkable : _walkable;

@@ -13,8 +13,10 @@ public class ElementEffect : ScriptableObject
     [Header("Attack Effects")]
     [SerializeField] private bool _projectile = false;
     public bool projectile { get => _projectile; }
+
     [SerializeField] private bool _groundEffect = false;
     public bool groundEffect { get => _groundEffect; }
+
     [SerializeField] private bool _willDamage = false;
     public bool willDamage { get => _willDamage; }
 

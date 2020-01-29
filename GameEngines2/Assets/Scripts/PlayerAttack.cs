@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Tilemaps;
 
 //--------------------------------------------------------------------------------------------------------------------------
 // Version of the attack script that does not rely on the radial menu.
@@ -19,7 +20,8 @@ public class PlayerAttack : MonoBehaviour
 	public ElementType[] element;
 	private PlayerControl _player;
 	private SpriteRenderer _sprite;
-
+	public BoundsInt slamRange;
+	public Vector3Int offset;
 	private void Awake() {
 		_anim = gameObject.GetComponentInParent<PlayerAnimation>();
 		_sprite = gameObject.GetComponentInParent<SpriteRenderer>();
@@ -27,28 +29,30 @@ public class PlayerAttack : MonoBehaviour
 		checkElements();
 	}
     private void Update() {
-        if(Input.GetKeyDown(KeyCode.W)) {
+		slamRange.position = TilemapManager.current.grid.WorldToCell(_player.transform.position) + offset;
+        
+		if(Input.GetKeyDown(KeyCode.W)) {
 			if(element[0].unlocked.Value == true) {
-				selectedElement.Value = 0; 
-				_anim.changeElement(selectedElement.Value); 
+				selectedElement.Value = 0;
+				_anim.changeElement(selectedElement.Value);
 			} 
 		}
         if(Input.GetKeyDown(KeyCode.A)) { 
 			if(element[1].unlocked.Value == true) {
-				selectedElement.Value = 1; 
-				_anim.changeElement(selectedElement.Value); 
+				selectedElement.Value = 1;
+				_anim.changeElement(selectedElement.Value);
 			}
 		}
         if(Input.GetKeyDown(KeyCode.S)) { 
 			if(element[2].unlocked.Value == true){
-				selectedElement.Value = 2; 
-				_anim.changeElement(selectedElement.Value); 
+				selectedElement.Value = 2;
+				_anim.changeElement(selectedElement.Value);
 			}
 		}
         if(Input.GetKeyDown(KeyCode.D)) { 
 			if(element[3].unlocked.Value == true) {
 				selectedElement.Value = 3;
-				_anim.changeElement(selectedElement.Value); 
+				_anim.changeElement(selectedElement.Value);
 			}
 		}
 
@@ -76,6 +80,28 @@ public class PlayerAttack : MonoBehaviour
 			Invisible(effect.activeTime);
 			StartCoroutine(_player.abilityCoolingdown(_player.cooldowns[selectedElement.Value], effect.cooldown, 0));
 		}
+
+		if(effect.groundEffect) {
+			groundSlam(this.slamRange);
+			StartCoroutine(_player.abilityCoolingdown(_player.cooldowns[selectedElement.Value], effect.cooldown, 0));	
+		}
+	}
+
+	private void groundSlam(BoundsInt slamRange)
+	{
+		for(int x=0; x < slamRange.size.x; x++) {
+			for(int y=0; y < slamRange.size.y; y++) {
+				Vector3Int pos = new Vector3Int(slamRange.position.x + x, slamRange.position.y + y, 0);
+				TileBase tile = TilemapManager.current.tilemap.GetTile(pos);
+				if (tile is BreakableTile) {
+					TilemapManager.current.tilemap.SetTile(pos, null);
+				}
+			}
+		}
+		// Debug.Log(slamRange);
+	 	// TileBase[] tileArray = TilemapManager.current.tilemap.GetTilesBlock(slamRange);
+		//  Debug.Log(TilemapManager.current.tilemap.gameObject.name);
+		// TilemapManager.current.destroyTile(tileArray);
 	}
 	
 	private void Invisible(float invisibleTime) {
@@ -96,7 +122,7 @@ public class PlayerAttack : MonoBehaviour
 	// Finds the first unlocked element, and sets that as the current active.
 	private void checkElements() {
 		for(int i = 0; i < element.Length; i++) {
-			if(element[i].unlocked.Value == true){
+			if(element[i].unlocked.Value == true) {
 				selectedElement.Value = i;
 				_anim.changeElement(i);
 				return;
@@ -109,5 +135,8 @@ public class PlayerAttack : MonoBehaviour
 			Gizmos.color = Color.blue;
 			Gizmos.DrawWireSphere(shotPoint.position, 0.5f);
 		}
+
+		Gizmos.color = Color.blue;
+		Gizmos.DrawWireCube(slamRange.center, slamRange.size);
 	}
 }
