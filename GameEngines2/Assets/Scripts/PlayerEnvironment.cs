@@ -33,8 +33,12 @@ public class PlayerEnvironment : MonoBehaviour {
         tileStand = TilemapManager.current.tilemap.GetTile(cellStand);
 
         // If the player is currently standing on a hazard, deal damage.
-        if (tileStand is HazardTile) {
+        if (tileStand is HazardTile && !(tileStand as HazardTile).lava) {
             Debug.Log("Ouch");
+        }
+
+        if(tileStand is HazardTile && (tileStand as HazardTile).lava && !_player._lavaResistant) {
+            Debug.Log("You are drowning in Lava");
         }
 
         if(tileStand is CloudTile && (tileStand as CloudTile).walkable == true) {

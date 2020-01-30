@@ -72,12 +72,12 @@ public class TilemapManager : MonoBehaviour {
         }
     }
 
-    public IEnumerator freezeTile(Vector3Int position, float activeTime) {
-        TileBase tiletmp = tilemap.GetTile(cellGround);
-        tilemap.SetTile(position, _frozen);
-        yield return new WaitForSeconds(activeTime);
-        tilemap.SetTile(position, tiletmp);
-    }
+    // public IEnumerator freezeTile(Vector3Int position, float activeTime) {
+    //     TileBase tiletmp = tilemap.GetTile(cellGround);
+    //     tilemap.SetTile(position, _frozen);
+    //     yield return new WaitForSeconds(activeTime);
+    //     tilemap.SetTile(position, tiletmp);
+    // }
 
     public void findGrid() {
         grid = GameObject.Find("Grid-"+currentActiveScene.Value).GetComponent<Grid>();

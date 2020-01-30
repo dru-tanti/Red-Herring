@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: d03e70d0b7b8d8d4990e54d27d2be576
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1285001677584123522
+    second: Tree_Twigs_0
+  - first:
+      213: 7931916259327441904
+    second: Tree_Twigs_1
+  - first:
+      213: -2901861221528072250
+    second: Tree_Twigs_2
+  - first:
+      213: 4153744405152786321
+    second: Tree_Twigs_3
+  - first:
+      213: 6927720866718302801
+    second: Tree_Twigs_4
+  - first:
+      213: -5132773838446556337
+    second: Tree_Twigs_5
+  - first:
+      213: 5269046396353234873
+    second: Tree_Twigs_6
+  - first:
+      213: -2912075681724264974
+    second: Tree_Twigs_7
+  - first:
+      213: -1640811977275279121
+    second: Tree_Twigs_8
+  - first:
+      213: -1924635951445323800
+    second: Tree_Twigs_9
+  - first:
+      213: -293478032047436677
+    second: Tree_Twigs_10
+  - first:
+      213: 5144748278187142550
+    second: Tree_Twigs_11
+  - first:
+      213: -640454356588745687
+    second: Tree_Twigs_12
+  - first:
+      213: -8152381162428166376
+    second: Tree_Twigs_13
+  - first:
+      213: -7214691366005295909
+    second: Tree_Twigs_14
+  - first:
+      213: 3154155397573172719
+    second: Tree_Twigs_15
+  - first:
+      213: 5964341871438455876
+    second: Tree_Twigs_16
+  - first:
+      213: -7919615639074834281
+    second: Tree_Twigs_17
+  - first:
+      213: 5299891216106596775
+    second: Tree_Twigs_18
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tree_Twigs_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 462
+        width: 194
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d56a129a1344c44a84005c21019f45
+      internalID: 1285001677584123522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 776
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79b0f92a47753b49a6c2ba825471d5d
+      internalID: 7931916259327441904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 776
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d0ed9a1ab46e54a9c87a228fa1b4f5
+      internalID: -2901861221528072250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 776
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109ce5f683407834fbd7cd82aa2d307e
+      internalID: 4153744405152786321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_4
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 776
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd820832d5a38544b82d142375688e0
+      internalID: 6927720866718302801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_5
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 776
+        width: 73
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007cc503f04ece442ac237af7420c8fc
+      internalID: -5132773838446556337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_6
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 776
+        width: 8
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eabf549e88e6af4aa1698a3a9ee1816
+      internalID: 5269046396353234873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_7
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 775
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd2b161554cce8408bd2a9747ed7f4f
+      internalID: -2912075681724264974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_8
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 775
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4911148b19e9b7247add921092a096e2
+      internalID: -1640811977275279121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_9
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 451
+        width: 179
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf27c0c386ce0c04199b96194d04bf4a
+      internalID: -1924635951445323800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_10
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 437
+        width: 74
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea38ef2b5cd6b824aa4c5cc1b2a341f2
+      internalID: -293478032047436677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_11
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 452
+        width: 79
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88a88bc2dc03ad4782e1a85406e338e
+      internalID: 5144748278187142550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_12
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 452
+        width: 123
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec57321332e3424ca4beab5fe130241
+      internalID: -640454356588745687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_13
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 452
+        width: 70
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4b9d1f1dc2dba49b7193b511859867
+      internalID: -8152381162428166376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_14
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 451
+        width: 71
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd12f3e962f2854ab6b731a61efcaca
+      internalID: -7214691366005295909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_15
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 57
+        width: 151
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d4e2c1d98086548a2e7a5d364f26ce
+      internalID: 3154155397573172719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_16
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 57
+        width: 243
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3940d3239d7cad6498cf385f704e9e67
+      internalID: 5964341871438455876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_17
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 34
+        width: 174
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f202267c2030a14d810bc7c8c458e82
+      internalID: -7919615639074834281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Twigs_18
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 50
+        width: 225
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31c06241a330df4c8a6b0e0156854dd
+      internalID: 5299891216106596775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,22 +13,24 @@ MonoBehaviour:
   m_Name: Water_Attack
   m_EditorClassIdentifier: 
   _projectile: 1
+  _groundEffect: 0
   _willDamage: 0
   _damage: 0
+  _turnInvisible: 0
   _willPush: 0
   _pushForce: 0
   _willFreeze: 1
-  _freezeDuration: 2
   _willStun: 0
-  _stunDuration: 0
-  _invisible: 0
   _immune: 0
   _fog: 0
   _willFloat: 0
-  _floatTime: 0
   _floatSpeed: 0
   _willDig: 0
   _willDash: 0
   _dashForce: 0
-  _dashTime: 0
+  _resistance: 0
+  _wallJump: 0
+  _strength: 0
+  _swim: 0
+  _activeTime: 4
   _cooldown: 7

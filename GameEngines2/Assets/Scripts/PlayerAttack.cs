@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
 	public ElementType[] element;
 	private PlayerControl _player;
 	private SpriteRenderer _sprite;
-	public BoundsInt slamRange;
+	public BoundsInt slamRange; // Will be used to find breakable tiles within this range
 	public Vector3Int offset;
 	private void Awake() {
 		_anim = gameObject.GetComponentInParent<PlayerAnimation>();
@@ -35,24 +35,36 @@ public class PlayerAttack : MonoBehaviour
 			if(element[0].unlocked.Value == true) {
 				selectedElement.Value = 0;
 				_anim.changeElement(selectedElement.Value);
+				foreach(ElementEffect passiveEffects in this.element[selectedElement.Value].passiveEffects) {
+					_player.setPassive(passiveEffects);	
+				}
 			} 
 		}
         if(Input.GetKeyDown(KeyCode.A)) { 
 			if(element[1].unlocked.Value == true) {
 				selectedElement.Value = 1;
 				_anim.changeElement(selectedElement.Value);
+				foreach(ElementEffect passiveEffects in this.element[selectedElement.Value].passiveEffects) {
+					_player.setPassive(passiveEffects);	
+				}			
 			}
 		}
         if(Input.GetKeyDown(KeyCode.S)) { 
 			if(element[2].unlocked.Value == true){
 				selectedElement.Value = 2;
 				_anim.changeElement(selectedElement.Value);
+				foreach(ElementEffect passiveEffects in this.element[selectedElement.Value].passiveEffects) {
+					_player.setPassive(passiveEffects);	
+				}			
 			}
 		}
         if(Input.GetKeyDown(KeyCode.D)) { 
 			if(element[3].unlocked.Value == true) {
 				selectedElement.Value = 3;
 				_anim.changeElement(selectedElement.Value);
+				foreach(ElementEffect passiveEffects in this.element[selectedElement.Value].passiveEffects) {
+					_player.setPassive(passiveEffects);	
+				}			
 			}
 		}
 

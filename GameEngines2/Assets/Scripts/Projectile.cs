@@ -32,14 +32,6 @@ public class Projectile : MonoBehaviour
     }
 
     private void Start() {
-        if (selectedElement != null) {
-            foreach (ElementEffect attackEffect in selectedElement.attackEffects) {
-                UseEffect(attackEffect);
-            }
-        } else {
-            Debug.LogWarning("No element assigned to these particles.");
-        }
-
         // Fire the projectile horizontally in relation to the spawn point.
         _projectileRB.velocity = transform.TransformDirection(Vector2.right) * speed;
         // Destroy this object after a specific amount of time.
@@ -90,35 +82,28 @@ public class Projectile : MonoBehaviour
     }
 
 
-    // Will handle other effects in the 
-    private void UseEffect(ElementEffect effect) {
-        if (effect == null) return;
+    // // Will handle other effects in the 
+    // private void UseEffect(ElementEffect effect) {
+    //     if (effect == null) return;
 
-        if (effect.willDamage) {
-            BurnVines(effect.damage);
-        }
+    //     if (effect.willDamage) {
+    //         BurnVines(effect.damage);
+    //     }
 
-        if (effect.willFreeze) {
-            FreezeGround(effect.activeTime);
-        }
-    }
+    //     if (effect.willFreeze) {
+    //         FreezeGround(effect.activeTime);
+    //     }
+    // }
 
-    private void UseEffect(ElementEffect effect) {
-        if (effect == null) return;
-        if (effect.groundEffect) {
-            StartCoroutine(checkGround());
-        }
-    }
+    // private IEnumerator checkGround(float activeTime) {
+    //     while(true) {
+    //         cellGround = TilemapManager.current.grid.WorldToCell(ground.position);
+    //         tileGround = TilemapManager.current.tilemap.GetTile(cellGround);
+    //         if(tileGround is GroundTile) {
+    //             StartCoroutine(TilemapManager.current.freezeTile(cellGround, activeTime));
+    //         }
 
-    private IEnumerator checkGround(float activeTime) {
-        while(true) {
-            cellGround = TilemapManager.current.grid.WorldToCell(ground.position);
-            tileGround = TilemapManager.current.tilemap.GetTile(cellGround);
-            if(tileGround is GroundTile) {
-                StartCoroutine(TilemapManager.current.freezeTile(cellGround, activeTime));
-            }
-
-            yield return new WaitForSeconds(0.1f);
-        }
-    }
+    //         yield return new WaitForSeconds(0.1f);
+    //     }
+    // }
 }

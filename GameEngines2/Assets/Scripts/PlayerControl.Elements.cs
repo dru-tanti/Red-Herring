@@ -19,12 +19,15 @@ public partial class PlayerControl
     private Coroutine _shieldBubble;
     private bool _floating;
     private bool _dashing = false;
-    public BoolVariable _isInvisible;
 
+    // Passive Ability Booleans.
+    public BoolVariable _lavaResistant, _rockStrength, _wallJump, _swimming;
 
     // Triggers different methods depending on the effects active.
     private void UseEffect(ElementEffect effect) {
         if (effect == null) return;
+
+        // Primary abilities are located in PlayerAttack, and in Projectile.
 
         // Secondary Abilities
         if (effect.willDash && !_dashing) {
@@ -33,7 +36,6 @@ public partial class PlayerControl
         }
 
         if(effect.willDig) {
-            Debug.Log("Digging");
             Dig(terrain.cellAim, terrain.tileAim);
             StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
         }
@@ -46,23 +48,6 @@ public partial class PlayerControl
         if (effect.willFloat) {
             Float(effect.floatSpeed, effect.activeTime);
             StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
-        }
-
-        // Passive Abilities
-        if (effect.resistance) {
-            
-        }
-
-        if(effect.strength) {
-
-        }
-
-        if(effect.swim) {
-
-        }
-
-        if(effect.wallJump) {
-
         }
     }
 
@@ -124,23 +109,12 @@ public partial class PlayerControl
     //--------------------------------------------------------------
     // Passive Ability Effects
     //--------------------------------------------------------------
-    private void Swim() {
-
-    }
-
-    private void wallJump() {
-
-    }
-
-    private void Resistance() {
-
-    }
-
-    private void Strenth() {
-        
-    }
-    private void OnCollisionEnter2D(Collision2D other) {
-        
+    public void setPassive(ElementEffect effect) {
+        if (effect == null) return;
+        _lavaResistant.Value = effect.resistance;
+        _rockStrength.Value = effect.strength;
+        _swimming.Value = effect.swim;
+        _wallJump.Value = effect.wallJump;
     }
 
     // Sets an ability as not available for a specified time.

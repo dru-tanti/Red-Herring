@@ -71,10 +71,6 @@ public partial class PlayerControl : BaseController {
             }
         }
 
-        foreach(ElementEffect passiveEffects in element[selectedElement.Value].passiveEffects) {
-            UseEffect(passiveEffects);
-        }
-
         // NOTE: For testing Purposes Only (No shit tipo...)
         // Kills the player
         if(Input.GetKeyDown(KeyCode.E)) _isAlive.Value = false;
@@ -168,5 +164,12 @@ public partial class PlayerControl : BaseController {
             }
         }
         cooldowns[2].abilityAvailable[0].Value = true;
+    }
+
+    public void killPlayer() {
+        // if the player is not currently shielded, kill the player.
+        if(!shield.activeSelf) {
+            _isAlive.Value = false;
+        }
     }
 }
