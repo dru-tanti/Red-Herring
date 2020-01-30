@@ -120,70 +120,70 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="MamboJamboStudios.UnityAtomsCore.Runtime">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsCore.Runtime.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsCore.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="MamboJamboStudios.UnityAtomsMonoHooks.Runtime">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsMonoHooks.Runtime.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsMonoHooks.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="MamboJamboStudios.UnityAtomsUI.Runtime">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsUI.Runtime.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsUI.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="MamboJamboStudios.UnityAtomsCore.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsCore.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsCore.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="MamboJamboStudios.UnityAtomsSceneMgmt.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsSceneMgmt.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsSceneMgmt.Editor.dll</HintPath>
  </Reference>
  <Reference Include="MamboJamboStudios.UnityAtomsMobile.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsMobile.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsMobile.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="MamboJamboStudios.UnityAtomsMobile.Runtime">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsMobile.Runtime.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsMobile.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="MamboJamboStudios.UnityAtomsSceneMgmt.Runtime">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsSceneMgmt.Runtime.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsSceneMgmt.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="MamboJamboStudios.UnityAtomsTags.Runtime">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsTags.Runtime.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/MamboJamboStudios.UnityAtomsTags.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Documents/Unity/GitHub/Red-Herring/Red-Herring-master/GameEngines2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
