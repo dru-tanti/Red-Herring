@@ -6,11 +6,11 @@ using TMPro;
 
 public class UICoinMeter : MonoBehaviour
 {
-    [SerializeField]
+[SerializeField]
     public IntVariable coins;
 
-    [SerializeField]
-    public IntVariable multiplier;
+    //[SerializeField]
+    //public IntVariable multiplier;
 
 
     [SerializeField]
@@ -19,8 +19,8 @@ public class UICoinMeter : MonoBehaviour
     [SerializeField]
     public TextMeshProUGUI add_coins;
 
-    [SerializeField]
-    public TextMeshProUGUI multiply_text;
+    //[SerializeField]
+    //public TextMeshProUGUI multiply_text;
 
     private const float _fade = 2.0f;
     private bool _update = false;
@@ -28,7 +28,7 @@ public class UICoinMeter : MonoBehaviour
     void Awake(){
         wallet.SetText("0");
         add_coins.SetText("");
-        multiply_text.SetText("");
+        //multiply_text.SetText("");
     }
 
     void FixedUpdate(){
@@ -48,6 +48,7 @@ public class UICoinMeter : MonoBehaviour
         }
     }
 
+    /* Previous version: Coins/Points could be multiplied via kill count
     public void MultiplierFlavour(){
         if(multiplier.Value == 0){ 
             multiply_text.SetText("");
@@ -55,15 +56,17 @@ public class UICoinMeter : MonoBehaviour
             multiply_text.SetText("x" + multiplier.Value);
         }
     }
+    */
 
-    //multiplier text is affected by enemy death and player being hit
+    //Previous version: Multiplier text is affected by enemy death and player being hit
     public void WalletUpdated(int value)
     {   
-        int excess = 1;
+        //int excess = 1;
 
-        if(multiplier.Value > 0) excess = multiplier.Value;
+        //if(multiplier.Value > 0) excess = multiplier.Value;
+        //add_coins.SetText("+" + ((value - coins.OldValue) * excess));
 
-        add_coins.SetText("+" + ((value - coins.OldValue) * excess));
+        add_coins.SetText("+" + (value - coins.OldValue));
         _update = true;
         wallet.SetText(coins.Value.ToString());
     }

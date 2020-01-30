@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f64af2ed99cb146358b8752c3e393fcc, type: 3}
   m_Name: Coins
   m_EditorClassIdentifier: 
-  _developerDescription: Player's current wealth
-  _value: 22
+  _developerDescription: 
+  _value: 0
   _initialValue: 0
-  _oldValue: 21
-  Changed: {fileID: 11400000, guid: 741078050b1137a42bcb64459e11aae7, type: 2}
+  _oldValue: 0
+  Changed: {fileID: 11400000, guid: a829e61691249df48919ac5a7027f42a, type: 2}
   ChangedWithHistory: {fileID: 0}

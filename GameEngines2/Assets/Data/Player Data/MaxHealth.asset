@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f64af2ed99cb146358b8752c3e393fcc, type: 3}
   m_Name: MaxHealth
   m_EditorClassIdentifier: 
-  _developerDescription: 'Player''s maximum allotted heath
-
-'
+  _developerDescription: Player's maximum alotted health pool.
   _value: 100
   _initialValue: 100
   _oldValue: 0

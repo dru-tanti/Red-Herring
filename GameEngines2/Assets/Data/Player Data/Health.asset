@@ -12,12 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f64af2ed99cb146358b8752c3e393fcc, type: 3}
   m_Name: Health
   m_EditorClassIdentifier: 
-  _developerDescription: 'Player''s current health pool
-
-
-'
+  _developerDescription: 
   _value: 100
   _initialValue: 100
   _oldValue: 0
-  Changed: {fileID: 11400000, guid: 1deebf68f0041b149a0ce64c7a4b2694, type: 2}
+  Changed: {fileID: 11400000, guid: 376f921a24752b940ab5f32bebc7ecfe, type: 2}
   ChangedWithHistory: {fileID: 0}

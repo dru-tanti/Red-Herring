@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class UIManaMeter : MonoBehaviour
 {
-    [SerializeField]
-    public IntVariable max_mana;
+    //[SerializeField]
+    //public IntVariable max_mana;
 
-    [SerializeField]
-    public GameObject pool;
+    //[SerializeField]
+    //public GameObject pool;
     
     [SerializeField]
     public IntVariable selectedElement;
@@ -18,39 +18,41 @@ public class UIManaMeter : MonoBehaviour
     public Sprite[] all_elements;
     public Image icon;
 
-    private string se_name;
-    private string sprite_ref;
+    private string _se_name;
+    private string _sprite_ref;
 
     //hold index values
-    private int hold = 100;
-    private int sprite_dex;
+    private int _hold = 100;
+    private int _sprite_dex;
 
     void FixedUpdate()
     {
         //If the selected element's index value has changed, commit the change in the UI
-        if(hold != selectedElement.Value){
+        if(_hold != selectedElement.Value){
             
             //Making sure the selected element's index is the same as the sprite index
             //If not, find the necessary sprite and display that
-            se_name = PlayerAttack.elements[selectedElement.Value].name;
-            se_name = se_name.Substring(0, se_name.Length - 9);
+            _se_name = PlayerAttack.element_list[selectedElement.Value].name;
+            _se_name = _se_name.Substring(0, _se_name.Length - 9);
 
-            sprite_ref = all_elements[selectedElement.Value].name;
+            _sprite_ref = all_elements[selectedElement.Value].name;
 
             //Name comparison, so PLEASE make sure that the elements HAVE THE SAME NAME THROUGHOUT
-            if(se_name.ToLower() == sprite_ref.ToLower()){
+            if(_se_name.ToLower() == _sprite_ref.ToLower()){
                 icon.sprite = all_elements[selectedElement.Value];
             }else{
-                sprite_dex = System.Array.FindIndex(all_elements, e => e.name == se_name.ToLower());
-                icon.sprite = all_elements[sprite_dex];
+                _sprite_dex = System.Array.FindIndex(all_elements, e => e.name == _se_name.ToLower());
+                icon.sprite = all_elements[_sprite_dex];
             }
 
-            hold = selectedElement.Value;
+            _hold = selectedElement.Value;
         }
     }
 
+    /* Previous version: Mana had a pool and regen
     public void ManaChanged(int current_mana)
     {   
         pool.GetComponent<Image>().fillAmount = 1.0f * current_mana / max_mana.Value;
     }
+    */
 }
