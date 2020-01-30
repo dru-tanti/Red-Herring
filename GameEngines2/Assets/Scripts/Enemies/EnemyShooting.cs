@@ -61,11 +61,6 @@ public class EnemyShooting : MonoBehaviour
             yield return new WaitForSeconds(this.time);    
         }
     }
-    // Method will instantiate the projectile prefab
-    void Shoot()
-    {
-
-    }
 
     void OnTriggerExit2D(Collider2D other) 
     {
