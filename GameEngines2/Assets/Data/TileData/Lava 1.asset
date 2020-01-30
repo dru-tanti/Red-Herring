@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93aa76e94f1d11646a37902f44535578, type: 3}
-  m_Name: Lava
+  m_Name: Lava 1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: fb66de0a9c74ffa4b914dd879c5b6f31, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 941091d7e8b06d14e97aca8550d499d0, type: 3}
   m_Color: {r: 0.9622642, g: 0.7088288, b: 0.39215687, a: 1}
   m_Transform:
     e00: 1

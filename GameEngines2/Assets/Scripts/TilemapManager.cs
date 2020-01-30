@@ -17,7 +17,7 @@ public class TilemapManager : MonoBehaviour {
 
     // Tiles that will be swapped when the player becomes invisible
     [SerializeField] private BoolVariable _isInvisible = null;
-
+    [SerializeField] private GroundTile _frozen = null;
     [Header("Invisible Tiles")]
     [SerializeField] private InvisibleTile visible = null;
     [SerializeField] private InvisibleTile invisible = null;
@@ -76,12 +76,12 @@ public class TilemapManager : MonoBehaviour {
         }
     }
 
-    // public IEnumerator freezeTile(Vector3Int position, float activeTime) {
-    //     TileBase tiletmp = tilemap.GetTile(position);
-    //     tilemap.SetTile(position, _frozen);
-    //     yield return new WaitForSeconds(activeTime);
-    //     tilemap.SetTile(position, tiletmp);
-    // }
+    public IEnumerator freezeTile(Vector3Int position, float activeTime) {
+        TileBase tiletmp = tilemap.GetTile(position);
+        tilemap.SetTile(position, _frozen);
+        yield return new WaitForSeconds(activeTime);
+        tilemap.SetTile(position, tiletmp);
+    }
 
     public void findGrid() {
         grid = GameObject.Find("Grid-"+currentActiveScene.Value).GetComponent<Grid>();

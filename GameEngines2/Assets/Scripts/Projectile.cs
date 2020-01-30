@@ -63,10 +63,10 @@ public class Projectile : MonoBehaviour
         }
 
         if(other.gameObject.tag == "Ground") {
-            cellHit = TilemapManager.current.grid.WorldToCell(object.transform.position);
+            cellHit = TilemapManager.current.grid.WorldToCell(other.transform.position);
             tileHit = TilemapManager.current.tilemap.GetTile(cellHit);
 
-            if(tileHit is VineTile) {
+            if(tileHit is BurnableTile) {
                 
             }
 
@@ -99,18 +99,18 @@ public class Projectile : MonoBehaviour
     }
 
 
-    // // Will handle other effects that do not rely on collisions with another object.
-    private void UseEffect(ElementEffect effect) {
-        if (effect == null) return;
+    // // // Will handle other effects that do not rely on collisions with another object.
+    // private void UseEffect(ElementEffect effect) {
+    //     if (effect == null) return;
 
-        if (effect.willDamage) {
-            BurnVines(effect.damage);
-        }
+    //     if (effect.willDamage) {
+    //         BurnVines(effect.damage);
+    //     }
 
-        if (effect.willFreeze) {
-            FreezeGround(effect.activeTime);
-        }
-    }
+    //     if (effect.willFreeze) {
+    //         FreezeGround(effect.activeTime);
+    //     }
+    // }
 
     private IEnumerator checkGround(float activeTime) {
         while(true) {

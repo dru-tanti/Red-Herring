@@ -38,7 +38,7 @@ public class PlayerEnvironment : MonoBehaviour {
             Debug.Log("Ouch");
         }
 
-        if(tileStand is HazardTile && (tileStand as HazardTile).lava && !_player._lavaResistant) {
+        if(tileStand is HazardTile && (tileStand as HazardTile).lava) {
             Debug.Log("You are drowning in Lava");
         }
 
