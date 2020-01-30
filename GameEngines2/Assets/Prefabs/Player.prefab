@@ -46,6 +46,10 @@ GameObject:
   - component: {fileID: 978995836279041750}
   - component: {fileID: 978995836279041745}
   - component: {fileID: 978995836279041751}
+  - component: {fileID: 505452004482000929}
+  - component: {fileID: -7833165933978514745}
+  - component: {fileID: -7074371895120827164}
+  - component: {fileID: 801037002210865385}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -210,6 +214,7 @@ MonoBehaviour:
   - abilityAvailable:
     - {fileID: 11400000, guid: 0ebac86e35c54dd4195508d2729362d7, type: 2}
     - {fileID: 11400000, guid: 637693f4ddd7e2d46878ae2636c987f5, type: 2}
+  shield: {fileID: 0}
 --- !u!114 &978995836279041750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,8 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b83634531e7d34290f256a77844b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
-  grid: {fileID: 0}
   _radius: 2
   shotPoint: {fileID: 978995837479754296}
   groundCheck: {fileID: 978995836103867417}
@@ -271,6 +274,72 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &505452004482000929
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978995836279041769}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5918469, y: 1.2379808}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5918469, y: 1.2379808}
+  m_EdgeRadius: 0
+--- !u!114 &-7833165933978514745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978995836279041769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7243098b3433b8d4b823ed4a687780d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 11400000, guid: 66e28465ea2df8347a5b5615e027dfd5, type: 2}
+  max_health: {fileID: 11400000, guid: 7c6e2ee3a431937438cb9bf991a03b21, type: 2}
+--- !u!114 &-7074371895120827164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978995836279041769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ba60f51aa1a4348b312426da0d1a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: {fileID: 11400000, guid: 30300f62c337c9841a6220236caee15b, type: 2}
+--- !u!114 &801037002210865385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978995836279041769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acabac180a3b663449fcefa2fdbc766e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: {fileID: 11400000, guid: 1af9faf934c96e44b91e2602c725c8d4, type: 2}
 --- !u!1 &978995836997789348
 GameObject:
   m_ObjectHideFlags: 0

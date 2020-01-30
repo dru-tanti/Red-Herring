@@ -15,12 +15,15 @@ public class PlayerAttack : MonoBehaviour
 	public Projectile[] projectiles;
 	public IntVariable selectedElement;
 	public BoolVariable isInvisible;
+	[HideInInspector]
+	public static Projectile[] element_list;
 	private PlayerAnimation _anim;
 	public ElementType[] element;
 	private PlayerControl _player;
 	private SpriteRenderer _sprite;
 
 	private void Awake() {
+		element_list = projectiles;
 		_anim = gameObject.GetComponentInParent<PlayerAnimation>();
 		_sprite = gameObject.GetComponentInParent<SpriteRenderer>();
 		_player = gameObject.GetComponentInParent<PlayerControl>();

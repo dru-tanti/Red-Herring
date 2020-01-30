@@ -9,14 +9,22 @@ using UnityEngine;
 
 public abstract class AIBehaviour : BaseController
 {
-    public int enemyHealth = 10;
+    public static int enemyMaxHealth = 10;
+    public int enemyHealth;
     public int speed = 5;
     public float pushForce = 4;
+
+    void Awake(){
+        enemyHealth = enemyMaxHealth;
+    }
 
     // Reduced the enemies health by the amount defined by the projectile.
     public void Damage(int damage) {
         enemyHealth -= damage;
         Debug.Log(enemyHealth);
+
+        var test = GetComponent<AITest>();
+        test.EnemyIsHit(enemyHealth);
     }
 
     // Triggers the Stun effect.
