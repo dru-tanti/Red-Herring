@@ -45,6 +45,7 @@ public class PlayerAttack : MonoBehaviour
 				selectedElement.Value = 1;
 				_anim.changeElement(selectedElement.Value);
 				foreach(ElementEffect passiveEffects in this.element[selectedElement.Value].passiveEffects) {
+					
 					_player.setPassive(passiveEffects);	
 				}			
 			}

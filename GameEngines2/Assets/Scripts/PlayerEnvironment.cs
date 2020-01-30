@@ -17,6 +17,7 @@ public class PlayerEnvironment : MonoBehaviour {
     public Transform shotPoint;
     public Transform groundCheck;
     private PlayerControl _player;
+    private float _moveY;
 
     private void Awake() {
         _player = GetComponent<PlayerControl>();
@@ -39,6 +40,17 @@ public class PlayerEnvironment : MonoBehaviour {
 
         if(tileStand is HazardTile && (tileStand as HazardTile).lava && !_player._lavaResistant) {
             Debug.Log("You are drowning in Lava");
+        }
+
+        if(tileStand is WaterTile) {
+            Debug.Log("You have drowned");
+            if(_player._swimming == true) {
+                _player.Gravity(0.1f);
+                _moveY = Input.GetAxisRaw("Vertical");
+                _player._rb.velocity = new Vector2 (_player._rb.velocity.x, _moveY * _player.speed.Value);
+            } else {
+                Debug.Log("You have drowned");
+            }
         }
 
         if(tileStand is CloudTile && (tileStand as CloudTile).walkable == true) {

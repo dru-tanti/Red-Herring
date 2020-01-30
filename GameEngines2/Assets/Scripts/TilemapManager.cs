@@ -55,6 +55,10 @@ public class TilemapManager : MonoBehaviour {
     //     }
     // }
 
+    // public void setWaterDanger() {
+    //     tilemap.SwapTile(changeTile, newTile);
+    // }
+
     public void setCloudWalkable() {
         Tile changeTile = (selectedElement.Value == 0) ? _notWalkable : _walkable;
         Tile newTile = (selectedElement.Value == 0) ? _walkable : _notWalkable;
@@ -73,7 +77,7 @@ public class TilemapManager : MonoBehaviour {
     }
 
     // public IEnumerator freezeTile(Vector3Int position, float activeTime) {
-    //     TileBase tiletmp = tilemap.GetTile(cellGround);
+    //     TileBase tiletmp = tilemap.GetTile(position);
     //     tilemap.SetTile(position, _frozen);
     //     yield return new WaitForSeconds(activeTime);
     //     tilemap.SetTile(position, tiletmp);

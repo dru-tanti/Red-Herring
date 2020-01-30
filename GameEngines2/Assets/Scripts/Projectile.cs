@@ -23,6 +23,10 @@ public class Projectile : MonoBehaviour
     private Collider2D _collider;
     public ElementType selectedElement;
 
+    // Gets the cell data of any tiles the projectile hits.
+    [HideInInspector] public Vector3Int cellHit;
+    [HideInInspector] public TileBase tileHit;
+
     public Transform ground;
     private Vector3Int cellGround;
     private TileBase tileGround;
@@ -57,6 +61,19 @@ public class Projectile : MonoBehaviour
             }
             enabled = false;
         }
+
+        if(other.gameObject.tag == "Ground") {
+            cellHit = TilemapManager.current.grid.WorldToCell(object.transform.position);
+            tileHit = TilemapManager.current.tilemap.GetTile(cellHit);
+
+            if(tileHit is VineTile) {
+                
+            }
+
+            if(tileHit is WaterTile) {
+
+            }
+        }
     }
 
     // Will trigger the effects in the AIBehaviour Script
@@ -82,28 +99,28 @@ public class Projectile : MonoBehaviour
     }
 
 
-    // // Will handle other effects in the 
-    // private void UseEffect(ElementEffect effect) {
-    //     if (effect == null) return;
+    // // Will handle other effects that do not rely on collisions with another object.
+    private void UseEffect(ElementEffect effect) {
+        if (effect == null) return;
 
-    //     if (effect.willDamage) {
-    //         BurnVines(effect.damage);
-    //     }
+        if (effect.willDamage) {
+            BurnVines(effect.damage);
+        }
 
-    //     if (effect.willFreeze) {
-    //         FreezeGround(effect.activeTime);
-    //     }
-    // }
+        if (effect.willFreeze) {
+            FreezeGround(effect.activeTime);
+        }
+    }
 
-    // private IEnumerator checkGround(float activeTime) {
-    //     while(true) {
-    //         cellGround = TilemapManager.current.grid.WorldToCell(ground.position);
-    //         tileGround = TilemapManager.current.tilemap.GetTile(cellGround);
-    //         if(tileGround is GroundTile) {
-    //             StartCoroutine(TilemapManager.current.freezeTile(cellGround, activeTime));
-    //         }
+    private IEnumerator checkGround(float activeTime) {
+        while(true) {
+            cellGround = TilemapManager.current.grid.WorldToCell(ground.position);
+            tileGround = TilemapManager.current.tilemap.GetTile(cellGround);
+            if(tileGround is WaterTile) {
+                StartCoroutine(TilemapManager.current.freezeTile(cellGround, activeTime));
+            }
 
-    //         yield return new WaitForSeconds(0.1f);
-    //     }
-    // }
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
 }

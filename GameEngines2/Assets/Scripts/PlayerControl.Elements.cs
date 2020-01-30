@@ -110,6 +110,7 @@ public partial class PlayerControl
     // Passive Ability Effects
     //--------------------------------------------------------------
     public void setPassive(ElementEffect effect) {
+        Debug.Log(effect);
         if (effect == null) return;
         _lavaResistant.Value = effect.resistance;
         _rockStrength.Value = effect.strength;
