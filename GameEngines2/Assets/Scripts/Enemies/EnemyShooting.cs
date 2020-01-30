@@ -18,6 +18,7 @@ public class EnemyShooting : MonoBehaviour
     private void Start()
     {
         target = new Vector2(patrolEnd.position.x, patrolEnd.position.y);
+        // InvokeRepeating("Shooting", 2.0f, 0.3f);
     }
     void Update()
     {
@@ -46,14 +47,20 @@ public class EnemyShooting : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collider) 
-    {
-        if(collider.tag == "Player")
-        {
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.tag == "Player") {
             isAttacking = true;
             StartCoroutine(Shooting());
         }
     }
+
+    // private void OnTriggerStay2D(Collider2D collider) 
+    // {
+    //     if(collider.tag == "Player") {
+    //         isAttacking = true;
+    //         StartCoroutine(Shooting());
+    //     }
+    // }
 
     public IEnumerator Shooting() {
         while(isAttacking) {
