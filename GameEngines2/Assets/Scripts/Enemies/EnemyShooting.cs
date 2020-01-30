@@ -28,7 +28,7 @@ public class EnemyShooting : MonoBehaviour
             Patrol();
         }
     }
-// Patrolling with points set in Unity
+    // Patrolling with points set in Unity
     void Patrol()
     {
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
@@ -46,21 +46,13 @@ public class EnemyShooting : MonoBehaviour
             }
         }
     }
-
+    // Once player enters the trigger, start the coroutine that shoots at the player
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Player") {
             isAttacking = true;
             StartCoroutine(Shooting());
         }
     }
-
-    // private void OnTriggerStay2D(Collider2D collider) 
-    // {
-    //     if(collider.tag == "Player") {
-    //         isAttacking = true;
-    //         StartCoroutine(Shooting());
-    //     }
-    // }
 
     public IEnumerator Shooting() {
         while(isAttacking) {
