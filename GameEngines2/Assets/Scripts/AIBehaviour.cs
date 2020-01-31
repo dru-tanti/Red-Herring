@@ -15,7 +15,8 @@ public abstract class AIBehaviour : BaseController
     public float pushForce = 4;
     public bool harmful = false;
 
-    void Awake(){
+    protected override void Awake(){
+        base.Awake();
         enemyHealth = enemyMaxHealth;
     }
 
