@@ -84,7 +84,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -96,7 +96,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -114,11 +114,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 227
-        y: 87
+        y: 88
         width: 732
         height: 1021
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54332703}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: Nature_Walk_2
       rect:
         serializedVersion: 2
-        x: 1408
-        y: 80
+        x: 1409
+        y: 89
         width: 732
         height: 1021
       alignment: 9
-      pivot: {x: 0.49923557, y: 0.51710933}
+      pivot: {x: 0.4992354, y: 0.5532152}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,11 +156,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2591
-        y: 87
+        y: 88
         width: 732
         height: 1021
       alignment: 9
-      pivot: {x: 0.50341064, y: 0.5051809}
+      pivot: {x: 0.50341064, y: 0.548508}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,11 +177,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4946
-        y: 87
+        y: 94
         width: 732
         height: 1021
       alignment: 9
-      pivot: {x: 0.503548, y: 0.5056848}
+      pivot: {x: 0.51361984, y: 0.54901177}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: Nature_Walk_6
       rect:
         serializedVersion: 2
-        x: 6125
+        x: 6144
         y: 87
         width: 732
         height: 1021
       alignment: 9
-      pivot: {x: 0.50897986, y: 0.5089036}
+      pivot: {x: 0.48883557, y: 0.5450093}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: Nature_Walk_7
       rect:
         serializedVersion: 2
-        x: 7308
-        y: 85
-        width: 732
-        height: 1021
+        x: 7310
+        y: 87
+        width: 741
+        height: 1023
       alignment: 9
-      pivot: {x: 0.51346844, y: 0.5193121}
+      pivot: {x: 0.5134676, y: 0.54814035}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,11 +240,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3772
-        y: 87
+        y: 89
         width: 732
         height: 1021
       alignment: 9
-      pivot: {x: 0.50000066, y: 0.4863727}
+      pivot: {x: 0.50000066, y: 0.5513634}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,7 +265,7 @@ TextureImporter:
         width: 732
         height: 1021
       alignment: 9
-      pivot: {x: 0.5134677, y: 0.5}
+      pivot: {x: 0.5134677, y: 0.55054826}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
