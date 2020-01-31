@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b061d1b48735edc4994e46aa2bd97467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rb: {fileID: 0}
   elementsUnlocked: 1
   speed: {fileID: 11400000, guid: 440a71e053492704c9c9d69ca3c9a2c6, type: 2}
   jump: {fileID: 11400000, guid: 7e8265b32854625488d57ad042fc9320, type: 2}
@@ -190,6 +191,8 @@ MonoBehaviour:
   jumpTime: 0.2
   fallMultiplier: 2.5
   lowJumpMultiplier: 3
+  wallJumpForce: 1
+  wallJumpDirection: {x: 1, y: 2}
   _grounded: 0
   selectedElement: {fileID: 11400000, guid: 5c42e8df52b4c7b4ebea0f9e08141d8c, type: 2}
   element:
@@ -211,6 +214,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 0ebac86e35c54dd4195508d2729362d7, type: 2}
     - {fileID: 11400000, guid: 637693f4ddd7e2d46878ae2636c987f5, type: 2}
   shield: {fileID: 8435157459046767859}
+  pushForce: 3000
   _lavaResistant: {fileID: 11400000, guid: d17dc45026a8ecf4ea84ee152fccf7a8, type: 2}
   _rockStrength: {fileID: 11400000, guid: d9d61b3b66ede2f4b96282552798d026, type: 2}
   _wallJump: {fileID: 11400000, guid: 9aaf18d1d8ad2d34281adf6a33d10b4d, type: 2}
@@ -231,8 +235,12 @@ MonoBehaviour:
   tileAim: {fileID: 0}
   cellStand: {x: 0, y: 0, z: 0}
   tileStand: {fileID: 0}
+  cellPlayer: {x: 0, y: 0, z: 0}
+  tilePlayer: {fileID: 0}
   shotPoint: {fileID: 978995837479754296}
   groundCheck: {fileID: 978995836103867417}
+  isTouchingWall: 0
+  inWater: 0
 --- !u!114 &978995836279041745
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,9 +28,10 @@ public class PlayerAttack : MonoBehaviour
 		_player = gameObject.GetComponentInParent<PlayerControl>();
 		checkElements();
 	}
+
     private void Update() {
 		slamRange.position = TilemapManager.current.grid.WorldToCell(_player.transform.position) + offset;
-        
+
 		if(Input.GetKeyDown(KeyCode.W)) {
 			if(element[0].unlocked.Value == true) {
 				selectedElement.Value = 0;
@@ -63,7 +64,7 @@ public class PlayerAttack : MonoBehaviour
 			if(element[3].unlocked.Value == true) {
 				selectedElement.Value = 3;
 				_anim.changeElement(selectedElement.Value);
-				foreach(ElementEffect passiveEffects in this.element[selectedElement.Value].passiveEffects) {
+				foreach(ElementEffect passiveEffects in element[selectedElement.Value].passiveEffects) {
 					_player.setPassive(passiveEffects);	
 				}			
 			}
@@ -133,6 +134,9 @@ public class PlayerAttack : MonoBehaviour
 			if(element[i].unlocked.Value == true) {
 				selectedElement.Value = i;
 				_anim.changeElement(i);
+				foreach(ElementEffect passiveEffects in this.element[selectedElement.Value].passiveEffects) {
+					_player.setPassive(passiveEffects);	
+				}			
 				return;
 			}
 		}

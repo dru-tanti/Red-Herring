@@ -37,16 +37,21 @@ public partial class PlayerControl : BaseController {
     [Range(0f, 5f)]
     public float lowJumpMultiplier = 2f;
 
+    // Used for wall jumping
+    public float wallJumpForce;
+    public Vector2 wallJumpDirection;
+
     [HideInInspector] public bool _grounded = false;
     private float groundRadius = 0.2f;
     private float _jumpTimeCounter;
-    private bool _isJumping;
+    private bool _isJumping, _canWallJump;
     private float _hardLandingTimer; // Used to trigger the hard landing animation.
 
     protected override void Awake() {
         base.Awake();
         terrain = GetComponent<PlayerEnvironment>();
         _isAlive.Value = true;
+        wallJumpDirection.Normalize();
 
         // NOTE: FOR TESTING PURPOSES.
         if(elementsUnlocked == true){
@@ -84,6 +89,7 @@ public partial class PlayerControl : BaseController {
     private void FixedUpdate() {
         // Will check if the character is touching the ground
         _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        if(_grounded) _canWallJump = true;
 
         // If the player is falling, we will increase the gravity scale so that the player falls faster.
         if(_rb.velocity.y < 0) {
@@ -93,16 +99,25 @@ public partial class PlayerControl : BaseController {
             _rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
 
-        if(!_dashing && !_floating){ Move(); }
+        if(!_dashing && !_floating) Move();
     }
 
     void Jump() {
         // Checks if the player is already in the air before executing the jump command.
-        if (Input.GetButtonDown("Jump") && _grounded) {
+        if (Input.GetButtonDown("Jump") && (_grounded)) {
             _isJumping = true;
             _jumpTimeCounter = jumpTime;
 
             _rb.velocity = Vector2.up * jump.Value;   
+        }
+
+        if(terrain.isTouchingWall && !_grounded && _wallJump.Value && _rb.velocity.y <= 0) {
+            if(Input.GetButtonDown("Jump") && _canWallJump) {
+                _canWallJump = false;
+                StartCoroutine(pushOffWall());
+                _jumpTimeCounter = jumpTime;
+                _rb.velocity = Vector2.up * jump.Value; 
+            }
         }
 
         // If the player holds down the spacebar the character will jump higher
@@ -117,7 +132,19 @@ public partial class PlayerControl : BaseController {
         }
 
         // When the space key is released, disable the jump.
-        if(Input.GetButtonUp("Jump")) { _isJumping = false; }
+        if(Input.GetButtonUp("Jump")) _isJumping = false;
+    }
+
+    private IEnumerator pushOffWall() {
+        bool walljump = true;
+        while(walljump) {
+            Gravity(0f);
+            _rb.velocity = (_facingRight) ? Vector2.left * speed.Value : Vector2.right * speed.Value;
+            yield return new WaitForSeconds(0.2f);
+            _canWallJump = false;
+            walljump = false;
+            Gravity(1f);
+        }
     }
     
     // Controls the movement of the player.

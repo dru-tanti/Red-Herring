@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: Fire_Passive
   m_EditorClassIdentifier: 
   _projectile: 0
+  _groundEffect: 0
   _willDamage: 0
   _damage: 0
   _turnInvisible: 0
-  _invisibleTime: 0
   _willPush: 0
   _pushForce: 0
   _willFreeze: 0
-  _freezeDuration: 0
   _willStun: 0
-  _stunDuration: 0
   _immune: 0
   _fog: 0
   _willFloat: 0

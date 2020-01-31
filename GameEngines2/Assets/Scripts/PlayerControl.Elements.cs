@@ -75,7 +75,7 @@ public partial class PlayerControl
     // If the player is aiming at a diggable tile, replace it with a dug tile.
     public void Dig(Vector3Int cellAim, TileBase tileAim) {
         if (tileAim is GroundTile && (tileAim as GroundTile).Dug == true) return;
-        if (tileAim is GroundTile && (tileAim as GroundTile).Dug == false) {
+        if (tileAim is GroundTile && (tileAim as GroundTile).Dug == false && (tileAim as GroundTile).diggable == true) {
             TilemapManager.current.tilemap.SetTile(cellAim, (tileAim as GroundTile).dugVersion);
         }
     }
@@ -110,12 +110,20 @@ public partial class PlayerControl
     // Passive Ability Effects
     //--------------------------------------------------------------
     public void setPassive(ElementEffect effect) {
-        Debug.Log(effect);
         if (effect == null) return;
         _lavaResistant.Value = effect.resistance;
-        _rockStrength.Value = effect.strength;
         _swimming.Value = effect.swim;
         _wallJump.Value = effect.wallJump;
+        _rockStrength.Value = effect.strength;
+    }
+
+    private void OnCollisionStay2D(Collision2D other) {
+        // Pushes an object if the player has the rock passive active.
+        if(other.gameObject.tag == "Push" && _rockStrength.Value) {
+            Rigidbody2D _pushRB = other.gameObject.GetComponent<Rigidbody2D>();
+            Vector2 offset = transform.position - other.transform.position;
+            _pushRB.velocity = new Vector2 (_moveX * (speed.Value / 4), _pushRB.velocity.y);
+        }
     }
 
     // Sets an ability as not available for a specified time.
