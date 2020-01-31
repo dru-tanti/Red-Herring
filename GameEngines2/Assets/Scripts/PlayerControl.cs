@@ -26,6 +26,7 @@ public partial class PlayerControl : BaseController {
     public BoolVariable _isAlive;
     private float _moveX;
     public float moveX { get => _moveX; } // To be used by the PlayerAnimation script
+    public bool _knockback;
 
     [Header("Jump Variables")]
     public Transform groundCheck;
@@ -62,8 +63,8 @@ public partial class PlayerControl : BaseController {
     }
 
     void Update() {
-        Jump();
-        
+        if(!_knockback) Jump();
+
         // Every frame we will check which element was chosen and use the effects defined in ElementEffect
         if(Input.GetKeyDown(KeyCode.C) && element[selectedElement.Value] != null) {
             if(cooldowns[selectedElement.Value].abilityAvailable[1].Value) {
@@ -99,7 +100,7 @@ public partial class PlayerControl : BaseController {
             _rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
 
-        if(!_dashing && !_floating) Move();
+        if(!_dashing && !_floating && !_knockback) Move();
     }
 
     void Jump() {
@@ -108,7 +109,7 @@ public partial class PlayerControl : BaseController {
             _isJumping = true;
             _jumpTimeCounter = jumpTime;
 
-            _rb.velocity = Vector2.up * jump.Value;   
+            _rb.velocity = Vector2.up * jump.Value;
         }
 
         if(terrain.isTouchingWall && !_grounded && _wallJump.Value && _rb.velocity.y <= 0) {
@@ -116,7 +117,7 @@ public partial class PlayerControl : BaseController {
                 _canWallJump = false;
                 StartCoroutine(pushOffWall());
                 _jumpTimeCounter = jumpTime;
-                _rb.velocity = Vector2.up * jump.Value; 
+                _rb.velocity = Vector2.up * jump.Value;
             }
         }
 
@@ -124,7 +125,7 @@ public partial class PlayerControl : BaseController {
         if(Input.GetButton("Jump") && _isJumping == true) {
             if(_jumpTimeCounter > 0) {
                 // Applies force when the player presses the Jump Button.
-                _rb.velocity = Vector2.up * jump.Value;   
+                _rb.velocity = Vector2.up * jump.Value;
                 _jumpTimeCounter -= Time.deltaTime;
             } else {
                 _isJumping = false;
@@ -146,10 +147,10 @@ public partial class PlayerControl : BaseController {
             Gravity(1f);
         }
     }
-    
+
     // Controls the movement of the player.
     void Move() {
-        _moveX = Input.GetAxisRaw("Horizontal"); 
+        _moveX = Input.GetAxisRaw("Horizontal");
         // Inverts the player model if they are moving to the left.
         if (_moveX < 0f && _facingRight) {
             FlipPlayer();
@@ -164,6 +165,22 @@ public partial class PlayerControl : BaseController {
     void FlipPlayer() {
         _facingRight = !_facingRight;
         transform.Rotate(0f, 180f, 0f);
+    }
+
+
+    // Applies a force in the direction the player is facing.
+    public void Push(float direction, float pushForce) {
+        if(_knockback == true) return;
+        StartCoroutine(Pushing(pushForce, pushTime, direction));
+    }
+    // Applies the dash force and stops the player from moving while dash is active.
+    private IEnumerator Pushing(float pushForce, float pushTime, float direction) {
+        _knockback = true;
+        while(_knockback) {
+            _playerRB.AddForce(Vector2.left * direction  * pushForce * pushMultiplier, ForceMode2D.Impulse);
+            yield return new WaitForSeconds(pushTime);
+            _knockback= false;
+        }
     }
 
     // NOTE: Mainly for Testing Purposes
