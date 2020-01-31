@@ -1,0 +1,6343 @@
+fileFormatVersion: 2
+guid: 6e089056dba7508499d3016c3ff7a1c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5160660819957252609
+    second: Bricks_0
+  - first:
+      213: 6859263829080826081
+    second: Bricks_1
+  - first:
+      213: 4408241631364836248
+    second: Bricks_2
+  - first:
+      213: 5775632523447700598
+    second: Bricks_3
+  - first:
+      213: -7225512925871877664
+    second: Bricks_4
+  - first:
+      213: 2482014102518608977
+    second: Bricks_5
+  - first:
+      213: -3348062934533217571
+    second: Bricks_6
+  - first:
+      213: -4048665207900645208
+    second: Bricks_7
+  - first:
+      213: 556530189025366737
+    second: Bricks_8
+  - first:
+      213: 2326304054162573754
+    second: Bricks_9
+  - first:
+      213: 6766710538194844706
+    second: Bricks_10
+  - first:
+      213: 6324531904809182244
+    second: Bricks_11
+  - first:
+      213: -3626552937498295834
+    second: Bricks_12
+  - first:
+      213: -771744083097051549
+    second: Bricks_13
+  - first:
+      213: -7493662373440314518
+    second: Bricks_14
+  - first:
+      213: 8377601346417164459
+    second: Bricks_15
+  - first:
+      213: -2791666833621720718
+    second: Bricks_16
+  - first:
+      213: 6935165142171217264
+    second: Bricks_17
+  - first:
+      213: -4575754327461565494
+    second: Bricks_18
+  - first:
+      213: -7989511489213889443
+    second: Bricks_19
+  - first:
+      213: -4526969275931063505
+    second: Bricks_20
+  - first:
+      213: 6875877566193945470
+    second: Bricks_21
+  - first:
+      213: -2101670647433447705
+    second: Bricks_22
+  - first:
+      213: -2903041914780571137
+    second: Bricks_23
+  - first:
+      213: 7013569439670819478
+    second: Bricks_24
+  - first:
+      213: -2351728184125324777
+    second: Bricks_25
+  - first:
+      213: -2408460109601310524
+    second: Bricks_26
+  - first:
+      213: 1877927561775796732
+    second: Bricks_27
+  - first:
+      213: -1590091725503304328
+    second: Bricks_28
+  - first:
+      213: -4606175067800870258
+    second: Bricks_29
+  - first:
+      213: -6117414832807462825
+    second: Bricks_30
+  - first:
+      213: 7942139042437279256
+    second: Bricks_31
+  - first:
+      213: 8058108971146127032
+    second: Bricks_32
+  - first:
+      213: 653349583320507831
+    second: Bricks_33
+  - first:
+      213: -309606227815762073
+    second: Bricks_34
+  - first:
+      213: 271461802844321000
+    second: Bricks_35
+  - first:
+      213: 6675420903985128321
+    second: Bricks_36
+  - first:
+      213: -4007597808561564627
+    second: Bricks_37
+  - first:
+      213: 3495765951527904603
+    second: Bricks_38
+  - first:
+      213: -5214482880028490239
+    second: Bricks_39
+  - first:
+      213: 8109085514931408302
+    second: Bricks_40
+  - first:
+      213: 8568486663932372681
+    second: Bricks_41
+  - first:
+      213: 3373534363995227094
+    second: Bricks_42
+  - first:
+      213: -1594706971751499377
+    second: Bricks_43
+  - first:
+      213: -1923462957361558241
+    second: Bricks_44
+  - first:
+      213: -3237319551571373777
+    second: Bricks_45
+  - first:
+      213: 2947782629709950520
+    second: Bricks_46
+  - first:
+      213: -1712608033672629461
+    second: Bricks_47
+  - first:
+      213: 3420802382242271487
+    second: Bricks_48
+  - first:
+      213: 4073831044082771821
+    second: Bricks_49
+  - first:
+      213: -7774845558202682318
+    second: Bricks_50
+  - first:
+      213: -4385122877384111609
+    second: Bricks_51
+  - first:
+      213: 8079255161275301963
+    second: Bricks_52
+  - first:
+      213: -2930251808271837553
+    second: Bricks_53
+  - first:
+      213: 1549626097033653730
+    second: Bricks_54
+  - first:
+      213: -5365758018893154128
+    second: Bricks_55
+  - first:
+      213: -2906226937824978672
+    second: Bricks_56
+  - first:
+      213: -797595217209894085
+    second: Bricks_57
+  - first:
+      213: -7809164651038441910
+    second: Bricks_58
+  - first:
+      213: -7042256452303854539
+    second: Bricks_59
+  - first:
+      213: 1839265906423216666
+    second: Bricks_60
+  - first:
+      213: 2991623462310642866
+    second: Bricks_61
+  - first:
+      213: -4791879487566944956
+    second: Bricks_62
+  - first:
+      213: -1031772877555021242
+    second: Bricks_63
+  - first:
+      213: 4640935471067513305
+    second: Bricks_64
+  - first:
+      213: -1011917871315178922
+    second: Bricks_65
+  - first:
+      213: 8792816283975404239
+    second: Bricks_66
+  - first:
+      213: 7011321120009063684
+    second: Bricks_67
+  - first:
+      213: -7036321339552477995
+    second: Bricks_68
+  - first:
+      213: -3749936857579891258
+    second: Bricks_69
+  - first:
+      213: 3838396379195861343
+    second: Bricks_70
+  - first:
+      213: -8176806238879663313
+    second: Bricks_71
+  - first:
+      213: 7247201074377966289
+    second: Bricks_72
+  - first:
+      213: 4335758619452730928
+    second: Bricks_73
+  - first:
+      213: 4504193136314795192
+    second: Bricks_74
+  - first:
+      213: -6691152417593846158
+    second: Bricks_75
+  - first:
+      213: -1795478935090779563
+    second: Bricks_76
+  - first:
+      213: -6880225480813951518
+    second: Bricks_77
+  - first:
+      213: 1665787080084634706
+    second: Bricks_78
+  - first:
+      213: 3506486232670077611
+    second: Bricks_79
+  - first:
+      213: -6803726051317226440
+    second: Bricks_80
+  - first:
+      213: -7142227709978730719
+    second: Bricks_81
+  - first:
+      213: 9137492646818096360
+    second: Bricks_82
+  - first:
+      213: -8128900578587785883
+    second: Bricks_83
+  - first:
+      213: 4760126939120015426
+    second: Bricks_84
+  - first:
+      213: -1424627342455148243
+    second: Bricks_85
+  - first:
+      213: 4318287028751553805
+    second: Bricks_86
+  - first:
+      213: -5495427629953643592
+    second: Bricks_87
+  - first:
+      213: 4962123794500436304
+    second: Bricks_88
+  - first:
+      213: 204241264235629653
+    second: Bricks_89
+  - first:
+      213: 2696860565691275641
+    second: Bricks_90
+  - first:
+      213: 465309824094915899
+    second: Bricks_91
+  - first:
+      213: 408784043244566213
+    second: Bricks_92
+  - first:
+      213: 280763145647505058
+    second: Bricks_93
+  - first:
+      213: -5224649944125737265
+    second: Bricks_94
+  - first:
+      213: -817713684678773101
+    second: Bricks_95
+  - first:
+      213: -3390437340330705926
+    second: Bricks_96
+  - first:
+      213: -8483514973637470466
+    second: Bricks_97
+  - first:
+      213: -2810147311333170315
+    second: Bricks_98
+  - first:
+      213: 1622937223984608385
+    second: Bricks_99
+  - first:
+      213: -7044702652949000375
+    second: Bricks_100
+  - first:
+      213: -6957614553793398243
+    second: Bricks_101
+  - first:
+      213: -3407527495846310884
+    second: Bricks_102
+  - first:
+      213: -5900022926060373091
+    second: Bricks_103
+  - first:
+      213: -1170124977980676867
+    second: Bricks_104
+  - first:
+      213: -5886309284362597097
+    second: Bricks_105
+  - first:
+      213: -2472266855773216087
+    second: Bricks_106
+  - first:
+      213: 1618887182602786407
+    second: Bricks_107
+  - first:
+      213: 6930804410638213924
+    second: Bricks_108
+  - first:
+      213: 3151804399429232283
+    second: Bricks_109
+  - first:
+      213: 2048453901915272803
+    second: Bricks_110
+  - first:
+      213: 6857537025806712687
+    second: Bricks_111
+  - first:
+      213: 8808310025248790019
+    second: Bricks_112
+  - first:
+      213: 1023160913693015106
+    second: Bricks_113
+  - first:
+      213: 975832669983296778
+    second: Bricks_114
+  - first:
+      213: -8490809967369734784
+    second: Bricks_115
+  - first:
+      213: -2268668656096896262
+    second: Bricks_116
+  - first:
+      213: 3727800098494250810
+    second: Bricks_117
+  - first:
+      213: 4867059831588045892
+    second: Bricks_118
+  - first:
+      213: 6947049392148266176
+    second: Bricks_119
+  - first:
+      213: 1107764548906823083
+    second: Bricks_120
+  - first:
+      213: 2370858862720021395
+    second: Bricks_121
+  - first:
+      213: -3266013110288361318
+    second: Bricks_122
+  - first:
+      213: 5190622397650730657
+    second: Bricks_123
+  - first:
+      213: -276626948101181087
+    second: Bricks_124
+  - first:
+      213: -4537149542508358270
+    second: Bricks_125
+  - first:
+      213: 383671072422323467
+    second: Bricks_126
+  - first:
+      213: -2775891500478335038
+    second: Bricks_127
+  - first:
+      213: 6186397115221192146
+    second: Bricks_128
+  - first:
+      213: 469546573087882945
+    second: Bricks_129
+  - first:
+      213: -2218891692635053622
+    second: Bricks_130
+  - first:
+      213: -6912457756770463827
+    second: Bricks_131
+  - first:
+      213: -3633523675122665875
+    second: Bricks_132
+  - first:
+      213: 7862881988146850607
+    second: Bricks_133
+  - first:
+      213: 4054472386732277592
+    second: Bricks_134
+  - first:
+      213: 1077659443627961128
+    second: Bricks_135
+  - first:
+      213: -8878935096940166491
+    second: Bricks_136
+  - first:
+      213: 2732699237391910610
+    second: Bricks_137
+  - first:
+      213: 7370324778396582351
+    second: Bricks_138
+  - first:
+      213: -7173269074989031427
+    second: Bricks_139
+  - first:
+      213: 2671886318807911092
+    second: Bricks_140
+  - first:
+      213: -808015843963294550
+    second: Bricks_141
+  - first:
+      213: -7660301780561029754
+    second: Bricks_142
+  - first:
+      213: 6096230234659239834
+    second: Bricks_143
+  - first:
+      213: -1068698381181659260
+    second: Bricks_144
+  - first:
+      213: 4414507379857004722
+    second: Bricks_145
+  - first:
+      213: 5403043996813446038
+    second: Bricks_146
+  - first:
+      213: -5568897811014393957
+    second: Bricks_147
+  - first:
+      213: -7218830244321499604
+    second: Bricks_148
+  - first:
+      213: -6134706225281561045
+    second: Bricks_149
+  - first:
+      213: 1287751972688458310
+    second: Bricks_150
+  - first:
+      213: -3105545363958777851
+    second: Bricks_151
+  - first:
+      213: -4900307968169619735
+    second: Bricks_152
+  - first:
+      213: -1664297003167757334
+    second: Bricks_153
+  - first:
+      213: -75448004612514910
+    second: Bricks_154
+  - first:
+      213: 5700289764025725706
+    second: Bricks_155
+  - first:
+      213: 8530275944383665097
+    second: Bricks_156
+  - first:
+      213: 3858119450119112872
+    second: Bricks_157
+  - first:
+      213: -6810905318853639453
+    second: Bricks_158
+  - first:
+      213: -8346585749988587392
+    second: Bricks_159
+  - first:
+      213: -9097583286418436484
+    second: Bricks_160
+  - first:
+      213: -1624484635398796086
+    second: Bricks_161
+  - first:
+      213: 4108513491736351327
+    second: Bricks_162
+  - first:
+      213: 8962377407788142296
+    second: Bricks_163
+  - first:
+      213: -9157610343869325664
+    second: Bricks_164
+  - first:
+      213: -8981595016634473647
+    second: Bricks_165
+  - first:
+      213: -2968290204282976968
+    second: Bricks_166
+  - first:
+      213: -2022793954295922445
+    second: Bricks_167
+  - first:
+      213: 4672668284231607309
+    second: Bricks_168
+  - first:
+      213: -7245210458604362108
+    second: Bricks_169
+  - first:
+      213: -6372882728852976566
+    second: Bricks_170
+  - first:
+      213: -3484481269142748821
+    second: Bricks_171
+  - first:
+      213: -7679062525739264385
+    second: Bricks_172
+  - first:
+      213: -8605020225131825522
+    second: Bricks_173
+  - first:
+      213: -4591444775706785664
+    second: Bricks_174
+  - first:
+      213: 8926581781768041931
+    second: Bricks_175
+  - first:
+      213: -8391328134787179709
+    second: Bricks_176
+  - first:
+      213: 306082806258354074
+    second: Bricks_177
+  - first:
+      213: 2153521075521388760
+    second: Bricks_178
+  - first:
+      213: -6713550803403410131
+    second: Bricks_179
+  - first:
+      213: 1843136047637694217
+    second: Bricks_180
+  - first:
+      213: -3141151062131390166
+    second: Bricks_181
+  - first:
+      213: -7457522162604542712
+    second: Bricks_182
+  - first:
+      213: -2304937868675854521
+    second: Bricks_183
+  - first:
+      213: 3799531344467156560
+    second: Bricks_184
+  - first:
+      213: -4239064445177310991
+    second: Bricks_185
+  - first:
+      213: -3039142513781926968
+    second: Bricks_186
+  - first:
+      213: 3913388505888562005
+    second: Bricks_187
+  - first:
+      213: -4769733363915733330
+    second: Bricks_188
+  - first:
+      213: 9086252119436621761
+    second: Bricks_189
+  - first:
+      213: 7401136583895939103
+    second: Bricks_190
+  - first:
+      213: -5339009928373733515
+    second: Bricks_191
+  - first:
+      213: 6128173287560061907
+    second: Bricks_192
+  - first:
+      213: -7419551888536609730
+    second: Bricks_193
+  - first:
+      213: 3869986787741393254
+    second: Bricks_194
+  - first:
+      213: -5310474195590845834
+    second: Bricks_195
+  - first:
+      213: 5779334839416698541
+    second: Bricks_196
+  - first:
+      213: 2583286164632146346
+    second: Bricks_197
+  - first:
+      213: 3561273719787061911
+    second: Bricks_198
+  - first:
+      213: -4765281068374237045
+    second: Bricks_199
+  - first:
+      213: 7233571534979510394
+    second: Bricks_200
+  - first:
+      213: 4630816911891411060
+    second: Bricks_201
+  - first:
+      213: -8487780892963394298
+    second: Bricks_202
+  - first:
+      213: 7143094794240380588
+    second: Bricks_203
+  - first:
+      213: -2142614752586145234
+    second: Bricks_204
+  - first:
+      213: -7176031481057365289
+    second: Bricks_205
+  - first:
+      213: -8172631395118786727
+    second: Bricks_206
+  - first:
+      213: -7617149386002997298
+    second: Bricks_207
+  - first:
+      213: 2618273392824294641
+    second: Bricks_208
+  - first:
+      213: -2537737133746317483
+    second: Bricks_209
+  - first:
+      213: -255083275516471709
+    second: Bricks_210
+  - first:
+      213: -2634082443446621875
+    second: Bricks_211
+  - first:
+      213: -324750310346207537
+    second: Bricks_212
+  - first:
+      213: 931356647967587571
+    second: Bricks_213
+  - first:
+      213: -7704707359832433203
+    second: Bricks_214
+  - first:
+      213: -1400138475359389064
+    second: Bricks_215
+  - first:
+      213: 1626929732232176360
+    second: Bricks_216
+  - first:
+      213: -6854646917053641846
+    second: Bricks_217
+  - first:
+      213: 7160140007701839959
+    second: Bricks_218
+  - first:
+      213: 6338328024401292501
+    second: Bricks_219
+  - first:
+      213: -8866843448317291797
+    second: Bricks_220
+  - first:
+      213: 36749545146749946
+    second: Bricks_221
+  - first:
+      213: 2935282500909756956
+    second: Bricks_222
+  - first:
+      213: -7896855728149232759
+    second: Bricks_223
+  - first:
+      213: 8905057139400335141
+    second: Bricks_224
+  - first:
+      213: -8920099641313820683
+    second: Bricks_225
+  - first:
+      213: -5855482583436481091
+    second: Bricks_226
+  - first:
+      213: -249285470843034253
+    second: Bricks_227
+  - first:
+      213: 665683015207296876
+    second: Bricks_228
+  - first:
+      213: -6981665057266344069
+    second: Bricks_229
+  - first:
+      213: 7458844018927004476
+    second: Bricks_230
+  - first:
+      213: -5201092579100928677
+    second: Bricks_231
+  - first:
+      213: -9104551884301898189
+    second: Bricks_232
+  - first:
+      213: -6666699791493737139
+    second: Bricks_233
+  - first:
+      213: 431733368465078963
+    second: Bricks_234
+  - first:
+      213: 7675316187447608263
+    second: Bricks_235
+  - first:
+      213: 2989986824016177470
+    second: Bricks_236
+  - first:
+      213: 1942560580721880083
+    second: Bricks_237
+  - first:
+      213: -8931491576280070495
+    second: Bricks_238
+  - first:
+      213: -394105674188331826
+    second: Bricks_239
+  - first:
+      213: -7702645141721782181
+    second: Bricks_240
+  - first:
+      213: 6353909066629550493
+    second: Bricks_241
+  - first:
+      213: 9103634423421195825
+    second: Bricks_242
+  - first:
+      213: -1611694086647740559
+    second: Bricks_243
+  - first:
+      213: 7309124491686452626
+    second: Bricks_244
+  - first:
+      213: -8457376910654657992
+    second: Bricks_245
+  - first:
+      213: -442243186440639836
+    second: Bricks_246
+  - first:
+      213: 4091683344950580434
+    second: Bricks_247
+  - first:
+      213: 1887055296665066718
+    second: Bricks_248
+  - first:
+      213: -4735215709508087417
+    second: Bricks_249
+  - first:
+      213: -2550245673614449167
+    second: Bricks_250
+  - first:
+      213: 3344278480544211071
+    second: Bricks_251
+  - first:
+      213: 1934982056318600086
+    second: Bricks_252
+  - first:
+      213: -8762027033714929550
+    second: Bricks_253
+  - first:
+      213: 1799057943412620295
+    second: Bricks_254
+  - first:
+      213: 3309512955237876993
+    second: Bricks_255
+  - first:
+      213: -8615068557727134173
+    second: Bricks_256
+  - first:
+      213: -3773423452493255192
+    second: Bricks_257
+  - first:
+      213: -4066632841392495673
+    second: Bricks_258
+  - first:
+      213: 6692604005325505615
+    second: Bricks_259
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bricks_0
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 779
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7083af7877d324da6aff2253be2da4
+      internalID: -5160660819957252609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 779
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5c8cfb76f47664787df62a95b5022d
+      internalID: 6859263829080826081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 779
+        width: 8
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1154fabde1efa48b11cfe31b528695
+      internalID: 4408241631364836248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_3
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 778
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6754df36efd387243879defbd75bc20d
+      internalID: 5775632523447700598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_4
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 779
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b48bdb3ced70ce4f80e46f78d4bba93
+      internalID: -7225512925871877664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 778
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4e6b376b30af249b038464b2b13738
+      internalID: 2482014102518608977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 739
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addb2a690da9cb9408db36f79ec2ba41
+      internalID: -3348062934533217571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 740
+        width: 66
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffd1cc96d109b84b9b0b81e65a345b0
+      internalID: -4048665207900645208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_8
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 740
+        width: 202
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a7e99b08b42894fac76932f11225a7
+      internalID: 556530189025366737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_9
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 740
+        width: 66
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad2023219f5dde43abf978598c8e2bd
+      internalID: 2326304054162573754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_10
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 740
+        width: 66
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626a463d3eade0845ba04b73eb79d0bd
+      internalID: 6766710538194844706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_11
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 740
+        width: 202
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5e5e61f67989840be2516cf0ff64f9
+      internalID: 6324531904809182244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_12
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 739
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f173233e15202774a8b9626dfe07e817
+      internalID: -3626552937498295834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_13
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 712
+        width: 136
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d687998e7e42f4bb2dc05652dc8c05
+      internalID: -771744083097051549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_14
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 712
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f04c51f6a097f94fbf451895c12c29c
+      internalID: -7493662373440314518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_15
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 712
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916c37854a4bbe642a9d0ae3adadcc38
+      internalID: 8377601346417164459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_16
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 712
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c5e46b39833564b99ec96c2b4d6dfb
+      internalID: -2791666833621720718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 712
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c003304f797594ba3608082da9999e
+      internalID: 6935165142171217264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_18
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 712
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c211a8b01cfc4f544b5092a6ffd74e13
+      internalID: -4575754327461565494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_19
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 712
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a901a462a141c540bda01a7aa5e749d
+      internalID: -7989511489213889443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_20
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 711
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c19c21867993a4b8379cde653cf37e
+      internalID: -4526969275931063505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_21
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 712
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bb2a08aeac7184982f6892a07935ce
+      internalID: 6875877566193945470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 682
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ed8bceb1c92444b8ade4ed061395ba
+      internalID: -2101670647433447705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_23
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 683
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2624ef761bfca614da9d7cc7d2f96684
+      internalID: -2903041914780571137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_24
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 683
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134f92f189c0ca9498558c75b19c5a1f
+      internalID: 7013569439670819478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_25
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 683
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a972a665bdf31c42ac8c4c1b41f9439
+      internalID: -2351728184125324777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_26
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 683
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3054f622dabbbc047be942a9aa9b8bdc
+      internalID: -2408460109601310524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_27
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 683
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc19404f73f2ae408d2c83e608d39cf
+      internalID: 1877927561775796732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_28
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 683
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da3659ee2e513540a35e52b64c9858d
+      internalID: -1590091725503304328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_29
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 683
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24e04f5db7bc934c838005b191aea4a
+      internalID: -4606175067800870258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_30
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 683
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511507ebc06e14046a192c8d17eb43d6
+      internalID: -6117414832807462825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_31
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 683
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf1fbaa6090b6645987deeb955eea7b
+      internalID: 7942139042437279256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_32
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 682
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8138b41bc20f240a0957c036d1a342
+      internalID: 8058108971146127032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_33
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 655
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810abd9554213ee45b060b8e86d2f22a
+      internalID: 653349583320507831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_34
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 655
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937372f19ec27b34f938f45df5255135
+      internalID: -309606227815762073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_35
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 655
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ee87d0afd4c754b94c283f6f91e916
+      internalID: 271461802844321000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_36
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 655
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5aa24b04dec9241ae3607ade1f7df0
+      internalID: 6675420903985128321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_37
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 655
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cb53c0ac2b7384592d58133a2cc74a
+      internalID: -4007597808561564627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_38
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 655
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8794c90abdf482b4daed28fc44087a94
+      internalID: 3495765951527904603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_39
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 655
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d33d0a41ecee0469c8b4fba82f00a9
+      internalID: -5214482880028490239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_40
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 655
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918baf6492ef7c642aabccf3f7830566
+      internalID: 8109085514931408302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_41
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 655
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeaa69ccb627c794b84de52cdca68149
+      internalID: 8568486663932372681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_42
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 655
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d91dbe14ba63ef4cbd6298cdda5ccac
+      internalID: 3373534363995227094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_43
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 627
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d487c72c035af3498415168c1b8d00d
+      internalID: -1594706971751499377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_44
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 627
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3e51262ded73446bcb7256de9625e2
+      internalID: -1923462957361558241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_45
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 627
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fc49c87127f2b4d881b80f6fdc057e
+      internalID: -3237319551571373777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_46
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 627
+        width: 134
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055d949212f7ff7449a4270cb185f295
+      internalID: 2947782629709950520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_47
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 627
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74d7120ae0eb9948a07dd223ce9fb4c
+      internalID: -1712608033672629461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_48
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 627
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c535c22ab072446947a627fa0047b7
+      internalID: 3420802382242271487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_49
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 627
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bcbf81f0b7e5b4ca0adb0c6635ce5f
+      internalID: 4073831044082771821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_50
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 627
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc63cec313d5b840b1b7eb6b77b6646
+      internalID: -7774845558202682318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_51
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 627
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66545d77ee8f104ca1dd1bbe7a86abe
+      internalID: -4385122877384111609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_52
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 627
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a1b7647a582e746a2a7eb70a9fa3f8
+      internalID: 8079255161275301963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_53
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 598
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b3672a2dd576646b5a273f3cd984f8
+      internalID: -2930251808271837553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_54
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 598
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557429e8147ea11409164643ce149c15
+      internalID: 1549626097033653730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_55
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 598
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd78b959cc2310b48a085d2169326c79
+      internalID: -5365758018893154128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_56
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 598
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8f4df53ed88f3499d7fca11e764643
+      internalID: -2906226937824978672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_57
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 598
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9fdffabf821f2438fd0e7f3b1403b2
+      internalID: -797595217209894085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_58
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 598
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafe57f84d440b64c8c978fadacb7adb
+      internalID: -7809164651038441910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_59
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 598
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e98a98ab8319f247b7cb42f9c74bc7e
+      internalID: -7042256452303854539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_60
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 598
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8520c3a68eba746a97df057fbc9357
+      internalID: 1839265906423216666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_61
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 598
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69898a2b742f2f94f91ba5a9bd9a0811
+      internalID: 2991623462310642866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_62
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 598
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec0b98618f5a984085342feb0f7f1e9
+      internalID: -4791879487566944956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_63
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 570
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f423e30662f90a844ad1d38bec0ee7c2
+      internalID: -1031772877555021242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_64
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 570
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c70b137bce8c4459111fa2ae5b3b45
+      internalID: 4640935471067513305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_65
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 570
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd9dfa88ad8568469733e426085630f
+      internalID: -1011917871315178922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_66
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 570
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5c62853fa6c704793adf783b0efc1d
+      internalID: 8792816283975404239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_67
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 570
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0759d397ac3afdd4ebe7e6fa5e0f79a1
+      internalID: 7011321120009063684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_68
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 570
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe965c43215fef74bb6fb22e665aac83
+      internalID: -7036321339552477995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_69
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 570
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b4cf110315aa84f86cafbe9297b1e3
+      internalID: -3749936857579891258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_70
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 570
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c45c56b14a956144a37572e79bfda7e
+      internalID: 3838396379195861343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_71
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 570
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4197d357b19a8dd48a1bab6d76a484b3
+      internalID: -8176806238879663313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_72
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 570
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165df30c99668a142b02067ae0803ae1
+      internalID: 7247201074377966289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_73
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 570
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4288db27b47190745bc7e70ddfcb8745
+      internalID: 4335758619452730928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_74
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 542
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b346403204b62479ff594bd6a02bbf
+      internalID: 4504193136314795192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_75
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 542
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564d6de9744cbba42a3a62bd6a0631cd
+      internalID: -6691152417593846158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_76
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 542
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf9f30f37c1f254d99697f47b30b75a
+      internalID: -1795478935090779563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_77
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 542
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fe65018b8562e44a13effcdbc5596f
+      internalID: -6880225480813951518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_78
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 542
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41ede12496bbb5429cedcc64a8bb58c
+      internalID: 1665787080084634706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_79
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 542
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d69991a4e1e2941b1b2d76f731f82f
+      internalID: 3506486232670077611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_80
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 542
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d41adf4de56554aa4f3294250f969b
+      internalID: -6803726051317226440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_81
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 542
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc33af295bfd0af45ae39459d8468e9c
+      internalID: -7142227709978730719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_82
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 542
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21ba498ebc0615419bff4eb192af890
+      internalID: 9137492646818096360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_83
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 542
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857c5bb4a5c5157418e31a67a7c619bd
+      internalID: -8128900578587785883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_84
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 513
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed547da6e58325b42a9e4afc14496fbf
+      internalID: 4760126939120015426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_85
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 513
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3feb5dfbccd464f9ef5863de1d6304
+      internalID: -1424627342455148243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_86
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 513
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb62b604e59b408469c40debd9a52d22
+      internalID: 4318287028751553805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_87
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 513
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1aa0ccab88fa142b8677af663dae1d
+      internalID: -5495427629953643592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_88
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 513
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a982e1cff44c8e645ab2900e1341e051
+      internalID: 4962123794500436304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_89
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 513
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadc4895066ccdc46b3c49b9f62ceb36
+      internalID: 204241264235629653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_90
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 513
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd53af27bc8d3a4f9eef0c179e42632
+      internalID: 2696860565691275641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_91
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 514
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bc628194549aa458ccd42b93a45276
+      internalID: 465309824094915899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_92
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 514
+        width: 65
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0fe6100a603d84c9c6bbc695f2c2f9
+      internalID: 408784043244566213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_93
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 513
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fab3cb4eba4aa84cbdc89836da12f37
+      internalID: 280763145647505058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_94
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 513
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d5b9cdadc192e43adccfb118a90415
+      internalID: -5224649944125737265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_95
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 485
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7875c8c3c2d2fa4f939e440cc0b71e2
+      internalID: -817713684678773101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_96
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 485
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacd3ad93fc654f4fbeb1f2e51a1807f
+      internalID: -3390437340330705926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_97
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 485
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93703b45563cc0f4a8b7ef0487d13fec
+      internalID: -8483514973637470466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_98
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 485
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e945ec11904904b9279c290da95da8
+      internalID: -2810147311333170315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_99
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 485
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52049d082485d1145bff0e251965d134
+      internalID: 1622937223984608385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_100
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 485
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30159198f17cb6b4e8f050d3950b2ee1
+      internalID: -7044702652949000375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_101
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 485
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79dba2d49b2a9442bec8526dc34ba96
+      internalID: -6957614553793398243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_102
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 485
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9baee90543b0d942b9089d40713ed1a
+      internalID: -3407527495846310884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_103
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 485
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b640d23bc1f00949bc15eb80d406b24
+      internalID: -5900022926060373091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_104
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 485
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fe9331679a26a43ae5e49df0f7fcfd
+      internalID: -1170124977980676867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_105
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 457
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bd7fe3b69d39f4c9c4d8147dbb7b97
+      internalID: -5886309284362597097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_106
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 457
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526d1b025595ca84ab733ef4e998c7b5
+      internalID: -2472266855773216087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_107
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 457
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8a2502b473af84b98189a940d75d33
+      internalID: 1618887182602786407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_108
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 457
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f229d3e88423049ad1727198ec6c8e
+      internalID: 6930804410638213924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_109
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 457
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bf5ad24cd569d4c8dc1fedf56a6fcb
+      internalID: 3151804399429232283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_110
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 457
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f30ce07d49ca2489ff2fe82cc2ef66
+      internalID: 2048453901915272803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_111
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 457
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37daeb5792b5fb640bfc3ae1334c1553
+      internalID: 6857537025806712687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_112
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 457
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f298c181b36e13b488d10cf2049f3559
+      internalID: 8808310025248790019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_113
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 457
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9ef508ba598ec48a744b97515a719a
+      internalID: 1023160913693015106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_114
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 457
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da8ca24f6517d94990b8f37ca6bd0a7
+      internalID: 975832669983296778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_115
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 457
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb965399323c294988e6389c881d396
+      internalID: -8490809967369734784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_116
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 429
+        width: 68
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dceabbfbfa1fe7448a9f6ec8d660613f
+      internalID: -2268668656096896262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_117
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 429
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c88bf94e3d3af142bffee0e06026d7b
+      internalID: 3727800098494250810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_118
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 429
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601afcb296cc4324189b95b36f76346a
+      internalID: 4867059831588045892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_119
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 429
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8fa5aeee89146488075fd0f75a2f9a
+      internalID: 6947049392148266176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_120
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 429
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8e52f8d14dff9489f1a7fd962a795a
+      internalID: 1107764548906823083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_121
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 429
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b78d2848fd42b4c9de590650d5f026
+      internalID: 2370858862720021395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_122
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 429
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cada8545eede8f1458d83ceb596d67dd
+      internalID: -3266013110288361318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_123
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 429
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0565dc39a66334292b47f923e0046d
+      internalID: 5190622397650730657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_124
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 429
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6269bb2785ed0bc4e82f3f2466114d2c
+      internalID: -276626948101181087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_125
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 429
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20eb20f48cda5f042ace98e26ee35e8b
+      internalID: -4537149542508358270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_126
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 400
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9baa6d6514068b647807ec39cfde7e3e
+      internalID: 383671072422323467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_127
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 401
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52ab83db8fe5d2409acba8e2ecd2c75
+      internalID: -2775891500478335038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_128
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 401
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40abc0a19ac37da41a88be04f6b86ce1
+      internalID: 6186397115221192146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_129
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 400
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf0135ff16f09944b5a7bf26d79e0b4
+      internalID: 469546573087882945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_130
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 401
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c70d38669e73e42893cc15918b5982
+      internalID: -2218891692635053622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_131
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 401
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8a0b30b8af2074780d1b38f85f67e8
+      internalID: -6912457756770463827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_132
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 401
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75f060cfd2b4f14fb3cae749dd76db5
+      internalID: -3633523675122665875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_133
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 401
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f20f55e53c6134da0c217293e4f0bb
+      internalID: 7862881988146850607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_134
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 400
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768e96c7f4e1eec44a4baf019363a722
+      internalID: 4054472386732277592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_135
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 401
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3d065e47257b24698084837ed18306
+      internalID: 1077659443627961128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_136
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 400
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf9d611c92b8374f9a1b4378dd97430
+      internalID: -8878935096940166491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_137
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 373
+        width: 68
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a9e0e689f7d6745994b9b8d716cee4
+      internalID: 2732699237391910610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_138
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 373
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df4a4bbecffd8245b64775f1d7a15cf
+      internalID: 7370324778396582351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_139
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 373
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcab57958b411c43b481193a6355e5d
+      internalID: -7173269074989031427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_140
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 373
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f25c799d70bf34e93531364ef2070a
+      internalID: 2671886318807911092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_141
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 372
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e92052b389307748b7708cc1d56d729
+      internalID: -808015843963294550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_142
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 373
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83f7f8c5221e754a873d1914487c095
+      internalID: -7660301780561029754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_143
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 372
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcf4bbafd0597f49b08169bfd29062e
+      internalID: 6096230234659239834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_144
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 372
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d029cea3f1a3923419a4cd6ac4935a5c
+      internalID: -1068698381181659260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_145
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 373
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d112ba3b10f95094c8f534a9255654cd
+      internalID: 4414507379857004722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_146
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 372
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35f6c5eb9daec442bac8439d1873a25
+      internalID: 5403043996813446038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_147
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 343
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955ed0d4ebb367845895249e873b99c7
+      internalID: -5568897811014393957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_148
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 344
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7312a6e71804054c8a8afd97187d2e3
+      internalID: -7218830244321499604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_149
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 344
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9961eaba7753c3e4084ae8b4fefb65b4
+      internalID: -6134706225281561045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_150
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 344
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badb49b4d7547cf4d95819bd25022867
+      internalID: 1287751972688458310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_151
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 344
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cdb27de45e6df49a844aaa152e34ae
+      internalID: -3105545363958777851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_152
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 344
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8492eed6e49c84bb96e7b272bac9be
+      internalID: -4900307968169619735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_153
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 344
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd808de0e292234ea9c22cb1eddf578
+      internalID: -1664297003167757334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_154
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 344
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee61d431440bb64cb03052dac8c233e
+      internalID: -75448004612514910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_155
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 344
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc89cdceb5dfc9c4e8ed904d6b4522e1
+      internalID: 5700289764025725706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_156
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 344
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a2af3f507c15241b5e68263bfc6f82
+      internalID: 8530275944383665097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_157
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 343
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5dbb12f1f7045478fdf8ed03224b01
+      internalID: 3858119450119112872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_158
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 316
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56786b66c38db2b4e960b2a0c364d179
+      internalID: -6810905318853639453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_159
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 316
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d181b64e6d101924bb975e6e2a94e679
+      internalID: -8346585749988587392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_160
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 316
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3cb5a971eae764d99410cd64bf542e
+      internalID: -9097583286418436484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_161
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 316
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a64b8af090da4541bf3d5cefc1dc456
+      internalID: -1624484635398796086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_162
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 316
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5be25dbc89b6fb49b7c304d584b8027
+      internalID: 4108513491736351327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_163
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 316
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46124630b8f6ced4bb72e9a69ce41556
+      internalID: 8962377407788142296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_164
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 316
+        width: 65
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd85e6403f3e42478a1f70819acf372
+      internalID: -9157610343869325664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_165
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 316
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2714c241f800a4c98da531d8f929d2
+      internalID: -8981595016634473647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_166
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 316
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3985a5294c3b1b45b095f3d6e8f382e
+      internalID: -2968290204282976968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_167
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 316
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f25a4ffcf72ea488d08ddebc62614e
+      internalID: -2022793954295922445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_168
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 288
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0dcba583ed4994faafee7ef9e7efc4
+      internalID: 4672668284231607309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_169
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 288
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536c5de53595cd94bae079e1baffd162
+      internalID: -7245210458604362108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_170
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 288
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34931818233e7574ab9f02cd80f93e0e
+      internalID: -6372882728852976566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_171
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 288
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48485d51aea519c41a28928566cfdc9a
+      internalID: -3484481269142748821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_172
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 288
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581bbc601d7edc04691786218f3a9354
+      internalID: -7679062525739264385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_173
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 288
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348f6c1b6dc46534b93546e7ad0bfcc9
+      internalID: -8605020225131825522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_174
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 288
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3876ee7cb198abe488ef8486bd61c49f
+      internalID: -4591444775706785664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_175
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 288
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f6eb1221472654a97267a3414b1f12
+      internalID: 8926581781768041931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_176
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 288
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bdbd9695614ae4abb830bb9b9d824a
+      internalID: -8391328134787179709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_177
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 288
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8c1198dc4ff854f99cc44de3bd5279
+      internalID: 306082806258354074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_178
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 288
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66f3edb08652e24aaac9aebd0e0631b
+      internalID: 2153521075521388760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_179
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 259
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cb307f204189644995f068c29620da
+      internalID: -6713550803403410131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_180
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 259
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fcda9cf4c39304b85869d55c9814bf
+      internalID: 1843136047637694217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_181
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 259
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd569e9c6776a924095c89f167aa0a11
+      internalID: -3141151062131390166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_182
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 259
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aadf009578b3fd4e9ef5c38c9b3cac2
+      internalID: -7457522162604542712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_183
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 259
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4c7e66859b72647ab6bd910fbaa703
+      internalID: -2304937868675854521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_184
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 259
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5bd5ae5bfff744b8aee1291eb0d3d2
+      internalID: 3799531344467156560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_185
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 259
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a594718fa56e0fc4998631f332b6147f
+      internalID: -4239064445177310991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_186
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 259
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a91c8b2b6dff447a8ebfd0f2d0c4cf
+      internalID: -3039142513781926968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_187
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 259
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b81f0073c0f6744e816e8004f6b2bdf
+      internalID: 3913388505888562005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_188
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 259
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7588c9c205a68446ae1481fb629bd06
+      internalID: -4769733363915733330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_189
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 231
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c70cf38cfbd6544a84ad8e8ac069e8f
+      internalID: 9086252119436621761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_190
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 231
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7febd4d56f89b3842ad0c8e7988f42e1
+      internalID: 7401136583895939103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_191
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 231
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6b336f4bbae7247b0efd0c6895ef0d
+      internalID: -5339009928373733515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_192
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 231
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafe97ff1c0379743b58defad48795fd
+      internalID: 6128173287560061907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_193
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 231
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a12cb4132bddc5409d5ce23f16c6354
+      internalID: -7419551888536609730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_194
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 231
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fbf2dadd71529439cf4c0fca781db3
+      internalID: 3869986787741393254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_195
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 231
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823478be5681a154491dd74ccfe756fa
+      internalID: -5310474195590845834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_196
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 231
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96d584b7d77e534ca68b8dfe0dd0c33
+      internalID: 5779334839416698541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_197
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 231
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f0b136091b32247a3fb8e9a55fad3a
+      internalID: 2583286164632146346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_198
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 231
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c2a1e59b577f14d88b904738e2828d
+      internalID: 3561273719787061911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_199
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 231
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd10496dfdfb6684da66c5eb37d8d4aa
+      internalID: -4765281068374237045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_200
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 203
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1559c49e21c9f0428d622bd7345c4ed
+      internalID: 7233571534979510394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_201
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 203
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300f901ab01924644baf3fb358bbd045
+      internalID: 4630816911891411060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_202
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 203
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6270ff67ff792784a9f19f7a2b9cb86f
+      internalID: -8487780892963394298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_203
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 203
+        width: 134
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6537d14fd97ae439a832d3dfa2c332
+      internalID: 7143094794240380588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_204
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 203
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01acd5d9799d92a4198e4e629b0be9c0
+      internalID: -2142614752586145234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_205
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 203
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7099a2ed21d3c4fb47916ef9a26b48
+      internalID: -7176031481057365289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_206
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 203
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f9931939caad245b5d2cccf0524e7b
+      internalID: -8172631395118786727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_207
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 203
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2aa30418451ae4794c028960bae3a4
+      internalID: -7617149386002997298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_208
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 203
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bd38bdf341b8649b4bb02ae51b4a0c
+      internalID: 2618273392824294641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_209
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 174
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f29f0e03019a984787689f80a9e5c1a
+      internalID: -2537737133746317483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_210
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 174
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6bc2ddaebefe6469dc26d6bf5febe7
+      internalID: -255083275516471709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_211
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 174
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb5305199332994ab749faa13f56c44
+      internalID: -2634082443446621875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_212
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 174
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c918f4e53c2373447bec2a65a4225c45
+      internalID: -324750310346207537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_213
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 174
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef1d5aa13b4fd449b1c44bf7adf7398
+      internalID: 931356647967587571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_214
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 174
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece867a4a6b18994099a473376970f1d
+      internalID: -7704707359832433203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_215
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 174
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c799b02e40d421438eda60c5a7764f3
+      internalID: -1400138475359389064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_216
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 174
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af9f21b8caff7e4189aea9367905473
+      internalID: 1626929732232176360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_217
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 174
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c264bf3643f16c34bb6f9df4236df67e
+      internalID: -6854646917053641846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_218
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 174
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601fdf7a3a260e345a5504a1aedc2e27
+      internalID: 7160140007701839959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_219
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 174
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9012434e006f727498d76e145f67c967
+      internalID: 6338328024401292501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_220
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 146
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4522a80197e72594ca9a9e50c85de5b3
+      internalID: -8866843448317291797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_221
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 146
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ed0e9f79e9a6f4a9e73db1941a74dc
+      internalID: 36749545146749946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_222
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 146
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f5e5b5fd6690a42bd6019f8126252c
+      internalID: 2935282500909756956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_223
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 146
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b6f1df783bfa642996d7859ee2ff72
+      internalID: -7896855728149232759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_224
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 146
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdc59091636fd04bb5557ef02df6878
+      internalID: 8905057139400335141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_225
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 146
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c485ab700d63bbc438dc915bc34671bb
+      internalID: -8920099641313820683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_226
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 146
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d793e95534013145a97d0262b0fb21e
+      internalID: -5855482583436481091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_227
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 146
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027b8422fcdc1aa4f91cf40c5a0c053d
+      internalID: -249285470843034253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_228
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 146
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d196bfb0879b14297c5e0f00bceb6b
+      internalID: 665683015207296876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_229
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 146
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511a5f05a4d5e64488fc50d3f44b6803
+      internalID: -6981665057266344069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_230
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 118
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d4b7746682da64b8539f72e1110e58
+      internalID: 7458844018927004476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_231
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 118
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5993998b178580f4c8cb2b05ce3d1e44
+      internalID: -5201092579100928677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_232
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 118
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abfe98743ee5dc4c99fc9935ad44441
+      internalID: -9104551884301898189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_233
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 118
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7aa0558b77bac48acab6039a25772b
+      internalID: -6666699791493737139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_234
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 118
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a84452ea2c1ce4f83079ddeacdab31
+      internalID: 431733368465078963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_235
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 118
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a493c78ae5111499ccec0d8d42c95e
+      internalID: 7675316187447608263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_236
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 118
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3545570c79fdd694caeacb4e3345d706
+      internalID: 2989986824016177470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_237
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 118
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb3bf177aab22048a941a15972a56e1
+      internalID: 1942560580721880083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_238
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 118
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eba61f21744e23499203e6b4ecd9809
+      internalID: -8931491576280070495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_239
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 118
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dc58963e2b93f45993874f316c19d3
+      internalID: -394105674188331826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_240
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 118
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613e49cc9cb2f9e4d91f969795defbe3
+      internalID: -7702645141721782181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_241
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 90
+        width: 68
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473a966b37af8ad46a1f02d193400ed4
+      internalID: 6353909066629550493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_242
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 90
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b286d320979d4cf4a9fb4dc9144336af
+      internalID: 9103634423421195825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_243
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 90
+        width: 65
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f7735715613a04f98b2e91179108fd
+      internalID: -1611694086647740559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_244
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 90
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cea9b8761506343893d3f547e5958c
+      internalID: 7309124491686452626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_245
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 90
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692342e63b618574f9430cc6e06d425e
+      internalID: -8457376910654657992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_246
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 90
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528fe46ad037b4648b1edc046d3709b0
+      internalID: -442243186440639836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_247
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 90
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3394b4f39e043b469ff880602314ec4
+      internalID: 4091683344950580434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_248
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 90
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c572240bf29b44fa9cfc0fb03c471c
+      internalID: 1887055296665066718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_249
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 90
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1086c0e38403e784dacabc2efa469d29
+      internalID: -4735215709508087417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_250
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 90
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ae98afbc6e971469aca9b173443869
+      internalID: -2550245673614449167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_251
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 74
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d7794481f5d334fa03374142456a4d
+      internalID: 3344278480544211071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_252
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 74
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9faa50eb603bce5489e7a9a10badb40e
+      internalID: 1934982056318600086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_253
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 74
+        width: 135
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e652e602c8fa5ae4bb3c7b9cf3bd67ea
+      internalID: -8762027033714929550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_254
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 74
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e38804638848741ae0e71cc5f136ac
+      internalID: 1799057943412620295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_255
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 74
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2ac00202039a543bbc9c32bacf5264
+      internalID: 3309512955237876993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_256
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 74
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5830e36fecaf1b148be78d6ee567c067
+      internalID: -8615068557727134173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_257
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 74
+        width: 135
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d9f611b6956b14199d4b647ec5bb8b
+      internalID: -3773423452493255192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_258
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 74
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c756be3c8637c9945bb4653c4f78327f
+      internalID: -4066632841392495673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_259
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 74
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cfaf1490bc9894197d8f830d577b3e
+      internalID: 6692604005325505615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: e6a2f678f81a6e34b8551cab030f5f17
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6728539436179983171
+    second: Cemetry_0
+  - first:
+      213: 747763135102557965
+    second: Cemetry_1
+  - first:
+      213: 7655828531986475505
+    second: Cemetry_2
+  - first:
+      213: 2288464713526246615
+    second: Cemetry_3
+  - first:
+      213: -4968316758719820079
+    second: Cemetry_4
+  - first:
+      213: -3800813867520773139
+    second: Cemetry_5
+  - first:
+      213: -2131916921697441981
+    second: Cemetry_6
+  - first:
+      213: -2765582926407709758
+    second: Cemetry_7
+  - first:
+      213: 5630040692098317109
+    second: Cemetry_8
+  - first:
+      213: -8576819517058385901
+    second: Cemetry_9
+  - first:
+      213: -3374669073545318721
+    second: Cemetry_10
+  - first:
+      213: 5355426815175448075
+    second: Cemetry_11
+  - first:
+      213: -5152963840592997146
+    second: Cemetry_12
+  - first:
+      213: -8322538827824629275
+    second: Cemetry_13
+  - first:
+      213: 8111651085340795008
+    second: Cemetry_14
+  - first:
+      213: -1072427810925972558
+    second: Cemetry_15
+  - first:
+      213: -1632425679687285442
+    second: Cemetry_16
+  - first:
+      213: 5051724760303712190
+    second: Cemetry_17
+  - first:
+      213: -5387076390491888097
+    second: Cemetry_18
+  - first:
+      213: -6997330034612776961
+    second: Cemetry_19
+  - first:
+      213: 2380160417125091806
+    second: Cemetry_20
+  - first:
+      213: -6004968208414828135
+    second: Cemetry_21
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cemetry_0
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 777
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febbb366d57cc4044a458f34da71bdb7
+      internalID: -6728539436179983171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_1
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 778
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b682a427448e37489164af5f3b9d55b
+      internalID: 747763135102557965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 778
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a908fdcb7aa714090abc17358f7d0a
+      internalID: 7655828531986475505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 778
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba24b1b1bdfdb6045b40e50857527138
+      internalID: 2288464713526246615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_4
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 778
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba408af3931ebee409e398f341fa6a63
+      internalID: -4968316758719820079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_5
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 778
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efd35fe1fcbbc949aae51f254101d29
+      internalID: -3800813867520773139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 778
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc811e70245357c46a38a72dbea69c8b
+      internalID: -2131916921697441981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_7
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 778
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c43d0507587e5244a81d6b39489ebc2
+      internalID: -2765582926407709758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 778
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8fae12bcad4c44d87b9370a7bfbefe
+      internalID: 5630040692098317109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_9
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 777
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1b1653072c74a498d2ef00b3cd1c14
+      internalID: -8576819517058385901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_10
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 777
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1ee4398a76d3f48b1ca0fda54a91e1
+      internalID: -3374669073545318721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 663
+        width: 370
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967462f01a517e6478d1243a81734687
+      internalID: 5355426815175448075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_12
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 388
+        width: 350
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f17df6b33f9d04fa75f079b4f3c0d3
+      internalID: -5152963840592997146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_13
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 612
+        width: 370
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16983549bdac6e4418f10e94798e0937
+      internalID: -8322538827824629275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_14
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 474
+        width: 91
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c3f6074f3b86d44bac990ece30230c
+      internalID: 8111651085340795008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_15
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 471
+        width: 87
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a9da281dcd04c44860a64b840201f3
+      internalID: -1072427810925972558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_16
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 472
+        width: 81
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7901c154a680454d99df223208f6ba3
+      internalID: -1632425679687285442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_17
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 17
+        width: 132
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbe34e77aabee545bcbae292c23d3f5
+      internalID: 5051724760303712190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_18
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 19
+        width: 71
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb3f3b5013c7104b833b0ee03342be0
+      internalID: -5387076390491888097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_19
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 24
+        width: 107
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68b420af98e26348a5298928f4d84e3
+      internalID: -6997330034612776961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_20
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 21
+        width: 78
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e530724f2f621745b4c1f900be338f5
+      internalID: 2380160417125091806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cemetry_21
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 14
+        width: 303
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb74a599df8c124780e27f9961e11cb
+      internalID: -6004968208414828135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

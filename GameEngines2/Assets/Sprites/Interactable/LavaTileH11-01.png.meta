@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: c42a11c92061ddb499a0a4b647123351
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7612374231236680248
+    second: LavaTileH11-01_0
+  - first:
+      213: -7051265491975059445
+    second: LavaTileH11-01_1
+  - first:
+      213: 7854747234798861427
+    second: LavaTileH11-01_2
+  - first:
+      213: -995418202473582378
+    second: LavaTileH11-01_3
+  - first:
+      213: 1162604437173235682
+    second: LavaTileH11-01_4
+  - first:
+      213: -1058383225584123077
+    second: LavaTileH11-01_5
+  - first:
+      213: 1326017117737200960
+    second: LavaTileH11-01_6
+  - first:
+      213: -3650118988155690046
+    second: LavaTileH11-01_7
+  - first:
+      213: 7408380412701848861
+    second: LavaTileH11-01_8
+  - first:
+      213: -2936833823651174045
+    second: LavaTileH11-01_9
+  - first:
+      213: 8463704254288312630
+    second: LavaTileH11-01_10
+  - first:
+      213: 5832851583999924094
+    second: LavaTileH11-01_11
+  - first:
+      213: -4122869574173337502
+    second: LavaTileH11-01_12
+  - first:
+      213: -3524414806893357702
+    second: LavaTileH11-01_13
+  - first:
+      213: 8176727529247334441
+    second: LavaTileH11-01_14
+  - first:
+      213: -6959589128825430686
+    second: LavaTileH11-01_15
+  - first:
+      213: -5012910294654997732
+    second: LavaTileH11-01_16
+  - first:
+      213: -1124035299499063795
+    second: LavaTileH11-01_17
+  - first:
+      213: 614695627871073406
+    second: LavaTileH11-01_18
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 587
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LavaTileH11-01_0
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 10904
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46631b0198818d4ea493fd47ecf21da
+      internalID: 7612374231236680248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_1
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 10317
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c5909c4a67b9c45a89dd17193c2630
+      internalID: -7051265491975059445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_2
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 9730
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09acb8eb1e05a0c40a85f88ee3776d8a
+      internalID: 7854747234798861427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_3
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 9143
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a48b5e1a15d1c7469d5f2a0c46bb00c
+      internalID: -995418202473582378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_4
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 8556
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d1b938139b1524c81edee080c09ffb
+      internalID: 1162604437173235682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 7969
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43af8ca229bde448a634abd652d4a49
+      internalID: -1058383225584123077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_6
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 7382
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ec22a4c5ac34149858a92d39a20b69
+      internalID: 1326017117737200960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_7
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 6795
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a8fa83d082eb04cb99db113ba27836
+      internalID: -3650118988155690046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_8
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 6208
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a47ab600835514c9164efee6cd0244
+      internalID: 7408380412701848861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_9
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 5621
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754a03b05736fef499402ea8955bf455
+      internalID: -2936833823651174045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_10
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 5034
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7734cabe5f6807d42b062430738972b8
+      internalID: 8463704254288312630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_11
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 4447
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e285cc1098a2043478813aebaa92e3bf
+      internalID: 5832851583999924094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_12
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 3860
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b368e89472c81d45b6a1589acbf2087
+      internalID: -4122869574173337502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_13
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 3273
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d949495469e9424ea53a2f82a0d4f58
+      internalID: -3524414806893357702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_14
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 2686
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd005760da163e1478996d34d6e2ccab
+      internalID: 8176727529247334441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_15
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 2099
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4e03d926367a4428145b989e5439bc
+      internalID: -6959589128825430686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_16
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1512
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfaa9c07177c2540bcde6578ba2f160
+      internalID: -5012910294654997732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_17
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 925
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c702f8b62441ec64092cd05b3c1390d0
+      internalID: -1124035299499063795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTileH11-01_18
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 338
+        width: 587
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2194b4820e296724f9a37f0ede841172
+      internalID: 614695627871073406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

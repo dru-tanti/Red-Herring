@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 //--------------------------------------------------------------------------------------------------------------------------
 // Controls the projectile and its effects when it spawns.
@@ -21,6 +23,13 @@ public class Projectile : MonoBehaviour
     private Collider2D _collider;
     public ElementType selectedElement;
 
+    // Gets the cell data of any tiles the projectile hits.
+    [HideInInspector] public Vector3Int cellHit;
+    [HideInInspector] public TileBase tileHit;
+
+    public Transform ground;
+    private Vector3Int cellGround;
+    private TileBase tileGround;
     private void Awake() {
         _projectileRB = GetComponent<Rigidbody2D>();
         _collider = GetComponent<Collider2D>();
@@ -51,12 +60,23 @@ public class Projectile : MonoBehaviour
                 Debug.LogWarning("No element assigned to these particles.");
             }
             enabled = false;
-        }    
+        }
+
+        if(other.gameObject.tag == "Ground") {
+            cellHit = TilemapManager.current.grid.WorldToCell(other.transform.position);
+            tileHit = TilemapManager.current.tilemap.GetTile(cellHit);
+
+            if(tileHit is BurnableTile) {
+                
+            }
+
+            if(tileHit is WaterTile) {
+
+            }
+        }
     }
 
-    // @param ai The AI agent that the projectile has hit.
-    // @param effect The effect of the selected element of the projectile. 
-    // Defines what properties will trigger which functions in the AIBehaviour script.
+    // Will trigger the effects in the AIBehaviour Script
     private void UseEffect(AIBehaviour ai, ElementEffect effect) {
         if (effect == null) return;
 
@@ -70,11 +90,37 @@ public class Projectile : MonoBehaviour
         }
 
         if (effect.willFreeze) {
-            ai.Freeze(effect.freezeDuration);
+            ai.Freeze(effect.activeTime);
         }
 
         if (effect.willStun) {
-            ai.Stun(effect.stunDuration);
+            ai.Stun(effect.activeTime);
+        }
+    }
+
+
+    // // // Will handle other effects that do not rely on collisions with another object.
+    // private void UseEffect(ElementEffect effect) {
+    //     if (effect == null) return;
+
+    //     if (effect.willDamage) {
+    //         BurnVines(effect.damage);
+    //     }
+
+    //     if (effect.willFreeze) {
+    //         FreezeGround(effect.activeTime);
+    //     }
+    // }
+
+    private IEnumerator checkGround(float activeTime) {
+        while(true) {
+            cellGround = TilemapManager.current.grid.WorldToCell(ground.position);
+            tileGround = TilemapManager.current.tilemap.GetTile(cellGround);
+            if(tileGround is WaterTile) {
+                StartCoroutine(TilemapManager.current.freezeTile(cellGround, activeTime));
+            }
+
+            yield return new WaitForSeconds(0.1f);
         }
     }
 }
