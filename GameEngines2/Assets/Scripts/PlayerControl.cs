@@ -42,6 +42,10 @@ public partial class PlayerControl : BaseController {
     public float wallJumpForce;
     public Vector2 wallJumpDirection;
 
+    [Tooltip("Effect of enemies when they push the player.")]
+    public float pushTime;
+    public float pushMultiplier;
+
     [HideInInspector] public bool _grounded = false;
     private float groundRadius = 0.2f;
     private float _jumpTimeCounter;
@@ -177,7 +181,7 @@ public partial class PlayerControl : BaseController {
     private IEnumerator Pushing(float pushForce, float pushTime, float direction) {
         _knockback = true;
         while(_knockback) {
-            _playerRB.AddForce(Vector2.left * direction  * pushForce * pushMultiplier, ForceMode2D.Impulse);
+            _rb.AddForce(Vector2.left * direction  * pushForce * pushMultiplier, ForceMode2D.Impulse);
             yield return new WaitForSeconds(pushTime);
             _knockback= false;
         }
