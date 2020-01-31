@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ActiveScene_atomS
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _value: SampleScene
-  _initialValue: SampleScene
+  _value: Centre
+  _initialValue: Centre
   _oldValue: SampleScene
   Changed: {fileID: 11400000, guid: 8e097c8826820954c868369cfd11e5cc, type: 2}
   ChangedWithHistory: {fileID: 0}

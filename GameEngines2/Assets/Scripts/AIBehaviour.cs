@@ -11,7 +11,7 @@ public abstract class AIBehaviour : BaseController
 {
     public static int enemyMaxHealth = 10;
     public int enemyHealth;
-    public int speed = 5;
+    public float speed = 5;
     public float pushForce = 4;
     public bool harmful = false;
 

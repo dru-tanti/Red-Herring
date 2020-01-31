@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CurrentSpawnScene_atomS
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _value: SampleScene
-  _initialValue: SampleScene
+  _value: Centre
+  _initialValue: Centre
   _oldValue: SceneLoad2
   Changed: {fileID: 0}
   ChangedWithHistory: {fileID: 0}
