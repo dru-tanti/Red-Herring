@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: WaterUnlock
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _value: 0
+  _value: 1
   _initialValue: 1
   _oldValue: 1
-  Changed: {fileID: 0}
+  Changed: {fileID: 11400000, guid: 6842f565ac350614fb962288f0b9f737, type: 2}
   ChangedWithHistory: {fileID: 0}
