@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerSpawner : MonoBehaviour {
     public static PlayerSpawner current { get; private set; }
     [SerializeField] private PlayerControl _playerPrefab = null;
+    [SerializeField] private GameObject _camera;
     private SpawnPoint[] _spawnPoints = null;
     public StringVariable currentSpawn = null;
     public StringVariable currentSpawnScene = null;
