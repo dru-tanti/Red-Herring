@@ -1,0 +1,295 @@
+fileFormatVersion: 2
+guid: d5cd060d169004dbf9a2b59b5133d609
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2260880289984690531
+    second: Nature_Walk_1
+  - first:
+      213: -8885947883991908897
+    second: Nature_Walk_2
+  - first:
+      213: 1074385746895496068
+    second: Nature_Walk_3
+  - first:
+      213: -8669470221929420251
+    second: Nature_Walk_5
+  - first:
+      213: -2639891982174450191
+    second: Nature_Walk_6
+  - first:
+      213: 4649471353339454295
+    second: Nature_Walk_7
+  - first:
+      213: -1713309454308955693
+    second: Nature_Walk_4
+  - first:
+      213: -478933498429876566
+    second: Nature_Walk_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nature_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 87
+        width: 732
+        height: 1021
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434253684125447a8bb8a05e04241362
+      internalID: 2260880289984690531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nature_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 80
+        width: 732
+        height: 1021
+      alignment: 9
+      pivot: {x: 0.49923557, y: 0.51710933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a618dfea511a84809969133b789a746b
+      internalID: -8885947883991908897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nature_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 87
+        width: 732
+        height: 1021
+      alignment: 9
+      pivot: {x: 0.50341064, y: 0.5051809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c20d7bac4a2749b28e2cedd58e19831
+      internalID: 1074385746895496068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nature_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 4946
+        y: 87
+        width: 732
+        height: 1021
+      alignment: 9
+      pivot: {x: 0.503548, y: 0.5056848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df5ddb2a91924845ac323780122b5e4
+      internalID: -8669470221929420251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nature_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 6125
+        y: 87
+        width: 732
+        height: 1021
+      alignment: 9
+      pivot: {x: 0.50897986, y: 0.5089036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e520de11e5c6b4caaaff71de3c116063
+      internalID: -2639891982174450191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nature_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 7308
+        y: 85
+        width: 732
+        height: 1021
+      alignment: 9
+      pivot: {x: 0.51346844, y: 0.5193121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c36342bf404541c98ccbf2d6fffb030
+      internalID: 4649471353339454295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nature_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 3772
+        y: 87
+        width: 732
+        height: 1021
+      alignment: 9
+      pivot: {x: 0.50000066, y: 0.4863727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9a4b1441d7a40df8a9e75585c2ccbc
+      internalID: -1713309454308955693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nature_Walk_8
+      rect:
+        serializedVersion: 2
+        x: 8485
+        y: 87
+        width: 732
+        height: 1021
+      alignment: 9
+      pivot: {x: 0.5134677, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd43dbefd2f240369e6069c7018bbeb
+      internalID: -478933498429876566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

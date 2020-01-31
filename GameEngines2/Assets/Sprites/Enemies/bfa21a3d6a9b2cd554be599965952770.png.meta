@@ -13,7 +13,7 @@ TextureImporter:
     second: Charging_Enemy
   - first:
       213: -4549752440547203373
-    second: Chase_Enemy
+    second: Boss
   - first:
       213: 9137107850530379006
     second: Shooting_Enemy
@@ -34,7 +34,7 @@ TextureImporter:
     second: bfa21a3d6a9b2cd554be599965952770_9
   - first:
       213: 7418966907661632359
-    second: bfa21a3d6a9b2cd554be599965952770_10
+    second: Chase_Enemy
   - first:
       213: 8251754964812508351
     second: Vertical_Enemy
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chase_Enemy
+      name: Boss
       rect:
         serializedVersion: 2
         x: 36
@@ -341,10 +341,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bfa21a3d6a9b2cd554be599965952770_10
+      name: Chase_Enemy
       rect:
         serializedVersion: 2
-        x: 240
+        x: 238
         y: 211
         width: 121
         height: 156
