@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4973109791136471759}
   - component: {fileID: 4973109791136471758}
   - component: {fileID: 4973109791136471752}
-  - component: {fileID: 834104536194971088}
   - component: {fileID: 4973109791136471756}
   - component: {fileID: 4973109791136471747}
   m_Layer: 0
@@ -28,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4973109791136471746}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.74, y: -7.177473, z: 5.397055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4973109792074329556}
@@ -99,28 +98,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  groundRadius: 0.2
-  edgeCheck: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  Player: {fileID: 0}
-  Laser: {fileID: 0}
-  startTimeBtwShots: 0
-  _finder: {fileID: 0}
---- !u!114 &834104536194971088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4973109791136471746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b96765f8f7fadb743b88e69857a45a40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 8
+  time: 2
+  repeat: 2
+  patrolStart: {fileID: 4973109792577601146}
+  patrolEnd: {fileID: 4973109791706796236}
+  projectileSpawn: {fileID: 4973109792074329556}
+  Projectile: {fileID: 5404473097211150461, guid: 600eccc9453804f479010b67814c9500,
+    type: 3}
 --- !u!61 &4973109791136471756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -186,8 +170,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4973109791706796227}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.46, y: -7.177473, z: 9.397055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.01, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4973109791840275426}
@@ -217,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4973109791840275425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.570645, y: 1.7674732, z: -5.397055}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4973109791136471759}
@@ -265,7 +249,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4973109792577601146}
-  - component: {fileID: 5389524081522132676}
   m_Layer: 0
   m_Name: Patrol Start
   m_TagString: Untagged
@@ -280,23 +263,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4973109792577601145}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.53, y: -7.177473, z: 9.397055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.99, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4973109791840275426}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5389524081522132676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4973109792577601145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b96765f8f7fadb743b88e69857a45a40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 0

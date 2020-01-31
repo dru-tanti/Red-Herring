@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
+    public bool shoot = false;
     private bool isAttacking = false;
     public float speed;
+    [Range(0f, 10f)]
+    public float time;
     private bool moveRight = true;
     public Transform patrolStart;
     public Transform patrolEnd;
-    private Vector2 target;
+    private Vector2 patrolTarget;
+    public Transform projectileSpawn;
+    public GameObject Projectile;
 
 
     private void Start()
     {
-        target = new Vector2(patrolEnd.position.x, patrolEnd.position.y);
+        patrolTarget = new Vector2(patrolEnd.position.x, patrolEnd.position.y);
     }
     void Update()
     {
@@ -27,16 +32,16 @@ public class EnemyPatrol : MonoBehaviour
 // Patrolling with points set in Unity
     void Patrol()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
-        if (transform.position.x == target.x && transform.position.y == target.y)
+        transform.position = Vector2.MoveTowards(transform.position, patrolTarget, speed * Time.deltaTime);
+        if (transform.position.x == patrolTarget.x && transform.position.y == patrolTarget.y)
         {
             if(moveRight)
                 {
-                    target = new Vector2(patrolStart.position.x, patrolStart.position.y);
+                    patrolTarget = new Vector2(patrolStart.position.x, patrolStart.position.y);
                     transform.localScale = new Vector3(-1f, 1f, 1f);
                     moveRight = false;
                 } else {
-                    target = new Vector2(patrolEnd.position.x, patrolEnd.position.y);
+                    patrolTarget = new Vector2(patrolEnd.position.x, patrolEnd.position.y);
                     transform.localScale = new Vector3(1f, 1f, 1f);
                     moveRight = true;
                 }
@@ -45,9 +50,33 @@ public class EnemyPatrol : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider) 
     {
-        if(collider.tag == "Player")
+        if(collider.tag == "Player" && !shoot)
         {
-            Debug.Log("Dealing Damage");
+            Debug.Log("Charging qelle");
+            Vector2 playerpos = collider.transform.position;
+            Debug.Log(playerpos);
+            StartCoroutine(ChargePlayer(playerpos));
+            //Debug.Log("Dealing Damage");
+        }
+
+        if(collider.tag == "Player" && shoot) {
+            isAttacking = true;
+            StartCoroutine(Shooting());
+        }
+    }
+
+    public IEnumerator Shooting() {
+        while(isAttacking) {
+            Instantiate(Projectile, projectileSpawn.position, projectileSpawn.rotation);
+            yield return new WaitForSeconds(this.time);    
+        }
+    }
+    private IEnumerator ChargePlayer(Vector2 playerPos) {
+        bool charging = true;
+        while(charging) {
+            transform.position = Vector2.MoveTowards(transform.position, playerPos, (speed * 2) * Time.deltaTime);
+            yield return new WaitForSeconds(2f);
+            charging = false;
         }
     }
     
