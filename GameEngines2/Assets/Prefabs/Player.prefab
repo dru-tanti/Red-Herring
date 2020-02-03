@@ -47,9 +47,6 @@ GameObject:
   - component: {fileID: 978995836279041745}
   - component: {fileID: 978995836279041751}
   - component: {fileID: 505452004482000929}
-  - component: {fileID: -7833165933978514745}
-  - component: {fileID: -7074371895120827164}
-  - component: {fileID: 801037002210865385}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -188,6 +185,7 @@ MonoBehaviour:
   speed: {fileID: 11400000, guid: 440a71e053492704c9c9d69ca3c9a2c6, type: 2}
   jump: {fileID: 11400000, guid: 7e8265b32854625488d57ad042fc9320, type: 2}
   _isAlive: {fileID: 11400000, guid: 87009c5e705bec24191c2a109a6de4f7, type: 2}
+  _knockback: 0
   groundCheck: {fileID: 978995836103867417}
   whatIsGround:
     serializedVersion: 2
@@ -197,6 +195,8 @@ MonoBehaviour:
   lowJumpMultiplier: 3
   wallJumpForce: 1
   wallJumpDirection: {x: 1, y: 2}
+  pushTime: 0
+  pushMultiplier: 0
   _grounded: 0
   selectedElement: {fileID: 11400000, guid: 5c42e8df52b4c7b4ebea0f9e08141d8c, type: 2}
   element:
@@ -218,8 +218,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 0ebac86e35c54dd4195508d2729362d7, type: 2}
     - {fileID: 11400000, guid: 637693f4ddd7e2d46878ae2636c987f5, type: 2}
   shield: {fileID: 0}
-  shield: {fileID: 8435157459046767859}
-  pushForce: 3000
   _lavaResistant: {fileID: 11400000, guid: d17dc45026a8ecf4ea84ee152fccf7a8, type: 2}
   _rockStrength: {fileID: 11400000, guid: d9d61b3b66ede2f4b96282552798d026, type: 2}
   _wallJump: {fileID: 11400000, guid: 9aaf18d1d8ad2d34281adf6a33d10b4d, type: 2}
@@ -236,7 +234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b83634531e7d34290f256a77844b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radius: 2
   cellAim: {x: 0, y: 0, z: 0}
   tileAim: {fileID: 0}
   cellStand: {x: 0, y: 0, z: 0}
@@ -310,46 +307,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5918469, y: 1.2379808}
   m_EdgeRadius: 0
---- !u!114 &-7833165933978514745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978995836279041769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7243098b3433b8d4b823ed4a687780d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: {fileID: 11400000, guid: 66e28465ea2df8347a5b5615e027dfd5, type: 2}
-  max_health: {fileID: 11400000, guid: 7c6e2ee3a431937438cb9bf991a03b21, type: 2}
---- !u!114 &-7074371895120827164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978995836279041769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4ba60f51aa1a4348b312426da0d1a5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coins: {fileID: 11400000, guid: 30300f62c337c9841a6220236caee15b, type: 2}
---- !u!114 &801037002210865385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978995836279041769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acabac180a3b663449fcefa2fdbc766e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keys: {fileID: 11400000, guid: 1af9faf934c96e44b91e2602c725c8d4, type: 2}
 --- !u!1 &978995836997789348
 GameObject:
   m_ObjectHideFlags: 0

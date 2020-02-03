@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: earthOther
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _value: 0
+  _value: 1
   _initialValue: 0
   _oldValue: 0
-  Changed: {fileID: 0}
+  Changed: {fileID: 11400000, guid: 73f23af8dcdfaed47aba566040998034, type: 2}
   ChangedWithHistory: {fileID: 0}

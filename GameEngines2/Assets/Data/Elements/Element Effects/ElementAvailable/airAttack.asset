@@ -16,5 +16,5 @@ MonoBehaviour:
   _value: 1
   _initialValue: 1
   _oldValue: 0
-  Changed: {fileID: 0}
+  Changed: {fileID: 11400000, guid: e6c7a000e9829b54ba7a517c750b7e2e, type: 2}
   ChangedWithHistory: {fileID: 0}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: waterAttack
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _value: 0
+  _value: 1
   _initialValue: 0
   _oldValue: 0
-  Changed: {fileID: 0}
+  Changed: {fileID: 11400000, guid: ec4e60a7aa54dbd4dbba173bea21594d, type: 2}
   ChangedWithHistory: {fileID: 0}
