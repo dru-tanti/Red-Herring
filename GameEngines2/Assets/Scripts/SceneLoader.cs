@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// @author: Andrew Tanti
+
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityAtoms;
@@ -19,7 +21,6 @@ public class SceneLoader : MonoBehaviour {
   
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Player") {
-            Debug.Log("Loading Scene");
             // Checks the difference between the players position and the trigger to determine the direction the player entered from.
             Vector3 offset = transform.position - other.transform.position;
             if(sceneNameRight || sceneNameLeft) {
@@ -68,22 +69,24 @@ public class SceneLoader : MonoBehaviour {
             // Checks the difference between the players position and the trigger to determine the direction the player entered from.
             Vector3 offset = transform.position - other.transform.position;
             // If a scene is not set on either the left or right, then we can skip this.
+            GameObject camera = GameObject.FindGameObjectWithTag("Camera");
             if(sceneNameRight || sceneNameLeft) {
-                                Debug.Log("X is " + Mathf.Sign(offset.x));
-
+                Debug.Log("Exit X is " + Mathf.Sign(offset.x));
                 switch(Mathf.Sign(offset.x)) {
                     case -1: 
                         // if a Scene is not set return.
                         if(!sceneNameRight) return;
                         // if scene is the current active scene, we do not want to unload it. So return.
-                        if(sceneNameRight.Value == activeScene.Value) return;
+                        // if(sceneNameRight.Value == activeScene.Value) return;
+                        SceneManager.MoveGameObjectToScene(camera, SceneManager.GetSceneByName(sceneNameRight.Value));
                         SceneManager.MoveGameObjectToScene(other.gameObject, SceneManager.GetSceneByName(sceneNameRight.Value));
                         activeScene.Value = sceneNameRight.Value;
                         SceneManager.UnloadSceneAsync(sceneNameLeft.Value);                         
                         break;
                     case 1:
                         if(!sceneNameLeft) return;
-                        if(sceneNameLeft.Value == activeScene.Value) return;
+                        // if(sceneNameLeft.Value == activeScene.Value) return;
+                        SceneManager.MoveGameObjectToScene(camera, SceneManager.GetSceneByName(sceneNameLeft.Value));
                         SceneManager.MoveGameObjectToScene(other.gameObject, SceneManager.GetSceneByName(sceneNameLeft.Value));
                         activeScene.Value = sceneNameLeft.Value;
                         SceneManager.UnloadSceneAsync(sceneNameRight.Value);
@@ -91,17 +94,20 @@ public class SceneLoader : MonoBehaviour {
                 }
             }
             if(sceneNameUp || sceneNameDown) {
+                Debug.Log("Exit Y is " + Mathf.Sign(offset.x));
                 switch(Mathf.Sign(offset.y)) {
                     case -1: 
                         if(!sceneNameUp) return;
-                        if(sceneNameUp.Value == activeScene.Value) return;
+                        // if(sceneNameUp.Value == activeScene.Value) return;
+                        SceneManager.MoveGameObjectToScene(camera, SceneManager.GetSceneByName(sceneNameUp.Value));
                         SceneManager.MoveGameObjectToScene(other.gameObject, SceneManager.GetSceneByName(sceneNameUp.Value));
                         activeScene.Value = sceneNameUp.Value;
                         SceneManager.UnloadSceneAsync(sceneNameDown.Value); 
                         break;
                     case 1:
                         if(!sceneNameDown) return;
-                        if(sceneNameDown.Value == activeScene.Value) return;
+                        // if(sceneNameDown.Value == activeScene.Value) return;
+                        SceneManager.MoveGameObjectToScene(camera, SceneManager.GetSceneByName(sceneNameDown.Value));
                         SceneManager.MoveGameObjectToScene(other.gameObject, SceneManager.GetSceneByName(sceneNameDown.Value));
                         activeScene.Value = sceneNameDown.Value;
                         SceneManager.UnloadSceneAsync(sceneNameUp.Value);   

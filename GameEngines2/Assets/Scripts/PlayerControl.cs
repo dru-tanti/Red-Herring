@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// @author: Andrew Tanti
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
@@ -218,6 +220,7 @@ public partial class PlayerControl : BaseController {
         // if the player is not currently shielded, kill the player.
         if(!shield.activeSelf) {
             _isAlive.Value = false;
+            Destroy(gameObject);
         }
     }
 }

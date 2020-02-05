@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5698797627040102843}
   - component: {fileID: 5698797627040102842}
   - component: {fileID: 5698797627040102836}
+  - component: {fileID: 449310123}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -72,6 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerPrefab: {fileID: 978995836279041768, guid: 97736063449680548a2829ea526ddc10,
     type: 3}
+  _camera: {fileID: 2299870184417591511, guid: 5d17cb199b91da04b824c03f112a2c13, type: 3}
   currentSpawn: {fileID: 11400000, guid: 375f39e46d86e284eb4fb8e173ed582c, type: 2}
   currentSpawnScene: {fileID: 11400000, guid: 562f040d5aa514643aba14534cfb0551, type: 2}
   activeScene: {fileID: 11400000, guid: c4ce6fe15aaaf2a429d74a960bc6aef4, type: 2}
@@ -154,6 +156,35 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5698797627040102841}
         m_MethodName: findGrid
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+--- !u!114 &449310123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5698797627040102846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b599e4a6576e24744a721cc20ce14578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: Triggers when the player is Dead
+  _event: {fileID: 11400000, guid: 49068ebab02e1294080c5079fb707093, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5698797627040102847}
+        m_MethodName: spawnPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

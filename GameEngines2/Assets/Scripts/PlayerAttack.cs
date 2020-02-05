@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// @author: Andrew Tanti
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
@@ -49,7 +51,6 @@ public class PlayerAttack : MonoBehaviour
 				selectedElement.Value = 1;
 				_anim.changeElement(selectedElement.Value);
 				foreach(ElementEffect passiveEffects in this.element[selectedElement.Value].passiveEffects) {
-					
 					_player.setPassive(passiveEffects);	
 				}			
 			}

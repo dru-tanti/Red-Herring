@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// @author: Andrew Tanti
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms;
@@ -7,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class PlayerSpawner : MonoBehaviour {
     public static PlayerSpawner current { get; private set; }
     [SerializeField] private PlayerControl _playerPrefab = null;
-    [SerializeField] private GameObject _camera;
+    [SerializeField] private GameObject _camera = null;
     private SpawnPoint[] _spawnPoints = null;
     public StringVariable currentSpawn = null;
     public StringVariable currentSpawnScene = null;
@@ -23,12 +25,20 @@ public class PlayerSpawner : MonoBehaviour {
         }
 
         SceneManager.sceneLoaded += CheckPlayer;
+        SceneManager.sceneLoaded += CheckCamera;
     }
 
     void CheckPlayer(Scene scene, LoadSceneMode sceneMode) {
         if(GameObject.FindGameObjectsWithTag("Player").Length == 0) {
             Debug.Log("No Player Found! Respawning");
             spawnPlayer();
+        }
+    }
+
+    void CheckCamera(Scene scene, LoadSceneMode sceneMode) {
+        if(GameObject.FindGameObjectsWithTag("Camera").Length == 0) {
+            Debug.Log("No Camera Found! Spawning");
+            spawnCamera();
         }
     }
 
@@ -44,6 +54,7 @@ public class PlayerSpawner : MonoBehaviour {
         4) Spawn the player.
     */
     public void spawnPlayer() {
+        // if(GameObject.FindGameObjectsWithTag("Player").Length > 0) return;
         if(!SceneManager.GetSceneByName(currentSpawnScene.Value).isLoaded){
             Debug.Log("Loading Scene");
             SceneManager.LoadScene(currentSpawnScene.Value);
@@ -58,5 +69,11 @@ public class PlayerSpawner : MonoBehaviour {
                 Instantiate(_playerPrefab, new Vector3(spawn.transform.position.x, spawn.transform.position.y + 1f, 0f), Quaternion.identity);
             }
         }
+    }
+
+    public void spawnCamera() {
+        if(GameObject.FindGameObjectsWithTag("Camera").Length > 0) return;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        Instantiate(_camera, new Vector3(player.transform.position.x, player.transform.position.y + 1f, 0f), Quaternion.identity);
     }
 }

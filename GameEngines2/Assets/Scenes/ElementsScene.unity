@@ -779,7 +779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 0}
-  element: Air
+  element: Thunder
 --- !u!114 &220081134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1671,7 +1671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 0}
-  element: Air
+  element: Spirit
 --- !u!114 &353172270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6104,7 +6104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 0}
-  element: Flora
+  element: Wood
 --- !u!114 &1616666415
 MonoBehaviour:
   m_ObjectHideFlags: 0

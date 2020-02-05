@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// @author: Andrew Tanti
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -55,9 +57,6 @@ public class TilemapManager : MonoBehaviour {
     //     }
     // }
 
-    // public void setWaterDanger() {
-    //     tilemap.SwapTile(changeTile, newTile);
-    // }
 
     public void setCloudWalkable() {
         Tile changeTile = (selectedElement.Value == 0) ? _notWalkable : _walkable;
@@ -65,7 +64,7 @@ public class TilemapManager : MonoBehaviour {
         tilemap.SwapTile(changeTile, newTile);
     }
 
-    public IEnumerator startStrom(Vector3Int position, float changeTime, float activeTime) {
+    public IEnumerator startStorm(Vector3Int position, float changeTime, float activeTime) {
         yield return new WaitForSeconds(changeTime);
         tilemap.SetTile(position, _stormy);
         yield return new WaitForSeconds(activeTime);

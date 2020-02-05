@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// @author: Andrew Tanti
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -14,7 +16,7 @@ public partial class PlayerControl
     public ElementType[] element;
     public ElementCooldown[] cooldowns;
 
-    [SerializeField] private GameObject shield = null;
+    public GameObject shield = null;
     private Coroutine _floatCoroutine;
     private Coroutine _shieldBubble;
     private bool _floating;

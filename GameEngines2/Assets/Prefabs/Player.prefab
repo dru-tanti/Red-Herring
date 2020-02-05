@@ -217,7 +217,7 @@ MonoBehaviour:
   - abilityAvailable:
     - {fileID: 11400000, guid: 0ebac86e35c54dd4195508d2729362d7, type: 2}
     - {fileID: 11400000, guid: 637693f4ddd7e2d46878ae2636c987f5, type: 2}
-  shield: {fileID: 0}
+  shield: {fileID: 8435157459046767859}
   _lavaResistant: {fileID: 11400000, guid: d17dc45026a8ecf4ea84ee152fccf7a8, type: 2}
   _rockStrength: {fileID: 11400000, guid: d9d61b3b66ede2f4b96282552798d026, type: 2}
   _wallJump: {fileID: 11400000, guid: 9aaf18d1d8ad2d34281adf6a33d10b4d, type: 2}
@@ -288,7 +288,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978995836279041769}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1

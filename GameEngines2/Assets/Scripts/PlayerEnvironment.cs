@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// @author: Andrew Tanti
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -13,14 +15,13 @@ public class PlayerEnvironment : MonoBehaviour {
     [HideInInspector] public TileBase tileAim;
     [HideInInspector] public Vector3Int cellStand;
     [HideInInspector] public TileBase tileStand;
-
     [HideInInspector] public Vector3Int cellPlayer;
     [HideInInspector] public TileBase tilePlayer;
 
     public Transform shotPoint;
     public Transform groundCheck;
     private PlayerControl _player;
-    private float _moveY;
+    private float _moveY; // To be used when the player is swimming
     public bool isTouchingWall, inWater;
 
     private void Awake() {
@@ -40,26 +41,27 @@ public class PlayerEnvironment : MonoBehaviour {
         cellStand = TilemapManager.current.grid.WorldToCell(groundCheck.position);
         tileStand = TilemapManager.current.tilemap.GetTile(cellStand);
 
-        isTouchingWall = (tileAim is GroundTile) ? true : false;
+        isTouchingWall = (tileAim is GroundTile);
 
         // If the player is currently standing on a hazard, deal damage.
         if (tileStand is HazardTile && !(tileStand as HazardTile).lava) {
-            Debug.Log("Ouch");
+            _player.killPlayer();
         }
 
         if(tileStand is HazardTile && (tileStand as HazardTile).lava) {
-            Debug.Log("You are drowning in Lava");
+            _player.killPlayer();
         }
 
-        if(tilePlayer is WaterTile || tileStand is WaterTile) {
+        // If the player is in the water, but they are not using Water, kill the player.
+        if(tilePlayer is WaterTile && !_player._swimming.Value) {
+            _player.killPlayer();
+        }
+
+        if((tilePlayer is WaterTile || tileStand is WaterTile) && _player._swimming.Value) {
             inWater = true;
-            if(_player._swimming.Value == true) {
-                _player.Gravity(0.8f);
-                _moveY = Input.GetAxisRaw("Vertical");
-                _player._rb.velocity = new Vector2 (_player._rb.velocity.x, _moveY * _player.speed.Value);
-            } else {
-                Debug.Log("You have drowned");
-            }
+            _player.Gravity(0.8f);
+            _moveY = Input.GetAxisRaw("Vertical");
+            _player._rb.velocity = new Vector2 (_player._rb.velocity.x, _moveY * _player.speed.Value);
         } 
 
         // If the player is no longer in the water but isWater is true, reset the settings.
@@ -69,7 +71,7 @@ public class PlayerEnvironment : MonoBehaviour {
         }
 
         if(tileStand is CloudTile && (tileStand as CloudTile).walkable == true) {
-            StartCoroutine(TilemapManager.current.startStrom(cellStand, 2, 2));
+            StartCoroutine(TilemapManager.current.startStorm(cellStand, 2, 2));
         }
     }
 }
