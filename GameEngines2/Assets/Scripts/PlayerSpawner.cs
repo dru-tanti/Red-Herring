@@ -72,7 +72,7 @@ public class PlayerSpawner : MonoBehaviour {
     }
 
     public void spawnCamera() {
-        if(GameObject.FindGameObjectsWithTag("Camera").Length > 0) return;
+        // if(GameObject.FindGameObjectsWithTag("Camera").Length > 0) return;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         Instantiate(_camera, new Vector3(player.transform.position.x, player.transform.position.y + 1f, 0f), Quaternion.identity);
     }
