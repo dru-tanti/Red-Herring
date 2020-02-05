@@ -54,6 +54,7 @@ public class PlayerSpawner : MonoBehaviour {
         4) Spawn the player.
     */
     public void spawnPlayer() {
+        if(_isAlive.Value) return;
         // if(GameObject.FindGameObjectsWithTag("Player").Length > 0) return;
         if(!SceneManager.GetSceneByName(currentSpawnScene.Value).isLoaded){
             Debug.Log("Loading Scene");
@@ -67,8 +68,10 @@ public class PlayerSpawner : MonoBehaviour {
             if(spawn.spawnName == currentSpawn.Value){
                 Debug.Log("Spawn Point found, respawning player");
                 Instantiate(_playerPrefab, new Vector3(spawn.transform.position.x, spawn.transform.position.y + 1f, 0f), Quaternion.identity);
+                // GameObject.FindGameObjectWithTag("Camera").transform.position = new Vector3(spawn.transform.position.x, spawn.transform.position.y + 1f, 0f);
             }
         }
+        _isAlive.Value = true;
     }
 
     public void spawnCamera() {

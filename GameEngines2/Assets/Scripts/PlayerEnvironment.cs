@@ -48,7 +48,7 @@ public class PlayerEnvironment : MonoBehaviour {
             _player.killPlayer();
         }
 
-        if(tileStand is HazardTile && (tileStand as HazardTile).lava) {
+        if(tileStand is HazardTile && (tileStand as HazardTile).lava && !_player._lavaResistant.Value) {
             _player.killPlayer();
         }
 
