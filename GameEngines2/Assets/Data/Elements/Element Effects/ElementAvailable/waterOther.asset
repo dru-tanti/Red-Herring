@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: waterOther
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _value: 0
+  _value: 1
   _initialValue: 0
   _oldValue: 0
-  Changed: {fileID: 0}
+  Changed: {fileID: 11400000, guid: dc517235ff32b8f438f185205c4276b3, type: 2}
   ChangedWithHistory: {fileID: 0}

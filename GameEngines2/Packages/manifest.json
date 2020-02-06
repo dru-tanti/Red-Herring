@@ -14,12 +14,12 @@
     }
   ],
   "dependencies": {
-    "com.mambojambostudios.unity-atoms-core": "2.1.1",
-          "com.mambojambostudios.unity-atoms-mobile": "2.1.1",
-          "com.mambojambostudios.unity-atoms-mono-hooks": "2.1.1",
-          "com.mambojambostudios.unity-atoms-tags": "2.1.1",
-          "com.mambojambostudios.unity-atoms-scene-mgmt": "2.1.1",
-          "com.mambojambostudios.unity-atoms-ui": "2.1.1",
+    "com.mambojambostudios.unity-atoms-core": "2.0.0",
+    "com.mambojambostudios.unity-atoms-mobile": "2.0.0",
+    "com.mambojambostudios.unity-atoms-mono-hooks": "2.0.0",
+    "com.mambojambostudios.unity-atoms-scene-mgmt": "2.0.0",
+    "com.mambojambostudios.unity-atoms-tags": "2.0.0",
+    "com.mambojambostudios.unity-atoms-ui": "2.0.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.cinemachine": "2.5.0",

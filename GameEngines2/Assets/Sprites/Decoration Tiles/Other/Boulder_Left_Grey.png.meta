@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: fa39752716f19a64a82252c26b06b5e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3601412920600284910
+    second: Boulder_Left_Grey_0
+  - first:
+      213: -8796659357567945830
+    second: Boulder_Left_Grey_1
+  - first:
+      213: -7118941042287472732
+    second: Boulder_Left_Grey_2
+  - first:
+      213: -4960894523404586644
+    second: Boulder_Left_Grey_3
+  - first:
+      213: -7548104633548187158
+    second: Boulder_Left_Grey_4
+  - first:
+      213: 5780440907870486861
+    second: Boulder_Left_Grey_5
+  - first:
+      213: -1015711482205640366
+    second: Boulder_Left_Grey_6
+  - first:
+      213: -2404713446268161487
+    second: Boulder_Left_Grey_7
+  - first:
+      213: -2746924116347468250
+    second: Boulder_Left_Grey_8
+  - first:
+      213: -8899793208324491188
+    second: Boulder_Left_Grey_9
+  - first:
+      213: -5048638369153581593
+    second: Boulder_Left_Grey_10
+  - first:
+      213: -7801810171901449471
+    second: Boulder_Left_Grey_11
+  - first:
+      213: 129128610142215819
+    second: Boulder_Left_Grey_12
+  - first:
+      213: 8093682432524412029
+    second: Boulder_Left_Grey_13
+  - first:
+      213: -2903209648723972089
+    second: Boulder_Left_Grey_14
+  - first:
+      213: -2183350643057767912
+    second: Boulder_Left_Grey_15
+  - first:
+      213: 1257010423412278488
+    second: Boulder_Left_Grey_16
+  - first:
+      213: -6801980730078188504
+    second: Boulder_Left_Grey_17
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_0
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 779
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1d7f94ae798514cbeb5837c756e4e5
+      internalID: 3601412920600284910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_1
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 778
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039376f00d2a33949bb48b77f7349e39
+      internalID: -8796659357567945830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_2
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 778
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817f38e6cb6aa9148a92e20afce79fa8
+      internalID: -7118941042287472732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 779
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb5867b6c3975941942e680f807d0b7
+      internalID: -4960894523404586644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_4
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 779
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763ef518553647c4daf096e7070ef5f6
+      internalID: -7548104633548187158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_5
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 779
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8598682692daaf4db835ef93c23a588
+      internalID: 5780440907870486861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_6
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 779
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103807122036d2a419e052a4cd68c250
+      internalID: -1015711482205640366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_7
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 778
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70ab36df77417648ba89a5c972d3b6c
+      internalID: -2404713446268161487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 551
+        width: 750
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0651cc185601c3749b37c6604a7cfbac
+      internalID: -2746924116347468250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 425
+        width: 338
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da71797d742f7ea46b509b5d1bbe94c0
+      internalID: -8899793208324491188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 426
+        width: 192
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f35852414e8e74796d55864444860e
+      internalID: -5048638369153581593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_11
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 428
+        width: 183
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e84d07b472fab4fbde2340956e473b
+      internalID: -7801810171901449471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 210
+        width: 187
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e244fa8b24744342bd715c098df23d9
+      internalID: 129128610142215819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_13
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 211
+        width: 130
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4957290a8288224ca90383142dfe04c
+      internalID: 8093682432524412029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 211
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed265dfe01e9d945b83039b7dec376c
+      internalID: -2903209648723972089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_15
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 222
+        width: 268
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b843f27f31d1b54ea76c701255c7eb0
+      internalID: -2183350643057767912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 46
+        width: 284
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef95a883d9fac314a9d11f38a8b96b81
+      internalID: 1257010423412278488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Left_Grey_17
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 37
+        width: 498
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3e8411d21ab944d91c56943100bcce
+      internalID: -6801980730078188504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

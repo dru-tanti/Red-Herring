@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: a598781a8cb362641923c8d3c03e5afa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2905827232519761436
+    second: Boulders_Right_0
+  - first:
+      213: 555924094879769289
+    second: Boulders_Right_1
+  - first:
+      213: -8323476136980448213
+    second: Boulders_Right_2
+  - first:
+      213: -8133109642261040626
+    second: Boulders_Right_3
+  - first:
+      213: -7059042126464844510
+    second: Boulders_Right_4
+  - first:
+      213: -7325323208138094031
+    second: Boulders_Right_5
+  - first:
+      213: 130826082330497723
+    second: Boulders_Right_6
+  - first:
+      213: -4648464282361228242
+    second: Boulders_Right_7
+  - first:
+      213: 4134460205371584659
+    second: Boulders_Right_8
+  - first:
+      213: -2069092442863671347
+    second: Boulders_Right_9
+  - first:
+      213: 2164499698635722026
+    second: Boulders_Right_10
+  - first:
+      213: -7893509267499075298
+    second: Boulders_Right_11
+  - first:
+      213: -5324894731129929457
+    second: Boulders_Right_12
+  - first:
+      213: -2017834173084321526
+    second: Boulders_Right_13
+  - first:
+      213: -7040472300687947505
+    second: Boulders_Right_14
+  - first:
+      213: 1036744245066993840
+    second: Boulders_Right_15
+  - first:
+      213: -1778903187853388338
+    second: Boulders_Right_16
+  - first:
+      213: 4190946445396990410
+    second: Boulders_Right_17
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boulders_Right_0
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 779
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43501c2227842134fb00645811a75677
+      internalID: -2905827232519761436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_1
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 778
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24301e92602173245a9991f7db00836f
+      internalID: 555924094879769289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_2
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 778
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b9cb6da8e2d1d4db1ecebda697380b
+      internalID: -8323476136980448213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_3
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 779
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c17a26db0e8bd74f9d07fae57895d96
+      internalID: -8133109642261040626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_4
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 779
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e12b01617877c4eae89ba804ae99f9
+      internalID: -7059042126464844510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_5
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 779
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6fd758ca5c33d478e18a9e9fcf3e3b
+      internalID: -7325323208138094031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_6
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 779
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e68661cda3ecc4093727a1a0e99cbf
+      internalID: 130826082330497723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_7
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 778
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5012baa190d5340870d34286593954
+      internalID: -4648464282361228242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 544
+        width: 800
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a493353c4bc6f7645a23100ac1ef9188
+      internalID: 4134460205371584659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_9
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 428
+        width: 183
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b14e4dd9c13e44fb33e949526dfc5a
+      internalID: -2069092442863671347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_10
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 426
+        width: 192
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38a11b59b219c340852df95f6d037b2
+      internalID: 2164499698635722026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_11
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 425
+        width: 339
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e821f3a364b7cb84dbed77b340e9e9a9
+      internalID: -7893509267499075298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 222
+        width: 268
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601463053b8c0ac4bacd6203d9416689
+      internalID: -5324894731129929457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_13
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 211
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51576d64c093857438210fd72998dffa
+      internalID: -2017834173084321526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_14
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 211
+        width: 130
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f3318e569bd3e42a74283321d11511
+      internalID: -7040472300687947505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 210
+        width: 187
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a4ac03bf4f1e24387fd8e8bf37a948
+      internalID: 1036744245066993840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_16
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 37
+        width: 498
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5318d254853417d4bbf4d4d08b1a167a
+      internalID: -1778903187853388338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulders_Right_17
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 46
+        width: 284
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094ea79c79b9b9c41adc4b4bf835f4ca
+      internalID: 4190946445396990410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

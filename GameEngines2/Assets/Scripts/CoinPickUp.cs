@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoinPickUp : MonoBehaviour
 {
-    void OnTriggerStay2D(Collider2D collider)
+        void OnTriggerStay2D(Collider2D collider)
     {
         //Player has two colliders - we only want to register the trigger
         if(collider.isTrigger){

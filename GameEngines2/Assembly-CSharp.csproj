@@ -57,30 +57,43 @@
      <Compile Include="Assets\Scripts\AIBehaviour.cs" />
      <Compile Include="Assets\Scripts\AIProperties.cs" />
      <Compile Include="Assets\Scripts\AITest.cs" />
+     <Compile Include="Assets\Scripts\ArtefactPickUp.cs" />
      <Compile Include="Assets\Scripts\Atom Extensions\IsInvisibleListener.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\BaseController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CoinPickUp.cs" />
-     <Compile Include="Assets\Scripts\CratePickUp.cs" />
+     <Compile Include="Assets\Scripts\CooldownManager.cs" />
      <Compile Include="Assets\Scripts\ElementEffect.cs" />
      <Compile Include="Assets\Scripts\ElementType.cs" />
      <Compile Include="Assets\Scripts\ElementUnlock.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Boss.cs" />
+     <Compile Include="Assets\Scripts\Enemies\BossHealth.cs" />
+     <Compile Include="Assets\Scripts\Enemies\BossWalk.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyCharging.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyChase.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyKnockback.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyPatrol.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyProjectile.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyShooting.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyTimed.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyVerticalPatrol.cs" />
+     <Compile Include="Assets\Scripts\FireText.cs" />
      <Compile Include="Assets\Scripts\GameStateManager.cs" />
-     <Compile Include="Assets\Scripts\HealthPotion.cs" />
-     <Compile Include="Assets\Scripts\KeyPickUp.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MapGenerator.cs" />
      <Compile Include="Assets\Scripts\OptionsMenu.cs" />
+     <Compile Include="Assets\Scripts\PanelOpen.cs" />
+     <Compile Include="Assets\Scripts\PanelText.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
-     <Compile Include="Assets\Scripts\PlayerControl.Jumping.cs" />
+     <Compile Include="Assets\Scripts\PlayerControl.Elements.cs" />
      <Compile Include="Assets\Scripts\PlayerEnvironment.cs" />
-     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerKeyRing.cs" />
      <Compile Include="Assets\Scripts\PlayerSpawner.cs" />
+     <Compile Include="Assets\Scripts\PlayerUI.cs" />
      <Compile Include="Assets\Scripts\PlayerWallet.cs" />
      <Compile Include="Assets\Scripts\Previous Version\Attack.cs" />
      <Compile Include="Assets\Scripts\Previous Version\PlayerController.cs" />
@@ -93,14 +106,13 @@
      <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\SpawnPoint.cs" />
      <Compile Include="Assets\Scripts\TilemapManager.cs" />
+     <Compile Include="Assets\Scripts\TileTypes\BreakableTile.cs" />
+     <Compile Include="Assets\Scripts\TileTypes\BurnableTile.cs" />
+     <Compile Include="Assets\Scripts\TileTypes\CloudTile.cs" />
      <Compile Include="Assets\Scripts\TileTypes\GroundTile.cs" />
+     <Compile Include="Assets\Scripts\TileTypes\HazardTile.cs" />
      <Compile Include="Assets\Scripts\TileTypes\InvisibleTile.cs" />
-     <Compile Include="Assets\Scripts\TileTypes\SpikeTile.cs" />
      <Compile Include="Assets\Scripts\TileTypes\WaterTile.cs" />
-     <Compile Include="Assets\Scripts\UICoinMeter.cs" />
-     <Compile Include="Assets\Scripts\UIHealthMeter.cs" />
-     <Compile Include="Assets\Scripts\UIKeyMeter.cs" />
-     <Compile Include="Assets\Scripts\UIManaMeter.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -367,6 +379,9 @@
  </Reference>
  <Reference Include="UnityEditor">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>D:/Documents/Unity/GitHub/Red_Herring/GameEngines2/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -722,6 +737,20 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{70872018-6485-2366-EC1D-0F26ABF703D8}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{63EBE7EE-D752-FFB3-C83D-FAAC9C18CBCA}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{075458FF-C29B-19FA-1BCE-1C5D7A064F03}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

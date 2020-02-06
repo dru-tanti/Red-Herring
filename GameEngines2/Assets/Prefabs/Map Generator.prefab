@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4718519319389835785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4718519319389835787}
+  - component: {fileID: 4718519319389835786}
+  m_Layer: 0
+  m_Name: Map Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4718519319389835787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4718519319389835785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4718519319389835786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4718519319389835785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29c86c05fac78549976ead275b9b3f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _texture: {fileID: 2800000, guid: e3c0d466daa70c747a47a2d461fb73eb, type: 3}
+  _tilemap: {fileID: 0}
+  _tileSettings:
+  - color: {r: 0, g: 0, b: 0, a: 1}
+    tile: {fileID: 11400000, guid: ea5170021285c9642af09553cd1aafc0, type: 2}
+  - color: {r: 0.38823533, g: 0.60784316, b: 1, a: 1}
+    tile: {fileID: 11400000, guid: b26db676452d438469fee23fe1debaf8, type: 2}
+  - color: {r: 0.85098046, g: 0.627451, b: 0.40000004, a: 1}
+    tile: {fileID: 11400000, guid: 477d51d6d4b152947af932cab9d08096, type: 2}
+  - color: {r: 0.29411766, g: 0.41176474, b: 0.18431373, a: 1}
+    tile: {fileID: 11400000, guid: 1f8ba41b8456d1840b2a3082ca91763c, type: 2}
+  - color: {r: 0.8745099, g: 0.4431373, b: 0.14901961, a: 1}
+    tile: {fileID: 11400000, guid: f9f0d8410d5cbe449bdb9aa32c69fcf4, type: 2}
+  - color: {r: 0.8235295, g: 0.6509804, b: 0.57254905, a: 1}
+    tile: {fileID: 11400000, guid: df057689899409f479ab0dc4a1daafef, type: 2}
+  - color: {r: 0.60784316, g: 0.6784314, b: 0.7176471, a: 1}
+    tile: {fileID: 11400000, guid: 4faa0afdcdbcd4a47adc42455e0e0ea8, type: 2}
+  - color: {r: 0.40000004, g: 0.22352943, b: 0.19215688, a: 1}
+    tile: {fileID: 11400000, guid: e38695b3509e3c044b3845db164a1772, type: 2}
+  - color: {r: 0.37254903, g: 0.80392164, b: 0.8941177, a: 1}
+    tile: {fileID: 11400000, guid: 3f65ce29b40e5c14da6fabbe45a32d2e, type: 2}
+  _startPixel: {x: 0, y: 0}
+  _generateSize: {x: 1500, y: 1250}
+  _clearOnGenerate: 1

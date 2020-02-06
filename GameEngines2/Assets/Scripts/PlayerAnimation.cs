@@ -31,6 +31,11 @@ public class PlayerAnimation : MonoBehaviour {
             _anim.SetBool("IsJumping", true);
         }
 
+        // To avoid animation bug where player is stuck in the jumping animation.
+        if(Input.GetButtonUp("Jump") && _player._grounded) {
+            _anim.SetBool("IsJumping", false);
+        }
+
         if(!_player._grounded && _playerRB.velocity.y < 0f) {
             _anim.SetBool("IsJumping", false);
             _anim.SetBool("IsFalling", true);

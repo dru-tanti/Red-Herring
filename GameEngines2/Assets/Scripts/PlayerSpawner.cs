@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerSpawner : MonoBehaviour {
     public static PlayerSpawner current { get; private set; }
     [SerializeField] private PlayerControl _playerPrefab = null;
+    [SerializeField] private GameObject _camera;
     private SpawnPoint[] _spawnPoints = null;
     public StringVariable currentSpawn = null;
     public StringVariable currentSpawnScene = null;
@@ -54,7 +55,7 @@ public class PlayerSpawner : MonoBehaviour {
         foreach(SpawnPoint spawn in _spawnPoints) {
             if(spawn.spawnName == currentSpawn.Value){
                 Debug.Log("Spawn Point found, respawning player");
-                Instantiate(_playerPrefab, new Vector3(spawn.transform.position.x, spawn.transform.position.y, 0f), Quaternion.identity);
+                Instantiate(_playerPrefab, new Vector3(spawn.transform.position.x, spawn.transform.position.y + 1f, 0f), Quaternion.identity);
             }
         }
     }

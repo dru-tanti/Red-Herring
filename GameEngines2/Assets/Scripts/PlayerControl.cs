@@ -3,60 +3,61 @@ using System.Collections.Generic;
 using UnityAtoms;
 using UnityEngine;
 
+// Custom class to hold the cooldowns
 [System.Serializable]
 public class ElementCooldown {
-    // [System.Serializable]
-    // public FloatVariable[] cooldown;
     public BoolVariable[] abilityAvailable;
 }
+
+//--------------------------------------------------------------------------------------------------------------------------
+// Contains the main movement controls for the player
+//--------------------------------------------------------------------------------------------------------------------------
 
 public partial class PlayerControl : BaseController {
 
     [Tooltip("Unlockes all the elements and abilites if true. For Testing Purposes")]
     public bool elementsUnlocked = false;
+
     [Header("Movement Variables")]
     public FloatConstant speed;
     private bool _facingRight = true;
     private PlayerEnvironment terrain;
     public FloatConstant jump;
-    public BoolVariable _isInvisible;
     public BoolVariable _isAlive;
-    [Range(0f, 5f)]
-    public float fallMultiplier = 2.5f;
-    [Range(0f, 5f)]
-    public float lowJumpMultiplier = 2f;
     private float _moveX;
     public float moveX { get => _moveX; } // To be used by the PlayerAnimation script
-    [Range(0f, 1f)]
-    private bool _dashing = false;
+    public bool _knockback;
 
     [Header("Jump Variables")]
     public Transform groundCheck;
     public LayerMask whatIsGround;
     [Range(0f, 0.5f)]
     public float jumpTime;
+    [Range(0f, 5f)]
+    public float fallMultiplier = 2.5f;
+    [Range(0f, 5f)]
+    public float lowJumpMultiplier = 2f;
+
+    // Used for wall jumping
+    public float wallJumpForce;
+    public Vector2 wallJumpDirection;
+
+    [Tooltip("Effect of enemies when they push the player.")]
+    public float pushTime;
+    public float pushMultiplier;
+
     [HideInInspector] public bool _grounded = false;
     private float groundRadius = 0.2f;
     private float _jumpTimeCounter;
-    private bool _isJumping;
-
+    private bool _isJumping, _canWallJump;
     private float _hardLandingTimer; // Used to trigger the hard landing animation.
-    private bool _floating;
 
-    [Header("Element")]
-	public IntVariable selectedElement;
-    public ElementType[] element;
-    public ElementCooldown[] cooldowns;
-
-    [SerializeField] private GameObject shield = null;
-    private Coroutine _highJumpCoroutine;
-    private Coroutine _shieldBubble;
-    // Retrieves the players rigidbody and sprite renderer so that we can manipulate them through the script.
     protected override void Awake() {
         base.Awake();
         terrain = GetComponent<PlayerEnvironment>();
-
         _isAlive.Value = true;
+        wallJumpDirection.Normalize();
+
         // NOTE: FOR TESTING PURPOSES.
         if(elementsUnlocked == true){
             unlockElements();
@@ -66,7 +67,8 @@ public partial class PlayerControl : BaseController {
     }
 
     void Update() {
-        Jump();
+        if(!_knockback) Jump();
+
         // Every frame we will check which element was chosen and use the effects defined in ElementEffect
         if(Input.GetKeyDown(KeyCode.C) && element[selectedElement.Value] != null) {
             if(cooldowns[selectedElement.Value].abilityAvailable[1].Value) {
@@ -92,6 +94,7 @@ public partial class PlayerControl : BaseController {
     private void FixedUpdate() {
         // Will check if the character is touching the ground
         _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        if(_grounded) _canWallJump = true;
 
         // If the player is falling, we will increase the gravity scale so that the player falls faster.
         if(_rb.velocity.y < 0) {
@@ -101,23 +104,32 @@ public partial class PlayerControl : BaseController {
             _rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
 
-        if(!_dashing && !_floating){ Move(); }
+        if(!_dashing && !_floating && !_knockback) Move();
     }
 
     void Jump() {
         // Checks if the player is already in the air before executing the jump command.
-        if (Input.GetButtonDown("Jump") && _grounded) {
+        if (Input.GetButtonDown("Jump") && (_grounded)) {
             _isJumping = true;
             _jumpTimeCounter = jumpTime;
 
-            _rb.velocity = Vector2.up * jump.Value;   
+            _rb.velocity = Vector2.up * jump.Value;
+        }
+
+        if(terrain.isTouchingWall && !_grounded && _wallJump.Value && _rb.velocity.y <= 0) {
+            if(Input.GetButtonDown("Jump") && _canWallJump) {
+                _canWallJump = false;
+                StartCoroutine(pushOffWall());
+                _jumpTimeCounter = jumpTime;
+                _rb.velocity = Vector2.up * jump.Value;
+            }
         }
 
         // If the player holds down the spacebar the character will jump higher
         if(Input.GetButton("Jump") && _isJumping == true) {
             if(_jumpTimeCounter > 0) {
                 // Applies force when the player presses the Jump Button.
-                _rb.velocity = Vector2.up * jump.Value;   
+                _rb.velocity = Vector2.up * jump.Value;
                 _jumpTimeCounter -= Time.deltaTime;
             } else {
                 _isJumping = false;
@@ -125,12 +137,24 @@ public partial class PlayerControl : BaseController {
         }
 
         // When the space key is released, disable the jump.
-        if(Input.GetButtonUp("Jump")) { _isJumping = false; }
+        if(Input.GetButtonUp("Jump")) _isJumping = false;
     }
-    
+
+    private IEnumerator pushOffWall() {
+        bool walljump = true;
+        while(walljump) {
+            Gravity(0f);
+            _rb.velocity = (_facingRight) ? Vector2.left * speed.Value : Vector2.right * speed.Value;
+            yield return new WaitForSeconds(0.2f);
+            _canWallJump = false;
+            walljump = false;
+            Gravity(1f);
+        }
+    }
+
     // Controls the movement of the player.
     void Move() {
-        _moveX = Input.GetAxisRaw("Horizontal"); 
+        _moveX = Input.GetAxisRaw("Horizontal");
         // Inverts the player model if they are moving to the left.
         if (_moveX < 0f && _facingRight) {
             FlipPlayer();
@@ -147,76 +171,20 @@ public partial class PlayerControl : BaseController {
         transform.Rotate(0f, 180f, 0f);
     }
 
-    // Triggers different methods depending on the effects active.
-    private void UseEffect(ElementEffect effect) {
-        if (effect == null) return;
-
-        if (effect.willDash && !_dashing) {
-            Dash(effect.dashForce, effect.activeTime);
-            StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
-        }
-
-        if (effect.immune) {
-            Immune(effect.activeTime);
-            StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
-
-        }
-
-        if (effect.willFloat) {
-            HighJump(effect.floatSpeed, effect.activeTime);
-            StartCoroutine(this.abilityCoolingdown(this.cooldowns[selectedElement.Value], effect.cooldown, 1));
-        }
-    }
 
     // Applies a force in the direction the player is facing.
-    void Dash(float dashForce, float dashTime) {
-        if(_dashing == true) return;
-        StartCoroutine(Dashing(dashForce, dashTime));
+    public void Push(float direction, float pushForce) {
+        if(_knockback == true) return;
+        StartCoroutine(Pushing(pushForce, pushTime, direction));
     }
-
     // Applies the dash force and stops the player from moving while dash is active.
-    private IEnumerator Dashing(float dashForce, float dashTime) {
-        _dashing = true;
-        while(_dashing) {
-            Gravity(0f);
-            _rb.velocity = (_facingRight) ? Vector2.right * dashForce : Vector2.left * dashForce;
-            yield return new WaitForSeconds(dashTime);
-            _dashing = false;
-            Gravity(1f);
+    private IEnumerator Pushing(float pushForce, float pushTime, float direction) {
+        _knockback = true;
+        while(_knockback) {
+            _rb.AddForce(Vector2.left * direction  * pushForce * pushMultiplier, ForceMode2D.Impulse);
+            yield return new WaitForSeconds(pushTime);
+            _knockback= false;
         }
-    }
-
-    void Immune(float activeTime) {
-        if(!shield.activeSelf) _shieldBubble = StartCoroutine(spawnShield(activeTime));
-        else StopCoroutine(_shieldBubble);
-    }
-
-    // Lets the player float upwards. If the player moves, the float is cancelled.
-    void HighJump(float floatSpeed, float floatTime) {
-        if(!_floating) _highJumpCoroutine = StartCoroutine(Floating(floatSpeed, floatTime));
-        else StopCoroutine(_highJumpCoroutine);
-    }
-
-    private IEnumerator Floating(float floatSpeed, float floatTime) {
-        _floating = true;
-        while(_floating) {
-            Gravity(floatSpeed);
-            yield return new WaitForSeconds(floatTime);
-            _floating = false;
-            Gravity(1f);
-        }
-    }
-
-    // Sets an ability as not available for a specified time.
-    public IEnumerator abilityCoolingdown(ElementCooldown cooldowns, float cooldownTime, int index) {
-        cooldowns.abilityAvailable[index].Value = false;
-        yield return new WaitForSeconds(cooldownTime);
-        cooldowns.abilityAvailable[index].Value = true;
-    }
-
-    public IEnumerator spawnShield(float activeTime) {
-        shield.SetActive(true);
-        yield return new WaitForSeconds (activeTime);
     }
 
     // NOTE: Mainly for Testing Purposes
@@ -244,5 +212,12 @@ public partial class PlayerControl : BaseController {
             }
         }
         cooldowns[2].abilityAvailable[0].Value = true;
+    }
+
+    public void killPlayer() {
+        // if the player is not currently shielded, kill the player.
+        if(!shield.activeSelf) {
+            _isAlive.Value = false;
+        }
     }
 }
