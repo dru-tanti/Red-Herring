@@ -82,6 +82,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6037718132642569249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527773790707313576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daed6eccc48105441bfb6c9dce685f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnName: Centre-Start
+  _sceneName: {fileID: 11400000, guid: 5812953eb897b8e439a50a709b607923, type: 2}
 --- !u!61 &7879155074432125090
 BoxCollider2D:
   m_ObjectHideFlags: 0
