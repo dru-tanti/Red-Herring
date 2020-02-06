@@ -9,20 +9,9 @@ using Cinemachine;
 //--------------------------------------------------------------------------------------------------------------------------
 
 public class CameraController : MonoBehaviour {
-    public static CameraController current { get; private set; }
     private CinemachineVirtualCamera _CM;
-
     private GameObject _player;
     private void Awake() {
-        // Declares the camera as a singleton and makes sure that it is not destoyed on load.
-        if (current == null) {
-            current = this;
-            DontDestroyOnLoad(gameObject);
-        } else {
-            DestroyImmediate(gameObject);
-            return;
-        }
-
         // Retrieves a reference to the Cinemachine so that we can give it a reference to the player.
         _CM = GetComponent<CinemachineVirtualCamera>();
     }

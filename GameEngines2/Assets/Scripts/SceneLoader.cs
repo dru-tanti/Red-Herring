@@ -81,7 +81,7 @@ public class SceneLoader : MonoBehaviour {
                         SceneManager.MoveGameObjectToScene(camera, SceneManager.GetSceneByName(sceneNameRight.Value));
                         SceneManager.MoveGameObjectToScene(other.gameObject, SceneManager.GetSceneByName(sceneNameRight.Value));
                         activeScene.Value = sceneNameRight.Value;
-                        SceneManager.UnloadSceneAsync(sceneNameLeft.Value);                         
+                        // SceneManager.UnloadSceneAsync(sceneNameLeft.Value);                         
                         break;
                     case 1:
                         if(!sceneNameLeft) return;
@@ -89,7 +89,7 @@ public class SceneLoader : MonoBehaviour {
                         SceneManager.MoveGameObjectToScene(camera, SceneManager.GetSceneByName(sceneNameLeft.Value));
                         SceneManager.MoveGameObjectToScene(other.gameObject, SceneManager.GetSceneByName(sceneNameLeft.Value));
                         activeScene.Value = sceneNameLeft.Value;
-                        SceneManager.UnloadSceneAsync(sceneNameRight.Value);
+                        // SceneManager.UnloadSceneAsync(sceneNameRight.Value);
                         break;
                 }
             }
@@ -102,7 +102,7 @@ public class SceneLoader : MonoBehaviour {
                         SceneManager.MoveGameObjectToScene(camera, SceneManager.GetSceneByName(sceneNameUp.Value));
                         SceneManager.MoveGameObjectToScene(other.gameObject, SceneManager.GetSceneByName(sceneNameUp.Value));
                         activeScene.Value = sceneNameUp.Value;
-                        SceneManager.UnloadSceneAsync(sceneNameDown.Value); 
+                        // SceneManager.UnloadSceneAsync(sceneNameDown.Value); 
                         break;
                     case 1:
                         if(!sceneNameDown) return;
@@ -110,7 +110,7 @@ public class SceneLoader : MonoBehaviour {
                         SceneManager.MoveGameObjectToScene(camera, SceneManager.GetSceneByName(sceneNameDown.Value));
                         SceneManager.MoveGameObjectToScene(other.gameObject, SceneManager.GetSceneByName(sceneNameDown.Value));
                         activeScene.Value = sceneNameDown.Value;
-                        SceneManager.UnloadSceneAsync(sceneNameUp.Value);   
+                        // SceneManager.UnloadSceneAsync(sceneNameUp.Value);   
                         break;
                 }
             }

@@ -68,7 +68,7 @@ public class PlayerSpawner : MonoBehaviour {
             if(spawn.spawnName == currentSpawn.Value){
                 Debug.Log("Spawn Point found, respawning player");
                 Instantiate(_playerPrefab, new Vector3(spawn.transform.position.x, spawn.transform.position.y + 1f, 0f), Quaternion.identity);
-                // GameObject.FindGameObjectWithTag("Camera").transform.position = new Vector3(spawn.transform.position.x, spawn.transform.position.y + 1f, 0f);
+                spawnCamera();
             }
         }
         _isAlive.Value = true;
