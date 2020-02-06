@@ -45,7 +45,7 @@ public class PlayerEnvironment : MonoBehaviour {
 
         Debug.Log(TilemapManager.current.tilemap.GetTile(cellAim));
         // If the player is currently standing on a hazard, deal damage.
-        if (tileStand is HazardTile && !(tileStand as HazardTile).lava) {
+        if ((tileStand is HazardTile || tilePlayer is HazardTile) && !(tileStand as HazardTile).lava) {
             _player.killPlayer();
         }
 
