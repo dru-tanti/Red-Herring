@@ -43,7 +43,6 @@ public class PlayerEnvironment : MonoBehaviour {
 
         isTouchingWall = (tileAim is GroundTile);
 
-        Debug.Log(TilemapManager.current.tilemap.GetTile(cellAim));
         // If the player is currently standing on a hazard, deal damage.
         if ((tileStand is HazardTile || tilePlayer is HazardTile) && !(tileStand as HazardTile).lava) {
             _player.killPlayer();

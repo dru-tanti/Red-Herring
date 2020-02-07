@@ -6,6 +6,9 @@ using UnityEngine;
 using UnityAtoms;
 using UnityEngine.SceneManagement;
 
+//--------------------------------------------------------------------------------
+// Handles the spawning of the player at the correct spawnpoint.
+//--------------------------------------------------------------------------------
 public class PlayerSpawner : MonoBehaviour {
     public static PlayerSpawner current { get; private set; }
     [SerializeField] private PlayerControl _playerPrefab = null;
@@ -15,6 +18,7 @@ public class PlayerSpawner : MonoBehaviour {
     public StringVariable currentSpawnScene = null;
     public StringVariable activeScene = null;
     public BoolVariable _isAlive = null;
+
     private void Awake() {
         if (current == null) {
             current = this;
@@ -24,6 +28,7 @@ public class PlayerSpawner : MonoBehaviour {
             return;
         }
 
+        // Everytime a scene loads, run the CheckPlayer() and CheckCamera() methods.
         SceneManager.sceneLoaded += CheckPlayer;
         SceneManager.sceneLoaded += CheckCamera;
     }
@@ -55,7 +60,6 @@ public class PlayerSpawner : MonoBehaviour {
     */
     public void spawnPlayer() {
         if(_isAlive.Value) return;
-        // if(GameObject.FindGameObjectsWithTag("Player").Length > 0) return;
         if(!SceneManager.GetSceneByName(currentSpawnScene.Value).isLoaded){
             Debug.Log("Loading Scene");
             SceneManager.LoadScene(currentSpawnScene.Value);
@@ -75,7 +79,6 @@ public class PlayerSpawner : MonoBehaviour {
     }
 
     public void spawnCamera() {
-        // if(GameObject.FindGameObjectsWithTag("Camera").Length > 0) return;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         Instantiate(_camera, new Vector3(player.transform.position.x, player.transform.position.y + 1f, 0f), Quaternion.identity);
     }

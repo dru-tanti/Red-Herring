@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms;
 
+//---------------------------------------------------------------------------------------------
+// Sets the information for this particular spawnpoint to be used later by PlayerSpawner
+//---------------------------------------------------------------------------------------------
 public class SpawnPoint : MonoBehaviour { 
     [SerializeField] private string _spawnName = null;
     public string spawnName { get => _spawnName; }

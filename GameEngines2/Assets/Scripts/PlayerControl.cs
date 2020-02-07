@@ -86,14 +86,7 @@ public partial class PlayerControl : BaseController {
         // NOTE: For testing Purposes Only (No shit tipo...)
         // Kills the player
         if(Input.GetKeyDown(KeyCode.E) && _isAlive.Value == true) {
-            _isAlive.Value = false;
-            PlayerSpawner.current.spawnPlayer();
-            Destroy(this.gameObject);
-        }
-
-        if(_isAlive.Value == false) {
-            PlayerSpawner.current.spawnPlayer();
-            Destroy(this.gameObject);
+            killPlayer();
         }
     }
 
@@ -225,6 +218,7 @@ public partial class PlayerControl : BaseController {
         if(!shield.activeSelf) {
             _isAlive.Value = false;
             GameObject camera = GameObject.FindGameObjectWithTag("Camera");
+            Debug.Log(camera);
             Destroy(camera);
             Destroy(gameObject);
         }

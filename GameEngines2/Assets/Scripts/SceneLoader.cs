@@ -24,39 +24,33 @@ public class SceneLoader : MonoBehaviour {
             // Checks the difference between the players position and the trigger to determine the direction the player entered from.
             Vector3 offset = transform.position - other.transform.position;
             if(sceneNameRight || sceneNameLeft) {
-                Debug.Log("X is " + Mathf.Sign(offset.x));
                 switch(Mathf.Sign(offset.x)) {
                     case -1: 
                         if(!sceneNameLeft) return;
                         // if the scene we want to load is already loaded, return.
                         if(SceneManager.GetSceneByName(sceneNameLeft.Value).isLoaded) return;
-                        Debug.Log("Loading Scene" + sceneNameLeft.Value);
                         SceneManager.LoadScene(sceneNameLeft.Value, LoadSceneMode.Additive);        
                         break;
                     case 1:
                         if(!sceneNameRight) return;
                         // if the scene we want to load is already loaded, return.
                         if(SceneManager.GetSceneByName(sceneNameRight.Value).isLoaded) return;
-                        Debug.Log("Loading Scene" + sceneNameRight.Value);
                         SceneManager.LoadScene(sceneNameRight.Value, LoadSceneMode.Additive);      
                         break;
                 }
             }
             if(sceneNameUp || sceneNameDown) {
-                Debug.Log("Y is " + Mathf.Sign(offset.x));
                 switch(Mathf.Sign(offset.y)) {
                     case -1: 
                         if(!sceneNameDown) return;
                         // if the scene we want to load is already loaded, return.
                         if(SceneManager.GetSceneByName(sceneNameDown.Value).isLoaded) return;
-                        Debug.Log("Loading Scene" + sceneNameDown.Value);
                         SceneManager.LoadScene(sceneNameDown.Value, LoadSceneMode.Additive);        
                         break;
                     case 1:
                         if(!sceneNameUp) return;
                         // if the scene we want to load is already loaded, return.
                         if(SceneManager.GetSceneByName(sceneNameUp.Value).isLoaded) return;
-                        Debug.Log("Loading Scene" + sceneNameUp.Value);
                         SceneManager.LoadScene(sceneNameUp.Value, LoadSceneMode.Additive);      
                         break;
                 }
@@ -71,7 +65,6 @@ public class SceneLoader : MonoBehaviour {
             // If a scene is not set on either the left or right, then we can skip this.
             GameObject camera = GameObject.FindGameObjectWithTag("Camera");
             if(sceneNameRight || sceneNameLeft) {
-                Debug.Log("Exit X is " + Mathf.Sign(offset.x));
                 switch(Mathf.Sign(offset.x)) {
                     case -1: 
                         // if a Scene is not set return.
@@ -94,7 +87,6 @@ public class SceneLoader : MonoBehaviour {
                 }
             }
             if(sceneNameUp || sceneNameDown) {
-                Debug.Log("Exit Y is " + Mathf.Sign(offset.x));
                 switch(Mathf.Sign(offset.y)) {
                     case -1: 
                         if(!sceneNameUp) return;

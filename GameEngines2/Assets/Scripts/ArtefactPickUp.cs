@@ -12,17 +12,13 @@ public class ArtefactPickUp : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        //Player has two colliders - we only want to register the trigger
-        if(collider.isTrigger){
-                
-            if (collider.tag == "Player"){ 
-                if(this.name.ToLower() == "breatheoflife") air_artefact.Value = true;       
-                if(this.name.ToLower() == "treeofwisdom") earth_artefact.Value = true;       
-                if(this.name.ToLower() == "eternalflame") fire_artefact.Value = true;       
-                if(this.name.ToLower() == "masteredtides") water_artefact.Value = true;       
+        if (collider.tag == "Player"){ 
+            if(this.name.ToLower() == "breatheoflife") air_artefact.Value = true;       
+            if(this.name.ToLower() == "treeofwisdom") earth_artefact.Value = true;       
+            if(this.name.ToLower() == "eternalflame") fire_artefact.Value = true;       
+            if(this.name.ToLower() == "masteredtides") water_artefact.Value = true;       
 
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 }
