@@ -43,19 +43,11 @@ public class EnemyVerticalPatrol : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider) 
+    void OnCollisionEnter2D(Collision2D collision) 
     {
-        if(collider.tag == "Player")
+        if(collision.gameObject.tag == "Player")
      {
          Debug.Log("Dealing Damage");
      }
-    }
-    
-    void OnTriggerExit2D(Collider2D other) 
-    {
-        if(other.tag == "Player")
-        {
-            isAttacking = false;
-        }    
     }
 }

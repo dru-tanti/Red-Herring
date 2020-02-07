@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -48,18 +48,18 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider) 
+    private void OnCollisionEnter2D(Collision2D collider) 
     {
-        if(collider.tag == "Player" && !shoot)
+        if(collider.gameObject.tag == "Player" && !shoot)
         {
-            Debug.Log("Charging qelle");
+            Debug.Log("Charging");
             Vector2 playerpos = collider.transform.position;
             Debug.Log(playerpos);
             StartCoroutine(ChargePlayer(playerpos));
             //Debug.Log("Dealing Damage");
         }
 
-        if(collider.tag == "Player" && shoot) {
+        if(collider.gameObject.tag == "Player" && shoot) {
             isAttacking = true;
             StartCoroutine(Shooting());
         }
@@ -80,9 +80,9 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
     
-    void OnTriggerExit2D(Collider2D other) 
+    void OnCollisionEnter2D(Collider2D other) 
     {
-        if(other.tag == "Player")
+        if(other.gameObject.tag == "Player")
         {
             isAttacking = false;
         }    
