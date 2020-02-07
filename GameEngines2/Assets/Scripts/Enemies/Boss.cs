@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-	public Transform player;
+
 	public bool isFlipped = false;
 	public int attackDamage = 20;
-	public Vector3 attackOffset;
 	public float attackRange = 1f;
+	public Vector3 attackOffset;
 	public LayerMask attackMask;
+	private Transform player;
+	private PlayerControl _player;
+
+	private void Awake()
+	{
+		player = GameObject.FindGameObjectWithTag("Player").transform;
+	}
 
 	public void LookAtPlayer()
 	{
@@ -38,7 +45,8 @@ public class Boss : MonoBehaviour
 		Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
 		if (colInfo != null)
 		{
-			//colInfo.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
+			PlayerControl _player = colInfo.gameObject.GetComponent<PlayerControl>();
+			_player.killPlayer();
 			Debug.Log("Attacking");
 		}
 	}

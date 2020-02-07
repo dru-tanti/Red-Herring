@@ -10,7 +10,7 @@ public class EnemyVerticalPatrol : MonoBehaviour
     public Transform patrolStart;
     public Transform patrolEnd;
     private Vector2 target;
-
+    private PlayerControl _player;
 
     private void Start()
     {
@@ -47,7 +47,8 @@ public class EnemyVerticalPatrol : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
      {
-         Debug.Log("Dealing Damage");
+        PlayerControl _player = GetComponent<Collider>().gameObject.GetComponent<PlayerControl>();
+        _player.killPlayer();
      }
     }
 }

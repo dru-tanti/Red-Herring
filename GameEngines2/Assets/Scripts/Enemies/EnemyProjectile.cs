@@ -8,6 +8,7 @@ public class EnemyProjectile : MonoBehaviour
     public float lifetime;
     private Transform player;
     private Rigidbody2D projectile;
+    private PlayerControl _player;
 
     private void Awake()
     {
@@ -28,7 +29,8 @@ public class EnemyProjectile : MonoBehaviour
         {
             if(collider.tag == "Player")
             {
-                Debug.Log("Dealing Damage");
+                PlayerControl _player = collider.gameObject.GetComponent<PlayerControl>();
+                _player.killPlayer();
                 Destroy(gameObject);
             }
         }   

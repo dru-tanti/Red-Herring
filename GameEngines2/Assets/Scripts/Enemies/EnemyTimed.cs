@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyTimed : MonoBehaviour
 {
+    private PlayerControl _player;
     public float timer;
 
     void OnCollisionEnter2D(Collision2D col) 
@@ -15,7 +16,7 @@ public class EnemyTimed : MonoBehaviour
     }
     void DamageDeal()
     {
-        //Animation Change
-        Debug.Log("Dealing Damage");
+        PlayerControl _player = GetComponent<Collider>().gameObject.GetComponent<PlayerControl>();
+        _player.killPlayer();
     }
 }
