@@ -52406,13 +52406,13 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneNameUp
       value: 
-      objectReference: {fileID: 11400000, guid: 75d8fdb8dde5a184893fbf2dce5ec25f,
+      objectReference: {fileID: 11400000, guid: 5812953eb897b8e439a50a709b607923,
         type: 2}
     - target: {fileID: 792672244946541440, guid: 5330ca846f84a1e47be5cb0b4baffd3c,
         type: 3}
       propertyPath: sceneNameDown
       value: 
-      objectReference: {fileID: 11400000, guid: 5812953eb897b8e439a50a709b607923,
+      objectReference: {fileID: 11400000, guid: 75d8fdb8dde5a184893fbf2dce5ec25f,
         type: 2}
     - target: {fileID: 792672244946541440, guid: 5330ca846f84a1e47be5cb0b4baffd3c,
         type: 3}
