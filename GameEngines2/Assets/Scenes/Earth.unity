@@ -192,6 +192,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Air-Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: 75d8fdb8dde5a184893fbf2dce5ec25f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &55455520 stripped
@@ -39692,6 +39698,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Earth-4
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: 75d8fdb8dde5a184893fbf2dce5ec25f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &341284009 stripped
@@ -87898,6 +87910,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Earth-5
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: 75d8fdb8dde5a184893fbf2dce5ec25f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1106257861 stripped
@@ -88025,6 +88043,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Earth-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: 75d8fdb8dde5a184893fbf2dce5ec25f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1253839824 stripped
@@ -89200,6 +89224,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Earth 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: 75d8fdb8dde5a184893fbf2dce5ec25f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1482612331 stripped
@@ -89280,6 +89310,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Air-HighJump
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: 75d8fdb8dde5a184893fbf2dce5ec25f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1635808954 stripped

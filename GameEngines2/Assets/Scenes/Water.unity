@@ -20864,6 +20864,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Earth-Dig
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: 84db4a05f33a9a24285f2bfb85d1fc6d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &707545299 stripped
@@ -54934,6 +54940,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Water 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: 84db4a05f33a9a24285f2bfb85d1fc6d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1164002569 stripped
@@ -55160,6 +55172,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Water 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: 84db4a05f33a9a24285f2bfb85d1fc6d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1782891638 stripped

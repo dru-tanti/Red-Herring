@@ -272,6 +272,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Air-4
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: e2c17ceaac8efee488613069664f58de,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &73063496 stripped
@@ -57929,6 +57935,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Water-FrostBreath
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: e2c17ceaac8efee488613069664f58de,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1080472955 stripped
@@ -58009,6 +58021,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Air-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: e2c17ceaac8efee488613069664f58de,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1098887748 stripped
@@ -58404,6 +58422,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Air-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: e2c17ceaac8efee488613069664f58de,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1389961520 stripped
@@ -58777,6 +58801,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Fire-Dash
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: e2c17ceaac8efee488613069664f58de,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1949122895 stripped

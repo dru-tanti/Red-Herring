@@ -385,6 +385,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Fire-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: d137c3736401e9a4db7e6aba12da7333,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &194054803 stripped
@@ -35754,6 +35760,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Earth-GroundPound
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: d137c3736401e9a4db7e6aba12da7333,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1317228319 stripped
@@ -35834,6 +35846,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Water-Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: d137c3736401e9a4db7e6aba12da7333,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1397248282 stripped
@@ -36072,6 +36090,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Fire-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: d137c3736401e9a4db7e6aba12da7333,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &1846768187 stripped
@@ -63130,6 +63154,12 @@ PrefabInstance:
       propertyPath: _spawnName
       value: Fire-4
       objectReference: {fileID: 0}
+    - target: {fileID: 6037718132642569249, guid: 794bcae316c287f4b8db882a42ca28ce,
+        type: 3}
+      propertyPath: _sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: d137c3736401e9a4db7e6aba12da7333,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794bcae316c287f4b8db882a42ca28ce, type: 3}
 --- !u!4 &2108943896 stripped

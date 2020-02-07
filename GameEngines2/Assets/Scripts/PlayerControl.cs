@@ -85,9 +85,9 @@ public partial class PlayerControl : BaseController {
 
         // NOTE: For testing Purposes Only (No shit tipo...)
         // Kills the player
-        if(Input.GetKeyDown(KeyCode.E) && _isAlive.Value == true) {
-            killPlayer();
-        }
+        // if(Input.GetKeyDown(KeyCode.E) && _isAlive.Value == true) {
+        //     killPlayer();
+        // }
     }
 
     private void FixedUpdate() {
