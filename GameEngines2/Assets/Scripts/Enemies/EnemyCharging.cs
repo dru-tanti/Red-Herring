@@ -34,27 +34,27 @@ public class EnemyCharging : MonoBehaviour
             if(moveRight)
                 {
                     target = new Vector2(patrolStart.position.x, patrolStart.position.y);
-                    transform.localScale = new Vector3(-1f, 1f, 1f);
+                    transform.localScale = new Vector3(1f, 1f, 1f);
                     moveRight = false;
                 } else {
                     target = new Vector2(patrolEnd.position.x, patrolEnd.position.y);
-                    transform.localScale = new Vector3(1f, 1f, 1f);
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
                     moveRight = true;
                 }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider) 
+private void OnCollisionEnter2D(Collision2D collider) 
     {
-        if(collider.tag == "Player")
+        if(collider.gameObject.tag == "Player")
      {
-         Debug.Log("Charging");
+         Debug.Log("Dealing Damage");
      }
     }
     
-    void OnTriggerExit2D(Collider2D other) 
+    void OnCollisionExit2D(Collision2D other) 
     {
-        if(other.tag == "Player")
+        if(other.gameObject.tag == "Player")
         {
             isAttacking = false;
         }    

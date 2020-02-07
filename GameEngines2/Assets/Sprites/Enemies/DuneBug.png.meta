@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 946dbca1f92323e41afe0977303cc3f9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 597554579778516464
+    second: DuneBug_0
+  - first:
+      213: -8752673445400276568
+    second: DuneBug_1
+  - first:
+      213: 3202592916923176483
+    second: DuneBug_2
+  - first:
+      213: 6255930422544188020
+    second: DuneBug_3
+  - first:
+      213: -8746539479759177991
+    second: DuneBug_4
+  - first:
+      213: -258866653566103727
+    second: DuneBug_5
+  - first:
+      213: -6676898687225030820
+    second: DuneBug_6
+  - first:
+      213: -6175102346731180251
+    second: DuneBug_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -60,10 +84,22 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +108,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DuneBug_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 521
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e61ef276779324d96946860d41b321
+      internalID: 597554579778516464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuneBug_1
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 0
+        width: 557
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d18f7c2514517941b3ebccbb75bff0e
+      internalID: -8752673445400276568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuneBug_2
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 0
+        width: 544
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59e9531b41e09844975341276123917
+      internalID: 3202592916923176483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuneBug_3
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 4
+        width: 523
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cfac621152da34981f6cad1c4dbabc
+      internalID: 6255930422544188020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuneBug_4
+      rect:
+        serializedVersion: 2
+        x: 2682
+        y: 4
+        width: 520
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93cf432af2e19f4dbffd88bcf76ed2b
+      internalID: -8746539479759177991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuneBug_5
+      rect:
+        serializedVersion: 2
+        x: 3361
+        y: 0
+        width: 546
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73c8afb1a3817f4284fa58f1f9bd20b
+      internalID: -258866653566103727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuneBug_6
+      rect:
+        serializedVersion: 2
+        x: 4083
+        y: 0
+        width: 556
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4a76c460007984d82da9b6911e34ca
+      internalID: -6676898687225030820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DuneBug_7
+      rect:
+        serializedVersion: 2
+        x: 4830
+        y: 1
+        width: 521
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849e0425963bc2244897e8524dc4063e
+      internalID: -6175102346731180251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

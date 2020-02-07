@@ -7,9 +7,9 @@ public class EnemyKnockback : MonoBehaviour
 {
     public float pushForce;
 
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnCollisionEnter2D(Collision2D other) 
     {
-        if(other.tag == "Player")
+        if(other.gameObject.tag == "Player")
         {
             PlayerControl playerPush = other.gameObject.GetComponent<PlayerControl>();
 
