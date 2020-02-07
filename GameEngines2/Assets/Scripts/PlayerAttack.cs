@@ -20,6 +20,8 @@ public class PlayerAttack : MonoBehaviour
 	public BoolVariable isInvisible;
 	[HideInInspector]
 	public static Projectile[] element_list;
+	[HideInInspector]
+	public static ElementType[] cooldowns;
 	private PlayerAnimation _anim;
 	public ElementType[] element;
 	private PlayerControl _player;
@@ -28,6 +30,7 @@ public class PlayerAttack : MonoBehaviour
 	public Vector3Int offset;
 	private void Awake() {
 		element_list = projectiles;
+		cooldowns = element;
 		_anim = gameObject.GetComponentInParent<PlayerAnimation>();
 		_sprite = gameObject.GetComponentInParent<SpriteRenderer>();
 		_player = gameObject.GetComponentInParent<PlayerControl>();
