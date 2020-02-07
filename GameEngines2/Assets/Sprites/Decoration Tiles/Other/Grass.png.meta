@@ -131,69 +131,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grass_0
-      rect:
-        serializedVersion: 2
-        x: 351
-        y: 777
-        width: 33
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 854e72177b2710646bbefc4de1c2b93c
-      internalID: -1347532211411968617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_1
-      rect:
-        serializedVersion: 2
-        x: 387
-        y: 777
-        width: 87
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3241affadd42a0e49a10a014cedd0318
-      internalID: -7645372005702169758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_2
-      rect:
-        serializedVersion: 2
-        x: 475
-        y: 777
-        width: 26
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98843dae1089f6a46b88e02ba8f03be2
-      internalID: 6891631753638271631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Grass_3
       rect:
         serializedVersion: 2
@@ -202,7 +139,7 @@ TextureImporter:
         width: 184
         height: 214
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,7 +160,7 @@ TextureImporter:
         width: 174
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,7 +181,7 @@ TextureImporter:
         width: 355
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,153 +189,6 @@ TextureImporter:
       bones: []
       spriteID: f65119cd77a4bba4f888d07904d8e589
       internalID: -7255497285719700247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_6
-      rect:
-        serializedVersion: 2
-        x: 322
-        y: 424
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5199a67299449a24ca2b7c99983f7822
-      internalID: 6828908663453297030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_7
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 424
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df34b5789e93c9641adbf2ba3212cb24
-      internalID: 6694032873506494867
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_8
-      rect:
-        serializedVersion: 2
-        x: 368
-        y: 423
-        width: 35
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8358a3f2681366744b240d160d637dd2
-      internalID: 2289616372777055746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_9
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 424
-        width: 49
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b831805a84540bf45899755e6e0a5b66
-      internalID: 7471297114442723461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_10
-      rect:
-        serializedVersion: 2
-        x: 452
-        y: 424
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df18d96c378acad4a8e4e8a136fdfdb1
-      internalID: 8577017789959637929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_11
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 424
-        width: 29
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4244b50c69246d648a003747b995ce03
-      internalID: -6796477259373386654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grass_12
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 423
-        width: 26
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6aaec495f02e3946ab1e34a17c10fec
-      internalID: -6259141551469331208
       vertices: []
       indices: 
       edges: []
@@ -412,7 +202,7 @@ TextureImporter:
         width: 727
         height: 195
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,7 +223,7 @@ TextureImporter:
         width: 38
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

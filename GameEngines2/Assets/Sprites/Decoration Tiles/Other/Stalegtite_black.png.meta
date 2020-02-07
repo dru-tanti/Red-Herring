@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 00c44633b09a9bb4fb528cc237b437ed
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7654775351081531610
+    second: Stalegtite_black_16
+  - first:
+      213: -7498011239445306101
+    second: Stalegtite_black_17
+  - first:
+      213: -1931620046759456782
+    second: Stalegtite_black_18
+  - first:
+      213: 460798252512323738
+    second: Stalegtite_black_19
+  - first:
+      213: -5737103043481574034
+    second: Stalegtite_black_20
+  - first:
+      213: -5673419027362352011
+    second: Stalegtite_black_23
+  - first:
+      213: 4695843967274689915
+    second: Stalegtite_black_24
+  - first:
+      213: -966022288703215453
+    second: Stalegtite_black_25
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +94,189 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Stalegtite_black_16
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 89
+        width: 76
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37c712459523f84f96691fd6edeb5d8
+      internalID: -7654775351081531610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalegtite_black_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 91
+        width: 99
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ba308e3723b4b489a21ac59fa1c448
+      internalID: -7498011239445306101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalegtite_black_18
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 334
+        width: 197
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa54d6b72d235154184d89397adbf65b
+      internalID: -1931620046759456782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalegtite_black_19
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 94
+        width: 61
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693fc1e77cd26534dbca55a80b613d44
+      internalID: 460798252512323738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalegtite_black_20
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 95
+        width: 78
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce64043b6ac01949a7eba04cd1b4724
+      internalID: -5737103043481574034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalegtite_black_23
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 89
+        width: 72
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a15db30b6581d40a20d53e7739f18e
+      internalID: -5673419027362352011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalegtite_black_24
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 92
+        width: 49
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff95bf96e7833f348a90dbc4f804393c
+      internalID: 4695843967274689915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalegtite_black_25
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 92
+        width: 36
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4f3464ecf16e34d81704002055eaeb
+      internalID: -966022288703215453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

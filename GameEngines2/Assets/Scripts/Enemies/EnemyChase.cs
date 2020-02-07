@@ -5,18 +5,22 @@ using Pathfinding;
 
 public class EnemyChase : MonoBehaviour
 {
-
-    public Transform target;
     public float speed = 200f;
     public float nextWaypointDist = 3f;
-
     public Transform enemy;
+    private Transform target;
+    private PlayerControl _player;
 
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath =  false;
     Seeker seeker;
     Rigidbody2D _rb;
+
+    private void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -82,7 +86,8 @@ public class EnemyChase : MonoBehaviour
     {
       if(other.gameObject.tag == "Player")
       {
-          Debug.Log("Dealing Damage");
+         PlayerControl _player = GetComponent<Collider>().gameObject.GetComponent<PlayerControl>();
+         _player.killPlayer();
       }   
     }
 }

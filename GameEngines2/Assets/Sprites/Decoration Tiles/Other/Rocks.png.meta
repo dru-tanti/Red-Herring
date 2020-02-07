@@ -122,99 +122,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rocks_0
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 778
-        width: 26
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6639671443c35054a9d01de013c04eb9
-      internalID: 1887494081247492234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rocks_1
-      rect:
-        serializedVersion: 2
-        x: 395
-        y: 779
-        width: 36
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41a22e74b20804249bf69e36074c9038
-      internalID: 2007986136508003152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rocks_2
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 779
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7985013a30ce0547a2d4c9452c0e7c9
-      internalID: -5091828049805951605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rocks_3
-      rect:
-        serializedVersion: 2
-        x: 467
-        y: 779
-        width: 28
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 539593b6cfd8a624780a97e13978e16b
-      internalID: -4209556597541047147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Rocks_4
       rect:
         serializedVersion: 2
-        x: 6
+        x: 7
         y: 608
         width: 835
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,90 +138,6 @@ TextureImporter:
       bones: []
       spriteID: 3c272878a614490428365d03460d16f9
       internalID: -5342935890121459157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rocks_5
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 543
-        width: 29
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 394adf7299ec64e49916c7a42da931dd
-      internalID: -7073761113175812397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rocks_6
-      rect:
-        serializedVersion: 2
-        x: 391
-        y: 542
-        width: 35
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a25e7454e09094419ad6b5fd52a7fe5
-      internalID: -2427098341007487093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rocks_7
-      rect:
-        serializedVersion: 2
-        x: 428
-        y: 542
-        width: 30
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57fc4ac27fabc424c90fc753521aa341
-      internalID: -1677260544633098824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rocks_8
-      rect:
-        serializedVersion: 2
-        x: 460
-        y: 543
-        width: 32
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a87dfda0de465514f9b86cb4d27320bb
-      internalID: 9019416115260902278
       vertices: []
       indices: 
       edges: []
@@ -319,7 +151,7 @@ TextureImporter:
         width: 505
         height: 183
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,11 +168,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 211
+        y: 210
         width: 499
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,7 +193,7 @@ TextureImporter:
         width: 527
         height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
