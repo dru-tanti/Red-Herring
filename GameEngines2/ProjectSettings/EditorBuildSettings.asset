@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FabioScene.unity
     guid: 7e786a35927334a81ac470de71848946
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/ElementsScene.unity
+    guid: 197088e0b0d3348439860fe13af68c24
   - enabled: 1
     path: Assets/Scenes/Centre.unity
     guid: 0de8e3aba9fe66244a0572191d690fcc
