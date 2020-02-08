@@ -48,10 +48,10 @@ public class PlayerEnvironment : MonoBehaviour {
             _player.killPlayer();
         }
 
-        if(tileStand is HazardTile && (tileStand as HazardTile).lava && !_player._lavaResistant.Value) {
+        if((tileStand is HazardTile || tilePlayer is HazardTile) && ((tileStand as HazardTile).lava || (tilePlayer as HazardTile).lava) && !_player._lavaResistant.Value) {
             _player.killPlayer();
         }
-
+        
         // If the player is in the water, but they are not using Water, kill the player.
         if(tilePlayer is WaterTile && !_player._swimming.Value) {
             _player.killPlayer();
