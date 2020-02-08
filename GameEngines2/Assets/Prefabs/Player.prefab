@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 0}
-  elementsUnlocked: 1
+  elementsUnlocked: 0
   speed: {fileID: 11400000, guid: 440a71e053492704c9c9d69ca3c9a2c6, type: 2}
   jump: {fileID: 11400000, guid: 7e8265b32854625488d57ad042fc9320, type: 2}
   _isAlive: {fileID: 11400000, guid: 87009c5e705bec24191c2a109a6de4f7, type: 2}
